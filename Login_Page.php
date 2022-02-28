@@ -15,10 +15,13 @@
     <form method = "post" align = "center" action = "process_login.php">
 	 <div id = "data">
 	    <label>First Name:</label>
-	    <input type = "text" name = "user_name" required>
+	    <input type = "text" name = "user_first_name" required>
 		 
             <label>First Name:</label>
-	    <input type = "text" name = "user_name" required>
+	    <input type = "text" name = "user_last_name" required>
+		 
+	    <label>Email:</label>
+	    <input type = "text" name = "user_email" required>
 
 	    <label>Password:</label>
 	    <input type = "text" name = "user_password" required>
