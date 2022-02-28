@@ -14,7 +14,10 @@
     
     <form method = "post" align = "center" action = "process_login.php">
 	 <div id = "data">
-	    <label>Username:</label>
+	    <label>First Name:</label>
+	    <input type = "text" name = "user_name" required>
+		 
+            <label>First Name:</label>
 	    <input type = "text" name = "user_name" required>
 
 	    <label>Password:</label>
@@ -22,8 +25,8 @@
 	 </div>
 	
 	 <select name = "user_role">
-	    <option value = "user">User</option>
-	    <option value = "admin">Admin</option>
+	    <option value = "student">Student</option>
+	    <option value = "instructor">Instructor</option>
 	 </select>
 	
 	
