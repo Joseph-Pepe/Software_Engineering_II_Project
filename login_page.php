@@ -16,7 +16,7 @@
 	    <label>First Name:</label>
 	    <input type = "text" name = "user_first_name" required>
 		 
-            <label>First Name:</label>
+            <label>Last Name:</label>
 	    <input type = "text" name = "user_last_name" required>
 		 
 	    <label>Email:</label>
