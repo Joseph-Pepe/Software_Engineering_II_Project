@@ -10,7 +10,7 @@ CREATE TABLE ACCOUNTS(
    password          VARCHAR(50)    NOT NULL, 
    firstName         VARCHAR(50)    NOT NULL, 
    lastName          VARCHAR(50)    NOT NULL, 
-   account_type      VARCHAR(255)   NOT NULL,
+   account_type      VARCHAR(50)   NOT NULL,
   PRIMARY KEY (accountID) 
 );
 
