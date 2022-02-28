@@ -16,7 +16,6 @@ catch(PDOException $database_exception){
 	include('database_connection_error.php');
 	echo "<p>An error occurred while connecting to the database: $error_message</p>";
 }// Catches any type of exception:
-
 catch(Exception $exception){
 	// Executes the object's method.
 	$error_message = $exception->getMessage();
