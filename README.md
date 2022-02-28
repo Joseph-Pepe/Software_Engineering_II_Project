@@ -2,6 +2,9 @@
 
 Improves communication between the instructor and students during a class session.
 
+![Screen Shot 2022-02-28 at 3 37 01 PM](https://user-images.githubusercontent.com/32807576/156055016-325454a5-9594-4ff8-8cb5-d7841d883be5.png)
+
+
 `Database Schema` - How the data is represented in the database (relational).
 
 ![Screen Shot 2022-02-28 at 3 32 49 PM](https://user-images.githubusercontent.com/32807576/156054459-0fa01b05-1232-41c0-9294-c469177e34ce.png)
