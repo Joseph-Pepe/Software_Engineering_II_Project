@@ -1,7 +1,7 @@
 # Step 1: Create and select the database (CSIT415).
 DROP DATABASE IF EXISTS CSIT415; 
 CREATE DATABASE CSIT415; 
-USE CSIT101; 
+USE CSIT415; 
 
 # Step 2: Create a table (named administrator) with five fields.
 CREATE TABLE administrators( 
