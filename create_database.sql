@@ -3,7 +3,7 @@ DROP DATABASE IF EXISTS CSIT415;
 CREATE DATABASE CSIT415; 
 USE CSIT415; 
 
-# Step 2: Create a table (named accounts) with five fields.
+# Step 2: Create a table (named accounts) with multiple fields.
 CREATE TABLE ACCOUNTS( 
    accountID         INT            NOT NULL   AUTO_INCREMENT, 
    email             VARCHAR(255)   NOT NULL, 
