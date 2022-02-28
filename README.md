@@ -2,7 +2,7 @@
 
 Improves communication between the instructor and students during a class session.
 
-![Screen Shot 2022-02-28 at 3 37 01 PM](https://user-images.githubusercontent.com/32807576/156055016-325454a5-9594-4ff8-8cb5-d7841d883be5.png)
+![Screen Shot 2022-02-28 at 3 38 15 PM](https://user-images.githubusercontent.com/32807576/156055208-c6ebc9e9-c6cb-4477-810e-debe4853e234.png)
 
 
 `Database Schema` - How the data is represented in the database (relational).
