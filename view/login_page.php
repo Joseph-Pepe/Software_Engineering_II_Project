@@ -1,3 +1,8 @@
+<?php
+// Require a secure connection:
+require_once('utilities/secure_connection.php');
+?>
+
 <!DOCTYPE html>
 <html>
  <head>
