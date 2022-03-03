@@ -1,6 +1,6 @@
 <?php
 // Require a secure connection:
-require_once('utilities/secure_connection.php');
+require_once('utility/secure_connection.php');
 ?>
 
 <!DOCTYPE html>
