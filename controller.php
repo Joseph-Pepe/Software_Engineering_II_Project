@@ -9,7 +9,7 @@ $action = filter_input(INPUT_POST, 'action');
 
 
 // If the user is not logged in, force the user to login.
-if(!isset($_SESSION['is_valid_user'])){
+if(!isset($_SESSION['is_valid_user_account'])){
    $action = 'login';
 }
 
@@ -19,7 +19,7 @@ switch($action){
       $email = filter_input(INPUT_POST, 'email');
       $password = filter_input(INPUT_POST, 'password');
       if(is_valid_user_login($email, $password)){
-         $_SESSION['is_valid_user'] = true;
+         $_SESSION['is_valid_user_account'] = true;
          include('view/homepage.php');
       }else{
          $login_message = 'You must login to view this page.';
