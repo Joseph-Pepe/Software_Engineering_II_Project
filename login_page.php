@@ -3,7 +3,7 @@
  <head>
      <meta charset = "utf-8">
      <title>Login</title>
-     <link rel = "stylesheet" type = "text/css" href = "styles.css">
+     <link rel = "stylesheet" type = "text/css" href = "styles.css" />
  </head>
 
  <body>
@@ -13,19 +13,19 @@
     </header>
     
     <form method = "post" align = "center" action = "process_login.php">
-	 <input name = "action" type = "hidden" value = "login">
+	 <input name = "action" type = "hidden" value = "login"/>
 	 <div id = "data">
 	    <label>First Name:</label>
-	    <input type = "text" name = "user_first_name" required>
+	    <input type = "text" name = "user_first_name" required/>
 		 
             <label>Last Name:</label>
-	    <input type = "text" name = "user_last_name" required>
+	    <input type = "text" name = "user_last_name" required/>
 		 
 	    <label>Email:</label>
-	    <input type = "text" name = "user_email" required>
+	    <input type = "text" name = "user_email" required/>
 
 	    <label>Password:</label>
-	    <input type = "text" name = "user_password" required>
+	    <input type = "text" name = "user_password" required/>
 	 </div>
 	
 	 <select name = "user_role">
@@ -36,8 +36,8 @@
 	
 	 <div id = "buttons" align = "center">
 	    <label>&nbsp;</label>
-	    <input type = "submit" value = "Login">
-	    <input type = "reset" value = "Clear">
+	    <input type = "submit" value = "Login"/>
+	    <input type = "reset" value = "Clear"/>
 	 </div>
 	
 	 <?php if(!empty($error_message)){ ?>
