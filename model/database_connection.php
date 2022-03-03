@@ -9,7 +9,6 @@ try{
 	$database = new PDO($data_source_name, $username, $password); 
 	echo '<p>You are connected to the database!</p>';
 }// Catches PDO exception:
-
 catch(PDOException $database_exception){
 	// Executes the object's method.
 	$error_message = $database_exception->getMessage();
