@@ -8,8 +8,8 @@ CREATE TABLE ACCOUNTS(
    accountID         INT            NOT NULL   AUTO_INCREMENT, 
    email             VARCHAR(255)   NOT NULL, 
    password          VARCHAR(50)    NOT NULL, 
-   firstName         VARCHAR(50)    NOT NULL, 
-   lastName          VARCHAR(50)    NOT NULL, 
+   first_name        VARCHAR(50)    NOT NULL, 
+   last_name         VARCHAR(50)    NOT NULL, 
    account_type      VARCHAR(50)   NOT NULL,
   PRIMARY KEY (accountID) 
 );
