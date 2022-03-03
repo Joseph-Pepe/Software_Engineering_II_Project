@@ -3,7 +3,7 @@
 require_once('utility/secure_connection.php');
 
 // Require a valid user:
-require_once('utility/valid_user.php');
+require_once('utility/valid_user_account.php');
 
 $user_email = filter_input(INPUT_POST, 'user_email');
 $user_password = filter_input(INPUT_POST, 'user_password');
