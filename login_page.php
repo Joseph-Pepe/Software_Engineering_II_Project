@@ -34,7 +34,7 @@
 	 </select>
 	
 	
-	 <div id = "buttons">
+	 <div id = "buttons" align = "center">
 	    <label>&nbsp;</label>
 	    <input type = "submit" value = "Login">
 	    <input type = "reset" value = "Clear">
