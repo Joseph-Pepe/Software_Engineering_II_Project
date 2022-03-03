@@ -5,13 +5,13 @@
 $https = filter_input(INPUT_SERVER, 'HTTPS');
 
 if(!$https){
-	// HTTP_HOST: Returns the host for another request.
-	$host = filter_input(INPUT_SERVER, 'HTTP_HOST');
+   // HTTP_HOST: Returns the host for another request.
+   $host = filter_input(INPUT_SERVER, 'HTTP_HOST');
 	
-	// REQUEST_URI: Returns the uniform resource identifier for the current request. 
-	$uri = filter_input(INPUT_SERVER, 'REQUEST_URI');
-	$url = 'https://' . $host . $uri; 
-	header("Location: " . $url);
-	exit();
+   // REQUEST_URI: Returns the uniform resource identifier for the current request. 
+   $uri = filter_input(INPUT_SERVER, 'REQUEST_URI');
+   $url = 'https://' . $host . $uri; 
+   header("Location: " . $url);
+   exit();
 }
 ?>
