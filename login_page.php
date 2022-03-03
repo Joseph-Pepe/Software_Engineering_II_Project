@@ -14,6 +14,7 @@
     
     <form method = "post" align = "center" action = "process_login.php">
 	 <input name = "action" type = "hidden" value = "login"/>
+	 <!-- [Form]: Stores the form data in a $_POST array. -->
 	 <div id = "data">
 	    <label>First Name:</label>
 	    <input type = "text" name = "user_first_name" required/>
