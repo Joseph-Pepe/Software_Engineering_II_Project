@@ -1,5 +1,5 @@
 <?php
-// Make sure the page uses a secure connection:
+// Make sure the page uses a secure connection (redirects to a secure connection):
 
 // HTTPS: Returns a non-empty value if the current request is using HTTPS.
 $https = filter_input(INPUT_SERVER, 'HTTPS');
