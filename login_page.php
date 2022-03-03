@@ -41,7 +41,7 @@
 	 </div>
 	
 	 <?php if(!empty($error_message)){ ?>
-	    <b class = "error" align = "center" style = "color: red;">Error: <?php echo htmlspecialchars($error_message); ?></b>
+	    <b class = "error" align = "center" style = "color: red;">Error:</b><?php echo htmlspecialchars($error_message); ?>
 	 <?php } ?>
     </form>
     <footer>
