@@ -6,7 +6,13 @@ require_once('model/user_database.php');
 
 // Get the action to perform (e.g., login, view class roster)
 $action = filter_input(INPUT_POST, 'action');
-
+if($action == NULL){
+   $action = filter_input(INPUT_GET, 'action');
+   if($action == NULL){
+      $action = 'show_homepage';
+   }
+   
+}
 
 // If the user is not logged in, force the user to login.
 if(!isset($_SESSION['is_valid_user_account'])){
@@ -25,6 +31,9 @@ switch($action){
          $login_message = 'You must login to view this page.';
          include('view/login_page.php');
       }
+      break;
+   case 'show_homepage':
+      include('view/homepage.php');
       break;
    case 'logout':
       // Clear all session data:
