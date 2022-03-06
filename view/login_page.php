@@ -50,8 +50,6 @@ require_once('utility/secure_connection.php');
 	    <b class = "error" align = "center" style = "color: red;">Error:</b><?php echo htmlspecialchars($error_message); ?>
 	 <?php } ?>
     </form>
-    <footer>
-       <h6>&copy; <?php echo date("Y"); ?> by Company_Name_Here, Inc. All rights reserved.</h6>
-    </footer>
+    <?php include 'view/' ?>
  </body>	
 </html>
