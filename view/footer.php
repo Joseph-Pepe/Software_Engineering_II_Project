@@ -1,5 +1,5 @@
 <footer>
-   <p class = "copyright">
-      <h6>&copy; <?php echo date("Y"); ?> by Company_Name_Here, Inc. All rights reserved.</h6>
-   </p>
+      <h5 class = "copyright">
+         &copy; <?php echo date("Y"); ?> by Company_Name_Here, Inc. All rights reserved.
+      </h5>
 </footer>
