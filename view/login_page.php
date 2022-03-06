@@ -51,7 +51,7 @@ require_once('utility/secure_connection.php');
 	 <?php } ?>
     </form>
     <footer>
-       <h6>&copy; 2022 by Company_Name_Here, Inc. All rights reserved.</h6>
+       <h6>&copy; <?php echo date("Y"); ?> by Company_Name_Here, Inc. All rights reserved.</h6>
     </footer>
  </body>	
 </html>
