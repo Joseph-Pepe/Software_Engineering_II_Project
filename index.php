@@ -4,7 +4,7 @@ session_start();
 require_once('model/database_connection.php');
 require_once('model/user_database.php');
 
-// Get the action to perform (e.g., login, view class roster)
+// Get the action to perform (e.g., login, homepage)
 $action = filter_input(INPUT_POST, 'action');
 if($action == NULL){
    $action = filter_input(INPUT_GET, 'action');
