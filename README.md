@@ -25,8 +25,9 @@ Inside you will find the htdocs folder (stores the applications that you want to
 
 ![Screen Shot 2022-03-12 at 8 36 37 PM](https://user-images.githubusercontent.com/32807576/158041100-2b95d297-897d-46a5-b95e-bb70f44668c0.png)
 
-
 This is the folder that it automatically goes to everytime you type in the `IP Address` of this localhost.
+
+To have an application run on this server, place it in the `htdocs` folder and provide the path after the localhost IP address.
 
 ![Screen Shot 2022-03-12 at 8 36 49 PM](https://user-images.githubusercontent.com/32807576/158041102-559c0ec2-f794-4472-936e-8ad9d635096f.png)
 
