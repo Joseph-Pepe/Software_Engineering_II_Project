@@ -1,5 +1,8 @@
-# Web Application: Improves communication between the instructor and students during a class session.
+# Web Application
 
+Improves communication between the instructor and students during a class session.
+
+-----
 
 <b>XAMPP (Cross-Platform, Apache, MariaDB, PHP)</b> is an open-source web server package .
 
