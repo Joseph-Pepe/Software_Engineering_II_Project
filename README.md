@@ -10,10 +10,11 @@ Improves communication between the instructor and students during a class sessio
 
 `Step #2: (Setup)` In the XAMPP Control panel select "start" in the "General tab" & in the "Services tab" select "start all".
 
+<b>Apache (web server)</b> is the machine where the application is running (localhost: local computer where the application is stored). 
+
 ![Screen Shot 2022-03-12 at 8 19 06 PM](https://user-images.githubusercontent.com/32807576/158040745-e4561de8-6007-441f-919f-f38936398110.png)
 ![Screen Shot 2022-03-12 at 8 20 09 PM](https://user-images.githubusercontent.com/32807576/158040771-ea8736aa-bfad-4d16-8575-b7c4a0c06dd2.png)
 
-<b>Apache (web server)</b> is the machine where the application is running (localhost: local computer where the application is stored). 
 
 
 
