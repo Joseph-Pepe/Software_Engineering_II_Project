@@ -21,9 +21,10 @@ Improves communication between the instructor and students during a class sessio
 
 `Web Server (Completed)` Go into your local folder (double-click) "lampp".
 
+Inside you will find the htdocs folder (stores the applications that you want to run on the web server).
+
 ![Screen Shot 2022-03-12 at 8 36 37 PM](https://user-images.githubusercontent.com/32807576/158041100-2b95d297-897d-46a5-b95e-bb70f44668c0.png)
 
-Inside you will find the htdocs folder (stores the applications that you want to run on the web server).
 
 This is the folder that it automatically goes to everytime you type in the `IP Address` of this localhost.
 
