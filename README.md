@@ -12,8 +12,8 @@ Improves communication between the instructor and students during a class sessio
 
 <b>Apache (web server)</b> is the machine where the application is running (localhost: local computer where the application is stored). 
 
-![Screen Shot 2022-03-12 at 8 19 06 PM](https://user-images.githubusercontent.com/32807576/158040745-e4561de8-6007-441f-919f-f38936398110.png)
-![Screen Shot 2022-03-12 at 8 20 09 PM](https://user-images.githubusercontent.com/32807576/158040771-ea8736aa-bfad-4d16-8575-b7c4a0c06dd2.png)
+![Screen Shot 2022-03-12 at 8 23 20 PM](https://user-images.githubusercontent.com/32807576/158040848-6fbe6fec-bd4e-4c15-9ed9-9a5f5d9adb3b.png)
+![Screen Shot 2022-03-12 at 8 23 39 PM](https://user-images.githubusercontent.com/32807576/158040849-6daae533-50ed-497b-9b76-ff094ef8268c.png)
 
 
 `Database Schema` - How the data is represented in the database (relational).
