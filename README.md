@@ -15,7 +15,7 @@ Improves communication between the instructor and students during a class sessio
 ![Screen Shot 2022-03-12 at 8 23 20 PM](https://user-images.githubusercontent.com/32807576/158040848-6fbe6fec-bd4e-4c15-9ed9-9a5f5d9adb3b.png)
 ![Screen Shot 2022-03-12 at 8 23 39 PM](https://user-images.githubusercontent.com/32807576/158040849-6daae533-50ed-497b-9b76-ff094ef8268c.png)
 
-`Step #3: (Testing)` Control panel select "Go to Application" to test the local server (see if this page pops up).
+`Step #3: (Test)` Control panel select "Go to Application" to test the local server (see if this page pops up).
 
 ![Screen Shot 2022-03-12 at 8 32 48 PM](https://user-images.githubusercontent.com/32807576/158041008-f60ee8a5-b42c-4270-ab3e-771bbc335b80.png)
 
