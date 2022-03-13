@@ -17,7 +17,6 @@ Improves communication between the instructor and students during a class sessio
 
 `Step #3: (Testing)` Control panel select "Go to Application" to test the local server (see if this page pops up).
 
-![Screen Shot 2022-03-12 at 8 23 20 PM](https://user-images.githubusercontent.com/32807576/158041002-e9b8fbb5-788c-4957-84f0-aef633b01650.png)
 ![Screen Shot 2022-03-12 at 8 32 48 PM](https://user-images.githubusercontent.com/32807576/158041008-f60ee8a5-b42c-4270-ab3e-771bbc335b80.png)
 
 `Database Schema` - How the data is represented in the database (relational).
