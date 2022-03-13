@@ -3,9 +3,9 @@
 Improves communication between the instructor and students during a class session.
 
 
-<b>XAMPP (Cross-Platform, Apache, MariaDB, PHP)</b> - An open-source web server package (https://www.apachefriends.org/index.html).
+<b>XAMPP (Cross-Platform, Apache, MariaDB, PHP)</b> - An open-source web server package .
 
-![Screen Shot 2022-03-12 at 7 54 27 PM](https://user-images.githubusercontent.com/32807576/158040258-69a4ae87-2a80-4c45-b6dc-c01b35c4671b.png)
+[![Screen Shot 2022-03-12 at 7 54 27 PM](https://user-images.githubusercontent.com/32807576/158040258-69a4ae87-2a80-4c45-b6dc-c01b35c4671b.png)](https://www.apachefriends.org/index.html)
 
 `Web Server (Apache)` - The machine where the application is running (localhost: local computer where the application is stored). 
 
