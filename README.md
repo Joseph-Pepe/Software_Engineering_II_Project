@@ -25,6 +25,8 @@ Improves communication between the instructor and students during a class sessio
 
 Inside you will find the htdocs folder (stores the applications that you want to run on the web server).
 
+This is the folder that it automatically goes to everytime you type in the `IP Address` of this localhost.
+
 ![Screen Shot 2022-03-12 at 8 36 49 PM](https://user-images.githubusercontent.com/32807576/158041102-559c0ec2-f794-4472-936e-8ad9d635096f.png)
 
 
