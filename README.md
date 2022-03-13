@@ -19,6 +19,15 @@ Improves communication between the instructor and students during a class sessio
 
 ![Screen Shot 2022-03-12 at 8 32 48 PM](https://user-images.githubusercontent.com/32807576/158041008-f60ee8a5-b42c-4270-ab3e-771bbc335b80.png)
 
+`Web Server (Completed)` Go into your local folder (double-click) "lampp" and go into "htdocs".
+
+
+
+![Screen Shot 2022-03-12 at 8 36 37 PM](https://user-images.githubusercontent.com/32807576/158041100-2b95d297-897d-46a5-b95e-bb70f44668c0.png)
+![Screen Shot 2022-03-12 at 8 36 49 PM](https://user-images.githubusercontent.com/32807576/158041102-559c0ec2-f794-4472-936e-8ad9d635096f.png)
+
+
+
 `Database Schema` - How the data is represented in the database (relational).
 
 ![Screen Shot 2022-02-28 at 3 32 49 PM](https://user-images.githubusercontent.com/32807576/156054459-0fa01b05-1232-41c0-9294-c469177e34ce.png)
