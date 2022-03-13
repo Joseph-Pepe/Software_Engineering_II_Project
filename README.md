@@ -16,11 +16,6 @@ Improves communication between the instructor and students during a class sessio
 ![Screen Shot 2022-03-12 at 8 20 09 PM](https://user-images.githubusercontent.com/32807576/158040771-ea8736aa-bfad-4d16-8575-b7c4a0c06dd2.png)
 
 
-
-
-![Screen Shot 2022-02-28 at 3 38 15 PM](https://user-images.githubusercontent.com/32807576/156055208-c6ebc9e9-c6cb-4477-810e-debe4853e234.png)
-
-
 `Database Schema` - How the data is represented in the database (relational).
 
 ![Screen Shot 2022-02-28 at 3 32 49 PM](https://user-images.githubusercontent.com/32807576/156054459-0fa01b05-1232-41c0-9294-c469177e34ce.png)
