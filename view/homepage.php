@@ -21,11 +21,10 @@ require_once('utility/valid_user_account.php');
       </header>
       <div id = "links">
          <?php if($user_role == "instructor"){ ?>
+	    <a class = "selection" href = "file_1.html">file_1</a>
+	    <a class = "selection" href = "file_2.html">file_2</a>
+	 <?php }else if($user_role == "student"){?>
 	      
-	 <?php }?>
-	      
-	 <?php if($user_role == "student"){ ?>
-	
          <?php }?>
       </div>
 	   
