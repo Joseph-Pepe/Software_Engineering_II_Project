@@ -6,6 +6,8 @@ require_once('utility/secure_connection.php');
 require_once('utility/valid_user_account.php');
 ?>
 
-<?php if()){ ?>
+<footer>
+   <?php if()){ ?>
 	    
-<?php } ?>
+   <?php } ?>
+</footer>
