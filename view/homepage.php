@@ -24,7 +24,7 @@ require_once('utility/valid_user_account.php');
 	    <a class = "selection" href = "file_1.html">file_1</a>
 	    <a class = "selection" href = "file_2.html">file_2</a>
 	 <?php }else if($user_role == "student"){?>
-	      
+	    <a class = "selection" href = "file_1.html">file_1</a>
          <?php }?>
       </div>
    </body>
