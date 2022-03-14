@@ -27,6 +27,5 @@ require_once('utility/valid_user_account.php');
 	      
          <?php }?>
       </div>
-	   
    </body>
 </html>
