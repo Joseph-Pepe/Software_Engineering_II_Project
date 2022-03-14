@@ -7,7 +7,7 @@ require_once('utility/valid_user_account.php');
 ?>
 
 <footer>
-   <?php if($user_role == "" || $user_role == "")){ ?>
+   <?php if($user_role == "instructor" || $user_role == "student")){ ?>
 	    
    <?php }else{ ?>
 	
