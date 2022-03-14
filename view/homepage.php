@@ -29,11 +29,4 @@ require_once('utility/valid_user_account.php');
       </div>
 	   
    </body>
-
-
-   <?php if($user_role == "instructor"){ ?>
-	    
-   <?php }else if($user_role == "student"){ ?>
-	
-   <?php }?>
 </html>
