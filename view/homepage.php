@@ -16,9 +16,18 @@ require_once('utility/valid_user_account.php');
 	
    <body> 
       <header>
-         <h2></h2>
+         <h2>Welcome User</h2>
 	 <hr/>
       </header>
+      <div id = "links">
+         <?php if($user_role == "instructor"){ ?>
+	      
+	 <?php }?>
+	      
+	 <?php if($user_role == "student"){ ?>
+	
+         <?php }?>
+      </div>
 	   
    </body>
 
