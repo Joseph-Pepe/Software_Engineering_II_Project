@@ -6,10 +6,8 @@ require_once('utility/secure_connection.php');
 require_once('utility/valid_user_account.php');
 ?>
 
-<footer>
-   <?php if($user_role == "instructor" || $user_role == "student")){ ?>
+   <?php if($user_role == "instructor"){ ?>
 	    
-   <?php }else{ ?>
+   <?php }else if($user_role == "student"){ ?>
 	
    <?php }?>
-</footer>
