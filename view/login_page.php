@@ -22,19 +22,19 @@ require_once('utility/secure_connection.php');
 	 <!-- [Form]: Stores the form data in a $_POST array (can retrieve the values from the superglobal variables). -->
 	 <div id = "data">
 	    <label>First Name:</label>
-	    <input type = "text" name = "user_first_name" required/>
+	    <input type = "text" name = "first_name" required/>
 		 
             <label>Last Name:</label>
-	    <input type = "text" name = "user_last_name" required/>
+	    <input type = "text" name = "last_name" required/>
 		 
 	    <label>Email:</label>
-	    <input type = "text" name = "user_email" required/>
+	    <input type = "text" name = "email" required/>
 
 	    <label>Password:</label>
-	    <input type = "text" name = "user_password" required/>
+	    <input type = "text" name = "password" required/>
 	 </div>
 	
-	 <select name = "user_role">
+	 <select name = "account_type">
 	    <option value = "student">Student</option>
 	    <option value = "instructor">Instructor</option>
 	 </select>
