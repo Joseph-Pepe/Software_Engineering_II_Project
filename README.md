@@ -2,6 +2,12 @@
 
 Improves communication between the instructor and students during a class session.
 
+-----
+
+<b>Apache (Web Server)</b>
+
+-----
+
 # Implementation
 
 <b>Scripting Language:</b> PHP embedded in html.
@@ -10,12 +16,6 @@ Improves communication between the instructor and students during a class sessio
 
 <b>Database Server:</b> MySQL (PHPMyAdmin)
 
-
------
-
-<b>Apache (Web Server)</b>
-
------
 
 `Step #1: (Download)` <b>XAMPP (Cross-Platform, Apache, MariaDB, PHP)</b> open-source web server package.
 
