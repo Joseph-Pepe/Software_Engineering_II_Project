@@ -89,7 +89,11 @@ To have an application run on this server, place it in the `htdocs` folder and p
 ![Screen Shot 2022-03-18 at 5 52 27 PM](https://user-images.githubusercontent.com/32807576/159088552-aba64fb0-920d-4d78-881c-4c64eaf80f4c.png)
 
 
+-----
 
+<b>Login Page</b>
+
+-----
 
 
 `Login Page` - Allows the user to login to an existing account or create a new account (sign up for a new account using .edu email).
