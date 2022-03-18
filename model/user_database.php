@@ -34,9 +34,7 @@ function is_valid_user_login($email, $password){
   
   // Store the record retrieved from the database in a variable.
   $row = $locate_user->fetch();
-  
   $locate_user->closeCursor();
-  
   $retrieved_hashed_password = $row['password'];
 
   // Returns true if the hashed password matches the specified hash.
