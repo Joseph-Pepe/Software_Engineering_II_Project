@@ -46,8 +46,8 @@ require_once('utility/secure_connection.php');
 	    <input type = "reset" value = "Clear"/>
 	 </div>
 	
-	 <?php if(!empty($error_message)){ ?>
-	    <b class = "error" align = "center" style = "color: red;">Error:</b><?php echo htmlspecialchars($error_message); ?>
+	 <?php if(!empty($login_message)){ ?>
+	    <b class = "error" align = "center" style = "color: red;">Error:</b><?php echo htmlspecialchars($login_message); ?>
 	 <?php } ?>
     </form>
     <?php include 'view/footer'; ?>
