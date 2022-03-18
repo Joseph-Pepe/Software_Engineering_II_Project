@@ -1,6 +1,12 @@
 <?php
 function add_user($first_name, $last_name, $email, $password, $account_type){
    global $database;
+   
+   /*
+      if($first_name == NULL || $last_name == NULL || $email == NULL || $password == NULL)
+         $error = "Invalid product data. Check all fields and try again.";
+         include('../errors/error.php');
+   */
   
    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
   
@@ -13,7 +19,7 @@ function add_user($first_name, $last_name, $email, $password, $account_type){
    $add_user->bindValue(':email', $email);
    $add_user->bindValue(':password', $hashed_password);
    $add_user->bindValue(':account_type', $account_type);
-
+  
    // Execute SQL statement:
    $add_user->execute();
   
