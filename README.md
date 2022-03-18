@@ -36,6 +36,18 @@ To have an application run on this server, place it in the `htdocs` folder and p
 
 ![Screen Shot 2022-03-12 at 8 36 49 PM](https://user-images.githubusercontent.com/32807576/158041102-559c0ec2-f794-4472-936e-8ad9d635096f.png)
 
+-----
+
+<b>PHPMyAdmin (Web-based Client)</b>
+
+-----
+
+`Step #1: (Setup)` Control panel select "start" in the "General tab" for "Apache" & "MySQL".
+
+![Screen Shot 2022-03-12 at 8 23 20 PM](https://user-images.githubusercontent.com/32807576/158040848-6fbe6fec-bd4e-4c15-9ed9-9a5f5d9adb3b.png)
+![Screen Shot 2022-03-12 at 8 23 39 PM](https://user-images.githubusercontent.com/32807576/158040849-6daae533-50ed-497b-9b76-ff094ef8268c.png)
+
+
 
 
 `Database Schema` - How the data is represented in the database (relational).
