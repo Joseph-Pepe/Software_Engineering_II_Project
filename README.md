@@ -47,6 +47,14 @@ To have an application run on this server, place it in the `htdocs` folder and p
 ![Screen Shot 2022-03-12 at 8 23 20 PM](https://user-images.githubusercontent.com/32807576/158040848-6fbe6fec-bd4e-4c15-9ed9-9a5f5d9adb3b.png)
 ![Screen Shot 2022-03-12 at 8 23 39 PM](https://user-images.githubusercontent.com/32807576/158040849-6daae533-50ed-497b-9b76-ff094ef8268c.png)
 
+`Step #2:` Control panel select "enable" for "localhost: 8080" in the "Network tab".
+
+
+![Screen Shot 2022-03-18 at 5 16 38 PM](https://user-images.githubusercontent.com/32807576/159084136-b2dba10a-b109-4b10-9b51-9dc739a85e95.png)
+
+
+
+
 
 
 
