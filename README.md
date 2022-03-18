@@ -55,7 +55,6 @@ To have an application run on this server, place it in the `htdocs` folder and p
 
 `Step #2:` Control panel select "enable" for "localhost: 8080" in the "Network tab".
 
-
 ![Screen Shot 2022-03-18 at 5 16 38 PM](https://user-images.githubusercontent.com/32807576/159084136-b2dba10a-b109-4b10-9b51-9dc739a85e95.png)
 
 `Step #3:` In the "web browser (e.g., safari)" type "http://localhost:8080/phpmyadmin/" in the address bar.
@@ -64,7 +63,18 @@ To have an application run on this server, place it in the `htdocs` folder and p
 
 ![Screen Shot 2022-03-18 at 5 21 00 PM](https://user-images.githubusercontent.com/32807576/159084537-c663b010-c5e6-4ec6-82a8-3ca245ad75bf.png)
 
+-----
 
+<b>SQL Script (Create Database)</b>
+
+-----
+
+`Step #1:` In the "PHPMyAdmin page" click "import" to go to the "import secction".
+
+![Screen Shot 2022-03-18 at 5 26 14 PM](https://user-images.githubusercontent.com/32807576/159085025-e9475d35-bbad-4505-ac3d-83927a333437.png)
+
+
+create_database.sql
 
 
 `Database Schema` - How the data is represented in the database (relational).
