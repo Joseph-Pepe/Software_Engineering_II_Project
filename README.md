@@ -58,8 +58,11 @@ To have an application run on this server, place it in the `htdocs` folder and p
 
 ![Screen Shot 2022-03-18 at 5 16 38 PM](https://user-images.githubusercontent.com/32807576/159084136-b2dba10a-b109-4b10-9b51-9dc739a85e95.png)
 
+`Step #3:` In the "web browser (e.g., safari)" type "http://localhost:8080/phpmyadmin/" in the address bar.
 
+![Screen Shot 2022-03-18 at 5 20 34 PM](https://user-images.githubusercontent.com/32807576/159084485-1e8f3f8c-c2d6-40b9-a0c3-09b089f8810a.png)
 
+![Screen Shot 2022-03-18 at 5 21 00 PM](https://user-images.githubusercontent.com/32807576/159084537-c663b010-c5e6-4ec6-82a8-3ca245ad75bf.png)
 
 
 
