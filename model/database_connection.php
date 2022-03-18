@@ -2,12 +2,13 @@
 $data_source_name = 'mysql:host=localhost;dbname=database_name';
 $username = 'account_username';
 $password = 'account_user_password';
-$options = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
+// $options = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
 
 // Handles a PHP data object (PDO) exception.
 try{
    // Create a database object:
-   $database = new PDO($data_source_name, $username, $password, $options); 
+   $database = new PDO($data_source_name, $username, $password); 
+   // $database = new PDO($data_source_name, $username, $password, $options);
    echo '<p>You are connected to the database!</p>';
 }// Catches PDO exception:
 catch(PDOException $database_exception){
