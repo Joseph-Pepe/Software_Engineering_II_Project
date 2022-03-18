@@ -2,6 +2,14 @@
 
 Improves communication between the instructor and students during a class session.
 
+# Implementation
+
+<b>Scripting Language:</b> PHP embedded in html.
+
+<b>Web Server:</b> Apache (localhost)
+
+<b>Database Server:</b> MySQL (PHPMyAdmin)
+
 
 -----
 
@@ -102,12 +110,5 @@ To have an application run on this server, place it in the `htdocs` folder and p
 ![Screen Shot 2022-02-28 at 3 15 03 PM](https://user-images.githubusercontent.com/32807576/156052240-d08230fa-7178-409b-97e0-575571cd339b.png)
 
 
-# Implementation
-
-<b>Scripting Language:</b> PHP embedded in html.
-
-<b>Web Server:</b> Apache (localhost)
-
-<b>Database Server:</b> MySQL (PHPMyAdmin)
 
 
