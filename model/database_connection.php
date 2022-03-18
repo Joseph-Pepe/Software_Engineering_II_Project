@@ -1,7 +1,7 @@
 // Information to connect to a database:
 $data_source_name = 'mysql:host=host_address;dbname=database_name';
-$username = 'user_username';
-$password = 'user_password';
+$username = 'account_username';
+$password = 'account_user_password';
 
 // Handles a PHP data object (PDO) exception.
 try{
