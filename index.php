@@ -1,5 +1,7 @@
 <?php
 // Start session management and include necessary functions.
+$lifetime = 60 * 15; // 15 minutes
+session_set_cookie_params($lifetime, '/');
 session_start();
 require_once('model/database_connection.php');
 require_once('model/user_database.php');
