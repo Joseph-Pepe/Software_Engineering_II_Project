@@ -2,12 +2,6 @@
 function add_user($first_name, $last_name, $email, $password, $account_type){
    global $database;
    
-   /*
-      if($first_name == NULL || $last_name == NULL || $email == NULL || $password == NULL)
-         $error = "Invalid product data. Check all fields and try again.";
-         include('../errors/error.php');
-   */
-  
    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
   
    $add_user_database_query = 'INSERT INTO ACCOUNTS (first_name, last_name, email, password, account_type) VALUES (:first_name, :last_name, :email, :password, :account_type)';
