@@ -69,6 +69,11 @@ To have an application run on this server, place it in the `htdocs` folder and p
 
 -----
 
+`Database Schema` - How the data is represented in the database (relational).
+
+![Screen Shot 2022-02-28 at 3 32 49 PM](https://user-images.githubusercontent.com/32807576/156054459-0fa01b05-1232-41c0-9294-c469177e34ce.png)
+
+
 `Step #1:` In the "PHPMyAdmin page" click the "import" to go to the "import tab".
 
 ![Screen Shot 2022-03-18 at 5 26 14 PM](https://user-images.githubusercontent.com/32807576/159085025-e9475d35-bbad-4505-ac3d-83927a333437.png)
@@ -83,9 +88,6 @@ To have an application run on this server, place it in the `htdocs` folder and p
 
 
 
-`Database Schema` - How the data is represented in the database (relational).
-
-![Screen Shot 2022-02-28 at 3 32 49 PM](https://user-images.githubusercontent.com/32807576/156054459-0fa01b05-1232-41c0-9294-c469177e34ce.png)
 
 
 
