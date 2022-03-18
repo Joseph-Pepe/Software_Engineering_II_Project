@@ -1,5 +1,5 @@
 <?php
-function add_user($email, $password){
+function add_user($first_name, $last_name, $email, $password, $account_type){
    global $database;
   
    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
