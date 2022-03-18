@@ -5,7 +5,7 @@ Improves communication between the instructor and students during a class sessio
 
 -----
 
-<b>Apache Web Server Setup</b>
+<b>Apache (Web Server)</b>
 
 -----
 
