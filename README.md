@@ -86,7 +86,7 @@ To have an application run on this server, place it in the `htdocs` folder and p
 
 ![Screen Shot 2022-03-18 at 5 26 14 PM](https://user-images.githubusercontent.com/32807576/159085025-e9475d35-bbad-4505-ac3d-83927a333437.png)
 
-`Step #2:` Click the "Choose File" button in the "File to Import" section, and choose the script "create_database.sql".
+`Step #2:` Click the "Choose File" button in the "File to Import" section (`create_database.sql`).
 
 ![Screen Shot 2022-03-18 at 5 32 45 PM](https://user-images.githubusercontent.com/32807576/159085731-7c1b8c69-8560-4e4d-bc39-30e5012a86e5.png)
 
