@@ -90,7 +90,7 @@ To have an application run on this server, place it in the `htdocs` folder and p
 
 ![Screen Shot 2022-03-18 at 5 32 45 PM](https://user-images.githubusercontent.com/32807576/159085731-7c1b8c69-8560-4e4d-bc39-30e5012a86e5.png)
 
-`Step #3:` Click the "Go" button to run the script that in the file.
+`Step #3:` Click the "Go" button to run the script that's in the file.
 
 ![Screen Shot 2022-03-18 at 5 26 14 PM](https://user-images.githubusercontent.com/32807576/159086073-b72872e1-23ec-4a78-b4e6-cb413d365db3.png)
 
