@@ -41,9 +41,8 @@ require_once('utility/secure_connection.php');
 	  <label>&nbsp;</label>
 	  <input type = "submit" value = "Login"/>
 	  <input type = "reset" value = "Clear"/>
-	 
-	  <b class = "error" align = "center" style = "color: red;"><?php echo $login_message; ?></b>
        </form>
+       <b class = "error" align = "center" style = "color: red;"><?php echo $login_message; ?></b>
        <?php include 'view/footer'; ?>
     <main>
  </body>	
