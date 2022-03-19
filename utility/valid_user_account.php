@@ -7,7 +7,7 @@ if(!isset($_SESSION['is_valid_user_account'])){
    header("Location: ."); 
 }
 
-
+/*
 $email = '';
 $password = '';
 
@@ -24,4 +24,5 @@ if(!is_valid_user_login($email, $password)){
    include('unauthorized.php');
    exit();
 }
+*/
 ?>
