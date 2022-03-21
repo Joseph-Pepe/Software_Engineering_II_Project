@@ -34,9 +34,6 @@ $fields->addField('password_2');
 $fields->addField('first_name');
 $fields->addField('last_name');
 
-// for the Login page
-$fields->addField('password');
-
 // Perform the specified action.
 switch($action){
    case 'login':
