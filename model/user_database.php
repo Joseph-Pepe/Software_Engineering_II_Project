@@ -5,7 +5,7 @@ function add_user($first_name, $last_name, $email, $password, $account_type){
    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
   
    $add_user_database_query = 'INSERT INTO ACCOUNTS (first_name, last_name, email, password, account_type) VALUES (:first_name, :last_name, :email, :password, :account_type)';
-   $add_user = $db->prepare($add_user_database_query);
+   $add_user = $database->prepare($add_user_database_query);
  
    // Method bindValue(parameter, value):
    $add_user->bindValue(':first_name', $first_name);
@@ -24,7 +24,7 @@ function is_valid_user_login($email, $password){
   global $database;
   
   $locate_user_database_query = 'SELECT password FROM ACCOUNTS WHERE email = :email';
-  $locate_user = $db->prepare($locate_user_database_query);
+  $locate_user = $database->prepare($locate_user_database_query);
  
   // Method bindValue(parameter, value):
   $locate_user->bindValue(':email', $email);
