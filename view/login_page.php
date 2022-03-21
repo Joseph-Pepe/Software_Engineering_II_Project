@@ -33,10 +33,12 @@
 	  <label>Password:</label>
 	  <input type = "text" name = "password" required/>
 	
+	  <!--
 	  <select name = "account_type">
 	     <option value = "student">Student</option>
 	     <option value = "instructor">Instructor</option>
 	  </select>
+          -->
 	
 	  <label>&nbsp;</label>
 	  <input type = "submit" value = "Login"/>
