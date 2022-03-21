@@ -1,8 +1,8 @@
 // Information to connect to database:
 $data_source_name = 'mysql:host=localhost;dbname=csit415';
-$username = 'engineer';
+$username = 'canvas';
 $password = 'software';
-
+$options = array(PDO::ATTR_MODE => PDO::ERRMODE_EXCEPTION);
 
 
 
