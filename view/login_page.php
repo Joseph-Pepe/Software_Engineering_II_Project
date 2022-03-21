@@ -45,6 +45,30 @@
 	  <input type = "reset" value = "Clear"/>
        </form>
        <b class = "error" align = "center" style = "color: red;"><?php echo $login_message; ?></b>
+	    
+       <form method = "post" id = "signup_form" class = "aligned" action = ".">
+          <input name = "action" type = "hidden" value = "signup"/>
+	  <label>First Name:</label>
+          <input type = "text" name = "first_name" required/>
+
+	  <label>Last Name:</label>
+	  <input type = "text" name = "last_name" required/>
+	       
+	  <label>Email:</label>
+	  <input type = "text" name = "email" required/>
+
+	  <label>Password:</label>
+	  <input type = "text" name = "password" required/>
+	
+	  <select name = "account_type">
+	     <option value = "student">Student</option>
+	     <option value = "instructor">Instructor</option>
+	  </select>
+	
+	  <label>&nbsp;</label>
+	  <input type = "submit" value = "Signup"/>
+	  <input type = "reset" value = "Clear"/>
+       </form>
        <?php include 'footer.php'; ?>
     <main>
  </body>	
