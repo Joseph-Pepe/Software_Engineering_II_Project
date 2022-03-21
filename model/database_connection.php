@@ -1,3 +1,4 @@
+<?php
 // Information to connect to database:
 $data_source_name = 'mysql:host=localhost;dbname=csit415';
 $username = 'canvas';
@@ -13,3 +14,4 @@ try{
    include('../view/database_connection_error.php');
    exit();
 }
+?>
