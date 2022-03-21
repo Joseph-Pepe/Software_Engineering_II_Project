@@ -5,8 +5,11 @@ session_set_cookie_params($lifetime, '/');
 session_start();
 require_once('model/database_connection.php');
 require_once('model/user_database.php');
+
+/*
 require_once('model/fields.php');
 require_once('model/validate.php');
+*/
 
 // Get the action to perform (e.g., login, homepage)
 $action = filter_input(INPUT_POST, 'action');
@@ -22,6 +25,7 @@ if(!isset($_SESSION['is_valid_user_account'])){
    $action = 'login';
 }
 
+/*
 // Set up all possible fields to validate
 $validate = new Validate();
 $fields = $validate->getFields();
@@ -32,6 +36,7 @@ $fields->addField('password_1');
 $fields->addField('password_2');
 $fields->addField('first_name');
 $fields->addField('last_name');
+*/
 
 // Perform the specified action.
 switch($action){
