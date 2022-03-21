@@ -1,26 +1,20 @@
 <?php
-/*
-function add_user($first_name, $last_name, $email, $password, $account_type){
-   global $database;
+function add_user($email, $first_name, $last_name, $password, $account_type) {
    
-   $hashed_password = password_hash($password, PASSWORD_DEFAULT);
-  
-   $add_user_database_query = 'INSERT INTO accounts (first_name, last_name, email, password, account_type) VALUES (:first_name, :last_name, :email, :password, :account_type)';
-   $add_user = $database->prepare($add_user_database_query);
- 
-   // Method bindValue(parameter, value):
-   $add_user->bindValue(':first_name', $first_name);
-   $add_user->bindValue(':last_name', $last_name);
-   $add_user->bindValue(':email', $email);
-   $add_user->bindValue(':password', $hashed_password);
-   $add_user->bindValue(':account_type', $account_type);
-  
-   // Execute SQL statement:
-   $add_user->execute();
-  
-   $add_user->closeCursor();
+   
+    global $database;
+    $add_user_query = 'INSERT INTO accounts (first_name, last_name, email_address, password, account_type)
+                       VALUES (:first_name, :last_name, :email, :password, :account_type)';
+    $add_user = $database->prepare($add_user_query);
+    $add_user->bindValue(':email', $email);
+    $add_user->bindValue(':password', $password);
+    $add_user->bindValue(':first_name', $first_name);
+    $add_user->bindValue(':last_name', $last_name);
+    $add_user->execute();
+    $user_id = $db->lastInsertId();
+    $add_user->closeCursor();
+    return $user_id;
 }
-*/
 
 function is_valid_user_login($email, $password){
    global $database;
