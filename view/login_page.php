@@ -45,7 +45,12 @@
 	  <input type = "reset" value = "Clear"/>
        </form>
        <b class = "error" align = "center" style = "color: red;"><?php echo $login_message; ?></b>
-	    
+    </main>
+    <header>
+       <h1>Login</h1>
+       <hr/>
+    </header> 
+    <head>
        <form method = "post" id = "signup_form" class = "aligned" action = ".">
           <input name = "action" type = "hidden" value = "signup"/>
 	  <label>First Name:</label>
@@ -70,6 +75,6 @@
 	  <input type = "reset" value = "Clear"/>
        </form>
        <?php include 'footer.php'; ?>
-    <main>
+    </main>
  </body>	
 </html>
