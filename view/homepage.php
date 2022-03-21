@@ -20,6 +20,7 @@ require_once('utility/valid_user_account.php');
 	 <hr/>
       </header>
       <main>
+	 <!--
          <?php if($user_role == "instructor"){ ?>
 	    <a href = "index.php?action=student_file_1">instructor_file_1</a>
 	    <a href = "index.php?action=student_file_2">instructor_file_2</a>
@@ -27,6 +28,7 @@ require_once('utility/valid_user_account.php');
 	    <a href = "index.php?action=student_file_1">student_file_1</a>
 	    <a href = "index.php?action=student_file_2">student_file_2</a>
          <?php }?>
+         -->
 	      
 	 <a href = "index.php?action=logout">Logout</a>
       </main>
