@@ -43,7 +43,7 @@
 	  <input type = "reset" value = "Clear"/>
        </form>
        <b class = "error" align = "center" style = "color: red;"><?php echo $login_message; ?></b>
-       <?php include 'view/footer'; ?>
+       <?php include 'footer.php'; ?>
     <main>
  </body>	
 </html>
