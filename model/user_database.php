@@ -26,31 +26,31 @@ function is_valid_user_login($email, $password){
    global $database;
    
    $search_query = 'SELECT password FROM accounts 
-                    WHERE email_address = :email';
+                    WHERE email_address = :email AND password = :password';
    $locate_user = $database->prepare($search_query);
    
    // Method bindValue(parameter, value):
    $locate_user->bindValue(':email', $email);
+   $locate_user->bindValue(':password', $password);
    
    // Execute SQL statement:
    $locate_user->execute();
    
+   /*
    // Store the record retrieved from the database in a variable.
    $row = $locate_user->fetch();
    $locate_user->closeCursor();
    
-   /* Returns true if the hashed password matches the specified hash. (With hash)
+   // Returns true if the hashed password matches the specified hash.
    if(!$row)
       return false;
    
    $retrieved_hashed_password = $row['password'];
    return password_verify($password, $retrieved_hashed_password);
    */
-   
-   if(!$row)
-      return false;
-   
-   $retrieved_password = $row['password'];
-   return $password == $retrieved_password;
+
+   $valid = ($locate_user->rowCount() == 1);
+   $locate_user->closeCursor();
+   return $valid;
 }
 ?>
