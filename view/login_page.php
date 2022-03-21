@@ -50,7 +50,7 @@
        <h1>Create Account (Signup)</h1>
        <hr/>
     </header> 
-    <head>
+    <main>
        <form method = "post" class = "aligned" action = ".">
           <input name = "action" type = "hidden" value = "signup"/>
 	  
