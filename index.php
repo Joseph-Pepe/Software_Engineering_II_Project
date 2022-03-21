@@ -23,6 +23,20 @@ if(!isset($_SESSION['is_valid_user_account'])){
    $action = 'login';
 }
 
+// Set up all possible fields to validate
+$validate = new Validate();
+$fields = $validate->getFields();
+
+// for the Registration page and other pages
+$fields->addField('email', 'Must be valid email.');
+$fields->addField('password_1');
+$fields->addField('password_2');
+$fields->addField('first_name');
+$fields->addField('last_name');
+
+// for the Login page
+$fields->addField('password');
+
 // Perform the specified action.
 switch($action){
    case 'login':
