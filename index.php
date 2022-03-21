@@ -37,6 +37,9 @@ switch($action){
    case 'show_homepage':
       include('view/homepage.php');
       break;
+   case 'show_signup':
+      include('view/signup.php');
+      break;
    case 'logout':
       // Clear all session data:
       $_SESSION = array();
