@@ -15,7 +15,6 @@ if($action == NULL){
    if($action == NULL){
       $action = 'show_homepage';
    }
-   
 }
 
 // If the user is not logged in, force the user to login.
