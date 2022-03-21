@@ -1,10 +1,10 @@
 -- Step 1: Create and select the database (CSIT415).
-DROP DATABASE IF EXISTS CSIT415; 
-CREATE DATABASE CSIT415; 
-USE CSIT415; 
+DROP DATABASE IF EXISTS csit415; 
+CREATE DATABASE csit415; 
+USE csit415; 
 
 -- Step 2: Create a table (named accounts) with multiple fields.
-CREATE TABLE ACCOUNTS( 
+CREATE TABLE accounts( 
    account_id        INT            NOT NULL   AUTO_INCREMENT, 
    email_address     VARCHAR(255)   NOT NULL, 
    password          VARCHAR(50)    NOT NULL,
@@ -15,7 +15,7 @@ CREATE TABLE ACCOUNTS(
 );
 
 -- Step 3: Populate with three users. 
-INSERT INTO ACCOUNTS (account_id, email_address, password, first_name, last_name,  account_type) VALUES 
+INSERT INTO accounts (account_id, email_address, password, first_name, last_name,  account_type) VALUES 
 (1, 'jj@montclair.edu', 'sesame', 'John', 'Johnson', 'Teacher'), 
 (2, 'kk@montclair.edu', 'password', 'Karen', 'King',  'Student'), 
 (3, 'sd@montclair.edu', 'Duper', 'superman', 'Superman', 'Student'); 
@@ -25,7 +25,7 @@ INSERT INTO ACCOUNTS (account_id, email_address, password, first_name, last_name
 -- Creates a user and grants them full privileges. 
 GRANT SELECT, INSERT, DELETE, UPDATE
 ON *
-TO account_username@localhost
-IDENTIFIED BY 'account_user_password';
+TO engineer@localhost
+IDENTIFIED BY 'software';
 
 
