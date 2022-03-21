@@ -1,7 +1,5 @@
 <?php
 function add_user($email, $first_name, $last_name, $password, $account_type) {
-   
-   
     global $database;
     $add_user_query = 'INSERT INTO accounts (first_name, last_name, email_address, password, account_type)
                        VALUES (:first_name, :last_name, :email, :password, :account_type)';
