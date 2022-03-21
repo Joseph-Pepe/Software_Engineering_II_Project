@@ -27,7 +27,7 @@ if(!isset($_SESSION['is_valid_user_account'])){
 $validate = new Validate();
 $fields = $validate->getFields();
 
-// for the Registration page and other pages
+// for the Registration page
 $fields->addField('email', 'Must be valid email.');
 $fields->addField('password_1');
 $fields->addField('password_2');
