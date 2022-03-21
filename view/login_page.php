@@ -47,7 +47,7 @@
        <b class = "error" align = "center" style = "color: red;"><?php echo $login_message; ?></b>
     </main>
     <header>
-       <h1>Login</h1>
+       <h1>Create Account (Signup)</h1>
        <hr/>
     </header> 
     <head>
