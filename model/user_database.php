@@ -40,7 +40,7 @@ function is_valid_user_login($email, $password){
    $locate_user->closeCursor();
    
    // Returns true if the hashed password matches the specified hash.
-   if($row == NULL)
+   if(!$row)
       return false;
    
    $retrieved_hashed_password = $row['password'];
