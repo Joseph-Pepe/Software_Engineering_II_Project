@@ -23,23 +23,24 @@ function add_user($first_name, $last_name, $email, $password, $account_type){
 */
 
 function is_valid_user_login($email, $password){
-  global $database;
-  
-  $locate_user_database_query = 'SELECT password FROM accounts WHERE email_address = :email';
-  $locate_user = $database->prepare($locate_user_database_query);
- 
-  // Method bindValue(parameter, value):
-  $locate_user->bindValue(':email', $email);
-  
-  // Execute SQL statement:
-  $locate_user->execute();
-  
-  // Store the record retrieved from the database in a variable.
-  $row = $locate_user->fetch();
-  $locate_user->closeCursor();
-  $retrieved_hashed_password = $row['password'];
-
-  // Returns true if the hashed password matches the specified hash.
-  return password_verify($password, $retrieved_hashed_password);
+   global $database;
+   
+   $search_query = 'SELECT password FROM accounts 
+                    WHERE email_address = :email';
+   $locate_user = $database->prepare($search_query);
+   
+   // Method bindValue(parameter, value):
+   $locate_user->bindValue(':email', $email);
+   
+   // Execute SQL statement:
+   $locate_user->execute();
+   
+   // Store the record retrieved from the database in a variable.
+   $row = $locate_user->fetch();
+   $locate_user->closeCursor();
+   
+   // Returns true if the hashed password matches the specified hash.
+   $retrieved_hashed_password = $row['password'];
+   return password_verify($password, $retrieved_hashed_password);
 }
 ?>
