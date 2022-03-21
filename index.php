@@ -57,13 +57,12 @@ switch($action){
    case 'signup':
         // Store user data in local variables
         $email = filter_input(INPUT_POST, 'email');
-        $password_1 = filter_input(INPUT_POST, 'password_1');
-        $password_2 = filter_input(INPUT_POST, 'password_2');
+        $password_1 = filter_input(INPUT_POST, 'password');
         $first_name = filter_input(INPUT_POST, 'first_name');
         $last_name = filter_input(INPUT_POST, 'last_name');
         
         // Add the customer data to the database
-        $user_id = add_user($email, $first_name, $last_name, $password_1);
+        $user_id = add_user($email, $first_name, $last_name, $password);
         include('view/login_page.php');
         break;
    case 'logout':
