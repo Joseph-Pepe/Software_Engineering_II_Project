@@ -13,7 +13,7 @@ try{
 catch(PDOException $database_exception){
    // Executes the object's method.
    $error_message = $database_exception->getMessage();
-   include('../errors/database_connection_error.php');
+   include('../view/database_connection_error.php');
    exit();
    //echo "<p>An error occurred while connecting to the database: $error_message</p>";
 }
