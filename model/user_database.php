@@ -39,11 +39,18 @@ function is_valid_user_login($email, $password){
    $row = $locate_user->fetch();
    $locate_user->closeCursor();
    
-   // Returns true if the hashed password matches the specified hash.
+   /* Returns true if the hashed password matches the specified hash. (With hash)
    if(!$row)
       return false;
    
    $retrieved_hashed_password = $row['password'];
    return password_verify($password, $retrieved_hashed_password);
+   */
+   
+   if(!$row)
+      return false;
+   
+   $retrieved_password = $row['password'];
+   return $password == $retrieved_password;
 }
 ?>
