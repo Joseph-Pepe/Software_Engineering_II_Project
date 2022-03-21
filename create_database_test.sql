@@ -16,9 +16,9 @@ CREATE TABLE accounts(
 
 -- Step 3: Populate with three users. 
 INSERT INTO accounts (account_id, email_address, password, first_name, last_name,  account_type) VALUES 
-(1, 'jj@montclair.edu', '6a718fbd768c2378b511f8249b54897f940e9022', 'John', 'Johnson', 'Teacher'), 
-(2, 'kk@montclair.edu', '971e95957d3b74d70d79c20c94e9cd91b85f7aae', 'Karen', 'King',  'Student'), 
-(3, 'sd@montclair.edu', '3f2975c819cefc686282456aeae3a137bf896ee8', 'superman', 'Superman', 'Student'); 
+(1, 'jj@montclair.edu', 'cretas', 'John', 'Johnson', 'Teacher'), 
+(2, 'kk@montclair.edu', 'sesame', 'Karen', 'King',  'Student'), 
+(3, 'sd@montclair.edu', 'guard', 'superman', 'Superman', 'Student'); 
 
 
 -- Step 4: Create a database server user named "account_username" that can query database (main purpose is so it can be used in the creation of a PDO object).
