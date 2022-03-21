@@ -5,7 +5,7 @@ function add_user($first_name, $last_name, $email, $password, $account_type){
    
    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
   
-   $add_user_database_query = 'INSERT INTO ACCOUNTS (first_name, last_name, email, password, account_type) VALUES (:first_name, :last_name, :email, :password, :account_type)';
+   $add_user_database_query = 'INSERT INTO accounts (first_name, last_name, email, password, account_type) VALUES (:first_name, :last_name, :email, :password, :account_type)';
    $add_user = $database->prepare($add_user_database_query);
  
    // Method bindValue(parameter, value):
