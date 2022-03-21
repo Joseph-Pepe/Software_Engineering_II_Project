@@ -49,14 +49,7 @@ switch($action){
    case 'show_homepage':
       include('view/homepage.php');
       break;
-   case 'view_signup':
-        // Clear user data
-        $email = '';
-        $first_name = '';
-        $last_name = '';
-        include 'signup.php';
-        break;
-    case 'signup':
+   case 'signup':
         // Store user data in local variables
         $email = filter_input(INPUT_POST, 'email');
         $password_1 = filter_input(INPUT_POST, 'password_1');
@@ -64,36 +57,9 @@ switch($action){
         $first_name = filter_input(INPUT_POST, 'first_name');
         $last_name = filter_input(INPUT_POST, 'last_name');
         
-        // Validate user data       
-        $validate->email('email', $email);
-        $validate->text('password_1', $password_1, true, 5, 30);
-        $validate->text('password_2', $password_2, true, 5, 30);        
-        $validate->text('first_name', $first_name);
-        $validate->text('last_name', $last_name);
-
-        // If validation errors, redisplay signup page and exit controller
-        if ($fields->hasErrors()) {
-            include 'signup.php';
-            break;
-        }
-
-        // If passwords don't match, redisplay signup page and exit controller
-        if ($password_1 !== $password_2) {
-            $password_message = 'Passwords do not match.';
-            include 'signup.php';
-            break;
-        }
-
-        // Validate the data for the user
-        if (is_valid_user_email($email)) {
-            display_error('The e-mail address ' . $email . ' is already in use.');
-        }
-        
         // Add the customer data to the database
         $user_id = add_user($email, $first_name, $last_name, $password_1);
-
-        // Store user data in session
-        $_SESSION['user'] = get_user($user_id);
+        include('view/login_page.php');
         break;
    case 'logout':
       // Clear all session data:
