@@ -1,4 +1,5 @@
 <?php
+/*
 function add_user($first_name, $last_name, $email, $password, $account_type){
    global $database;
    
@@ -19,11 +20,12 @@ function add_user($first_name, $last_name, $email, $password, $account_type){
   
    $add_user->closeCursor();
 }
+*/
 
 function is_valid_user_login($email, $password){
   global $database;
   
-  $locate_user_database_query = 'SELECT password FROM ACCOUNTS WHERE email = :email';
+  $locate_user_database_query = 'SELECT password FROM accounts WHERE email_address = :email';
   $locate_user = $database->prepare($locate_user_database_query);
  
   // Method bindValue(parameter, value):
