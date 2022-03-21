@@ -26,6 +26,28 @@ function is_valid_user_email($email) {
     return $valid;
 }
 
+function get_user($user_id) {
+    global $database;
+    $query = 'SELECT * FROM accounts WHERE account_id = :user_id';
+    $statement = $db->prepare($query);
+    $statement->bindValue(':user_id', $user_id);
+    $statement->execute();
+    $user = $statement->fetch();
+    $statement->closeCursor();
+    return $user;
+}
+
+function get_user_by_email($email) {
+    global $database;
+    $query = 'SELECT * FROM accounts WHERE email_address = :email';
+    $statement = $database->prepare($query);
+    $statement->bindValue(':email', $email);
+    $statement->execute();
+    $user = $statement->fetch();
+    $statement->closeCursor();
+    return $user;
+}
+
 function is_valid_user_login($email, $password){
    global $database;
    
