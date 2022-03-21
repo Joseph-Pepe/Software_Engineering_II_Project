@@ -1,6 +1,7 @@
 <?php
 // Require a secure connection:
 // require_once('../utility/secure_connection.php');
+if (!isset($password_message)) { $password_message = ''; } 
 ?>
 
 <!DOCTYPE html>
@@ -19,11 +20,30 @@
     <head>
        <form method = "post" id = "signup_form" class = "aligned" action = ".">
           <input name = "action" type = "hidden" value = "signup"/>
-	  <label>First Name:</label>
-          <input type = "text" name = "first_name" required/>
+	       
+	  <label>E-Mail:</label>
+          <input type="text" name="email" value="<?php echo htmlspecialchars($email); ?>" size="30">
+          <?php echo $fields->getField('email')->getHTML(); ?><br>
 
-	  <label>Last Name:</label>
-	  <input type = "text" name = "last_name" required/>
+          <label>Password:</label>
+          <input type="password" name="password_1" size="30">
+          <?php echo $fields->getField('password_1')->getHTML(); ?>
+          <span class="error"><?php echo htmlspecialchars($password_message); ?></span><br>
+
+          <label>Retype Password:</label>
+          <input type="password" name="password_2" size="30">
+          <?php echo $fields->getField('password_2')->getHTML(); ?><br>
+
+	       
+	  <label>First Name:</label>
+          <input type="text" name="first_name" value="<?php echo htmlspecialchars($first_name); ?>" size="30">
+          <?php echo $fields->getField('first_name')->getHTML(); ?>
+	  <br>
+
+          <label>Last Name:</label>
+          <input type="text" name="last_name" value="<?php echo htmlspecialchars($last_name); ?>" size="30">
+          <?php echo $fields->getField('last_name')->getHTML(); ?>
+	  <br>
 	       
 	  <label>Email:</label>
 	  <input type = "text" name = "email" required/>
@@ -36,6 +56,7 @@
 	     <option value = "instructor">Instructor</option>
 	  </select>
 	
+	       
 	  <label>&nbsp;</label>
 	  <input type = "submit" value = "Signup"/>
 	  <input type = "reset" value = "Clear"/>
