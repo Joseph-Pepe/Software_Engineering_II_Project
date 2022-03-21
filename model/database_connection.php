@@ -1,7 +1,7 @@
 // Information to connect to a database:
-$data_source_name = 'mysql:host=localhost;dbname=database_name';
-$username = 'account_username';
-$password = 'account_user_password';
+$data_source_name = 'mysql:host=localhost;dbname=csit415';
+$username = 'engineer';
+$password = 'software';
 $options = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
 
 // Handles a PHP data object (PDO) exception.
