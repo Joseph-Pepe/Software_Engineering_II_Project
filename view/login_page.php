@@ -51,7 +51,7 @@
        <hr/>
     </header> 
     <main>
-       <form method = "post" class = "aligned" action = ".">
+       <form method = "post" class = "aligned" action = "view/signup.php">
           <input name = "action" type = "hidden" value = "view_signup"/>
           <input type = "submit" value = "Signup"/>
        </form>
