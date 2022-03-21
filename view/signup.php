@@ -33,8 +33,7 @@ if (!isset($password_message)) { $password_message = ''; }
           <label>Retype Password:</label>
           <input type="password" name="password_2" size="30">
           <?php echo $fields->getField('password_2')->getHTML(); ?><br>
-
-	       
+ 
 	  <label>First Name:</label>
           <input type="text" name="first_name" value="<?php echo htmlspecialchars($first_name); ?>" size="30">
           <?php echo $fields->getField('first_name')->getHTML(); ?>
@@ -44,19 +43,12 @@ if (!isset($password_message)) { $password_message = ''; }
           <input type="text" name="last_name" value="<?php echo htmlspecialchars($last_name); ?>" size="30">
           <?php echo $fields->getField('last_name')->getHTML(); ?>
 	  <br>
-	       
-	  <label>Email:</label>
-	  <input type = "text" name = "email" required/>
-
-	  <label>Password:</label>
-	  <input type = "text" name = "password" required/>
 	
 	  <select name = "account_type">
 	     <option value = "student">Student</option>
 	     <option value = "instructor">Instructor</option>
 	  </select>
 	
-	       
 	  <label>&nbsp;</label>
 	  <input type = "submit" value = "Signup"/>
 	  <input type = "reset" value = "Clear"/>
