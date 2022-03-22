@@ -1,4 +1,8 @@
 <?php
+require_once('../model/database_connection.php');
+require_once('../model/user_database.php');
+
+
 // Store user data in local variables
 $email = filter_input(INPUT_POST, 'email');
 $password = filter_input(INPUT_POST, 'password');
