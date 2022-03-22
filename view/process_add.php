@@ -13,3 +13,16 @@ $account_type = filter_input(INPUT_POST, 'account_type');
 // Add the customer data to the database
 $user_id = add_user($email, $first_name, $last_name, $password, $account_type);
 ?>
+
+<!DOCTYPE html>
+<html>
+ <head>
+     <meta charset = "utf-8">
+     <title>Login</title>
+     <link rel = "stylesheet" type = "text/css" href = "styles.css"/>
+ </head>
+     <b>Account Added to database.</b>
+ <body>
+    
+ </body>	
+</html>
