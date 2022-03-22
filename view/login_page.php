@@ -37,10 +37,7 @@
        <hr/>
     </header> 
     <main>
-       <form method = "post" class = "aligned" action = ".">
-          <input name = "action" type = "hidden" value = "signup"/>
-          <input type = "submit" value = "Signup"/>
-       </form>
+       <a href = "index.php?action=signup">Signup</a>
        <?php include 'footer.php'; ?>
     </main>
  </body>	
