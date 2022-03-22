@@ -8,10 +8,9 @@ function add_user($email, $first_name, $last_name, $password, $account_type) {
     $add_user->bindValue(':password', $password);
     $add_user->bindValue(':first_name', $first_name);
     $add_user->bindValue(':last_name', $last_name);
+    $add_user->bindValue(':account_type', $account_type);
     $add_user->execute();
-    $user_id = $db->lastInsertId();
     $add_user->closeCursor();
-    return $user_id;
 }
 
 function is_valid_user_email($email) {
