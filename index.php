@@ -60,9 +60,10 @@ switch($action){
         $password_1 = filter_input(INPUT_POST, 'password');
         $first_name = filter_input(INPUT_POST, 'first_name');
         $last_name = filter_input(INPUT_POST, 'last_name');
+        $account_type = filter_input(INPUT_POST, 'account_type');
         
         // Add the customer data to the database
-        $user_id = add_user($email, $first_name, $last_name, $password);
+        $user_id = add_user($email, $first_name, $last_name, $password, $account_type);
         include('view/login_page.php');
         break;
    case 'logout':
