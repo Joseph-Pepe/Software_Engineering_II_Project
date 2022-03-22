@@ -1,7 +1,6 @@
 <?php
 // Require a secure connection:
 // require_once('../utility/secure_connection.php');
-if (!isset($password_message)) { $password_message = ''; } 
 ?>
 
 <!DOCTYPE html>
