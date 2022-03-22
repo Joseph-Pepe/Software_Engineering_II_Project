@@ -37,7 +37,7 @@
        <hr/>
     </header> 
     <main>
-       <form method = "post" id = "signup_form" class = "aligned" action = "process_add.php">
+       <form method = "post" id = "signup_form" class = "aligned" action = "view/process_add.php">
           <input name = "action" type = "hidden" value = "signup"/>
 	       
 	  <label>First Name:</label>
