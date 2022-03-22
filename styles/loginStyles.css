@@ -47,7 +47,7 @@ main {
 }
 
 /* textfield styling*/
-input[type=text], input[type=password], {
+input[type=text], input[type=password], select {
 	background: #ebebeb;
   width: 100%;
   padding: 12px 20px;
@@ -61,6 +61,7 @@ input[type=text], input[type=password], {
 /* Submit styling */
 input[type=submit]{
   width: 33%;
+  background: #8B8B8B;
   padding: 12px 20px;
   margin: 15px 100px;
   border: 1px solid #ccc;
@@ -69,7 +70,7 @@ input[type=submit]{
 }
 /* clear button styling */
 input[type=reset]{
-  width: 10%;
+  width: 15%;
   padding: 2px 3px;
   display: inline-block;
   border: 1px solid #ccc;
