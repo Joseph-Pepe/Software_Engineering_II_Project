@@ -1,9 +1,10 @@
+
 <?php
 // Require a secure connection:
 // require_once('utility/secure_connection.php');
 
 // Require a valid user:
-require_once('utility/valid_user_account.php');
+//require_once('utility/valid_user_account.php');
 ?>
 
 <!DOCTYPE html>
@@ -11,13 +12,12 @@ require_once('utility/valid_user_account.php');
    <head>
       <meta charset = "utf-8">
       <title>Homepage</title>
-      <link rel = "stylesheet" type = "text/css" href = "styles.css"/>
+      <link rel = "stylesheet" type = "text/css" href = "../styles/homepageStyles.css"/>/>
    </head>
 	
    <body> 
       <header>
          <h2>Welcome User</h2>
-	 <hr/>
       </header>
       <main>
 	 <!--
