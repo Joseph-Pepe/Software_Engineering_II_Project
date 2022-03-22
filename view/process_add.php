@@ -18,7 +18,7 @@ $user_id = add_user($email, $first_name, $last_name, $password, $account_type);
 <html>
  <head>
      <meta charset = "utf-8">
-     <title>Login</title>
+     <title>Account Add</title>
      <link rel = "stylesheet" type = "text/css" href = "styles.css"/>
  </head>
      <b>Account Added to database.</b>
