@@ -1,0 +1,19 @@
+html {
+	height: 100%;
+	background-color:  #141414;
+	display: table;
+    margin: auto;
+}
+
+body {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+h2 {
+	color: #FF5F5F;
+}
+
+a {
+	color:  #FCFCFC;
+}
