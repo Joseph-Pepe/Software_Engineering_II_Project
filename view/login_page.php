@@ -49,7 +49,7 @@
 	  <input type = "text" name = "email" required/>
 
 	  <label>Password:</label>
-	  <input type = "text" name = "password" required/>
+	  <input type = "password" name = "password" required/>
 	       
 	  <select name = "account_type">
 	     <option value = "student">Student</option>
@@ -57,7 +57,7 @@
 	  </select>
 	
 	  <label>&nbsp;</label>
-	  <input type = "submit" value = "Signup"/>
+	  <input type = "submit" value = "Sign Up"/>
 	  <input type = "reset" value = "Clear"/>
        </form>
     </main>
