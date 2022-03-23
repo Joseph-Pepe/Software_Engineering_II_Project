@@ -16,7 +16,7 @@
        <h1>Login</h1>
        <hr/>
     </header>
-    <main>
+    <main class = "loginForm">
        <form method = "post" id = "login_form" class = "aligned" action = ".">
 	  <input type="hidden" name="action" value="login">
 	       
