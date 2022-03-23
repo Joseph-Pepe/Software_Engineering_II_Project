@@ -20,7 +20,7 @@ function is_valid_user_email($email) {
     global $database;
     $email_query = 'SELECT account_id FROM accounts
                     WHERE email_address = :email';
-    $locate_email = $database->prepare($query);
+    $locate_email = $database->prepare($email_query);
     $locate_email->bindValue(':email', $email);
     $locate_email->execute();
     $valid = ($locate_email->rowCount() == 1);
