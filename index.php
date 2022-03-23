@@ -87,10 +87,12 @@ switch($action){
         }
 
         // Add the customer data to the database
-        $user_id = add_user($email, $first_name, $last_name, $password, $account_type);
+        $user_id = add_user($email, $first_name, $last_name, $password_1, $account_type);
       
         // Store user data in session
         $_SESSION['user'] = get_user($user_id);
+      
+        redirect('.');
         break;
    case 'view_login':
       // Clear login data
