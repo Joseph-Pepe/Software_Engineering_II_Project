@@ -13,16 +13,17 @@ $action = filter_input(INPUT_POST, 'action');
 if($action == NULL){
    $action = filter_input(INPUT_GET, 'action');
    if($action == NULL){
-      $action = 'show_homepage';
+      $action = 'view_login';
    }
 }
 
-// If the user is not logged in, force the user to login.
+/* If the user is not logged in, force the user to login.
 if(!isset($_SESSION['is_valid_user_account'])){
    $action = 'login';
 }
+*/
 
-/*
+
 // Set up all possible fields to validate
 $validate = new Validate();
 $fields = $validate->getFields();
@@ -33,7 +34,9 @@ $fields->addField('password_1');
 $fields->addField('password_2');
 $fields->addField('first_name');
 $fields->addField('last_name');
-*/
+
+// For the login page
+$fields->addField('password');
 
 // Perform the specified action.
 switch($action){
