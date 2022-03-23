@@ -53,47 +53,47 @@ switch($action){
       include 'signup_page.php';
       break;
    case 'signup':
-        // Store user data in local variables
-        $email = filter_input(INPUT_POST, 'email');
-        $password_1 = filter_input(INPUT_POST, 'password_1');
-        $password_2 = filter_input(INPUT_POST, 'password_2');
-        $first_name = filter_input(INPUT_POST, 'first_name');
-        $last_name = filter_input(INPUT_POST, 'last_name');
-        $account_type = filter_input(INPUT_POST, 'account_type');
+      // Store user data in local variables
+      $email = filter_input(INPUT_POST, 'email');
+      $password_1 = filter_input(INPUT_POST, 'password_1');
+      $password_2 = filter_input(INPUT_POST, 'password_2');
+      $first_name = filter_input(INPUT_POST, 'first_name');
+      $last_name = filter_input(INPUT_POST, 'last_name');
+      $account_type = filter_input(INPUT_POST, 'account_type');
       
-        // Validate user data       
-        $validate->email('email', $email);
-        $validate->text('password_1', $password_1, true, 10, 30);
-        $validate->text('password_2', $password_2, true, 10, 30);        
-        $validate->text('first_name', $first_name);
-        $validate->text('last_name', $last_name);
+      // Validate user data       
+      $validate->email('email', $email);
+      $validate->text('password_1', $password_1, true, 10, 30);
+      $validate->text('password_2', $password_2, true, 10, 30);        
+      $validate->text('first_name', $first_name);
+      $validate->text('last_name', $last_name);
       
-        // If validation errors, redisplay signup page and exit controller.
-        if ($fields->hasErrors()) {
-            include 'view/signup_page.php';
-            break;
-        }
+      // If validation errors, redisplay signup page and exit controller.
+      if ($fields->hasErrors()) {
+          include 'view/signup_page.php';
+          break;
+      }
 
-        // If passwords don't match, redisplay signup page and exit controller.
-        if ($password_1 !== $password_2) {
-            $password_message = 'Passwords do not match.';
-            include 'view/signup_page.php';
-            break;
-        }
+      // If passwords don't match, redisplay signup page and exit controller.
+      if ($password_1 !== $password_2) {
+          $password_message = 'Passwords do not match.';
+          include 'view/signup_page.php';
+          break;
+      }
 
-        // Validate the data for the user.
-        if (is_valid_user_email($email)) {
-            display_error('The e-mail address ' . $email . ' is already in use.');
-        }
+      // Validate the data for the user.
+      if (is_valid_user_email($email)) {
+          display_error('The e-mail address ' . $email . ' is already in use.');
+      }
 
-        // Add the customer data to the database
-        $user_id = add_user($email, $first_name, $last_name, $password_1, $account_type);
+      // Add the customer data to the database
+      $user_id = add_user($email, $first_name, $last_name, $password_1, $account_type);
       
-        // Store user data in session
-        $_SESSION['user'] = get_user($user_id);
+      // Store user data in session
+      $_SESSION['user'] = get_user($user_id);
       
-        redirect('.');
-        break;
+      redirect('.');
+      break;
    case 'view_login':
       // Clear login data
       $email = '';
