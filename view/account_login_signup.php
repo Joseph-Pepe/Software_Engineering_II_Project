@@ -38,7 +38,7 @@
 	    
        <h1>Create Account (Signup)</h1>
        <form action="." method="post">
-          <input type="hidden" name="action" value="view_register">
+          <input type="hidden" name="action" value="view_signup">
           <input type="submit" value="Register">
        </form>
     </main>
