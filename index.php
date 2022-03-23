@@ -50,7 +50,7 @@ switch($action){
       $email = '';
       $first_name = '';
       $last_name = '';
-      include 'signup.php';
+      include 'signup_page.php';
       break;
    case 'signup':
         // Store user data in local variables
@@ -70,14 +70,14 @@ switch($action){
       
         // If validation errors, redisplay signup page and exit controller.
         if ($fields->hasErrors()) {
-            include 'view/signup.php';
+            include 'view/signup_page.php';
             break;
         }
 
         // If passwords don't match, redisplay signup page and exit controller.
         if ($password_1 !== $password_2) {
             $password_message = 'Passwords do not match.';
-            include 'view/signup.php';
+            include 'view/signup_page.php';
             break;
         }
 
