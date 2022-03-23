@@ -40,19 +40,12 @@ $fields->addField('password');
 
 // Perform the specified action.
 switch($action){
-   case 'login':
-      $email = filter_input(INPUT_POST, 'email');
-      $password = filter_input(INPUT_POST, 'password');
-      if(is_valid_user_login($email, $password)){
-         $_SESSION['is_valid_user_account'] = true;
-         include('view/homepage.php');
-      }else{
-         $login_message = 'You must login to view this page.';
-         include('view/login_page.php');
-      }
-      break;
-   case 'show_homepage':
-      include('view/homepage.php');
+   case 'view_signup':
+      // Clear Data:
+      $email = '';
+      $first_name = '';
+      $last_name = '';
+      include 'signup.php';
       break;
    case 'signup':
         /*
@@ -68,6 +61,20 @@ switch($action){
         $user_id = add_user($email, $first_name, $last_name, $password, $account_type);
         break;
         */
+   case 'login':
+      $email = filter_input(INPUT_POST, 'email');
+      $password = filter_input(INPUT_POST, 'password');
+      if(is_valid_user_login($email, $password)){
+         $_SESSION['is_valid_user_account'] = true;
+         include('view/homepage.php');
+      }else{
+         $login_message = 'You must login to view this page.';
+         include('view/login_page.php');
+      }
+      break;
+   case 'show_homepage':
+      include('view/homepage.php');
+      break;
    case 'logout':
       // Clear all session data:
       $_SESSION = array();
