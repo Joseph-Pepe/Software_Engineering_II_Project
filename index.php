@@ -109,7 +109,7 @@ switch($action){
       $validate->email('email', $email);
       $validate->text('password', $password, true, 10, 30);
       
-      // If validation errors, redisplay Login page and exit controller
+      // If validation errors, redisplay login page and exit controller
       if ($fields->hasErrors()) {
           include 'view/account_login_signup.php';
           break;
@@ -132,6 +132,7 @@ switch($action){
          include('view/login_page.php');
       }
       */
+      redirect('.');
       break;
    case 'view_homepage':
       include('view/homepage.php');
