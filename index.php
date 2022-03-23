@@ -139,7 +139,7 @@ switch($action){
                          $_SESSION['user']['last_name'];
       $email = $_SESSION['user']['email_address'];        
 
-      include 'homepage.php';
+      include 'view/homepage.php';
       break;
    case 'logout':
       /*
