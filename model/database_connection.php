@@ -10,7 +10,7 @@ try{
    $database = new PDO($data_source_name, $username, $password, $options);
 }catch(PDOException $exception_object){
    $error_message = $exception_object->getMessage();
-   include('../view/database_connection_error.php');
+   include('../errors/database_connection_error.php');
    exit();
 }
 ?>
