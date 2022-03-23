@@ -18,8 +18,8 @@
           <input type="submit" value="Create Account (Signup)">
        </form>
        <form action="." method="post">
-          <input type="hidden" name="action" value="view_login_signup">
-          <input type="submit" value="Create Account (Signup)">
+          <input type="hidden" name="action" value="view_login">
+          <input type="submit" value="Login">
        </form>
     </header>
     <main class = "signupForm">
