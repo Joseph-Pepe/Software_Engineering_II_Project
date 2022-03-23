@@ -13,14 +13,18 @@
 
  <body>
     <header>
-       <form action="." method="post">
-          <input type="hidden" name="action" value="view_signup">
-          <input type="submit" value="Create Account (Signup)">
-       </form>
-       <form action="." method="post">
-          <input type="hidden" name="action" value="view_login">
-          <input type="submit" value="Login">
-       </form>
+       <table>
+	  <thead>
+             <form action="." method="post">
+                <input type="hidden" name="action" value="view_signup">
+                <td><input type="submit" value="Create Account (Signup)"></td>
+             </form>
+             <form action="." method="post">
+                <input type="hidden" name="action" value="view_login">
+                <td><input type="submit" value="Login"></td>
+             </form> 
+          </thead>
+       </table>
     </header>
     <main>
        <form method = "post" id = "login_form" class = "aligned" action = ".">
