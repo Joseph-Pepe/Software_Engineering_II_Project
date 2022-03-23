@@ -18,23 +18,14 @@ body {
    width:  50vh;
 }
 
-/* Hides the forms for our js script to open them up 
-.loginForm {
-   display:  none;
-}
-.signUpForm {
-   display:  none;
-}
-*/
-
 /* Login and Sign up buttons */
 button {
-  width: 45%;
-  padding: 12px 20px;
-  margin: 10px 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+   width: 45%;
+   padding: 12px 20px;
+   margin: 10px 5px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
 }
 
 /* Form styling */
