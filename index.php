@@ -132,7 +132,8 @@ switch($action){
          include('view/login_page.php');
       }
       */
-      redirect('.');
+      // redirect('.');
+      include 'view/homepage.php';
       break;
    case 'view_homepage':
       $user_name = $_SESSION['user']['first_name'] . ' ' .
