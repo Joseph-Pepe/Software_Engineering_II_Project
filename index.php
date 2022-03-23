@@ -116,7 +116,7 @@ switch($action){
       }
       
       // Check email and password in database.
-      if (is_valid_customer_login($email, $password)) {
+      if (is_valid_user_login($email, $password)) {
           $_SESSION['user'] = get_user_by_email($email);
       }else {
           $password_message = 'Login failed. Invalid email or password.';
