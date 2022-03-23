@@ -48,14 +48,21 @@ switch($action){
       include 'signup.php';
       break;
    case 'signup':
-        /*
-        
         // Store user data in local variables
         $email = filter_input(INPUT_POST, 'email');
-        $password_1 = filter_input(INPUT_POST, 'password');
+        $password_1 = filter_input(INPUT_POST, 'password_1');
+        $password_2 = filter_input(INPUT_POST, 'password_2');
         $first_name = filter_input(INPUT_POST, 'first_name');
         $last_name = filter_input(INPUT_POST, 'last_name');
         $account_type = filter_input(INPUT_POST, 'account_type');
+      
+        // Validate user data       
+        $validate->email('email', $email);
+        $validate->text('password_1', $password_1, true, 6, 30);
+        $validate->text('password_2', $password_2, true, 6, 30);        
+        $validate->text('first_name', $first_name);
+        $validate->text('last_name', $last_name);
+
         
         // Add the customer data to the database
         $user_id = add_user($email, $first_name, $last_name, $password, $account_type);
