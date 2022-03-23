@@ -18,19 +18,29 @@
     </header>
     <main>
        <form method = "post" id = "login_form" class = "aligned" action = ".">
-          <input name = "action" type = "hidden" value = "login"/>
-	  
-	  <label>Email:</label>
-	  <input type = "text" name = "email" required/>
+          <label>E-Mail:</label>
+          <input type="text" name="email" value="<?php echo htmlspecialchars($email); ?>" size="30">
+          <?php echo $fields->getField('email')->getHTML(); ?><br>
 
-	  <label>Password:</label>
-	  <input type = "text" name = "password" required/>
+          <label>Password:</label>
+          <input type="password" name="password" size="30">
+          <?php echo $fields->getField('password')->getHTML(); ?><br>
+
+          <input type="submit" value="Login">
+	  <input type = "reset" value = "Clear"/>
+          <?php if (!empty($password_message)) : ?>         
+          <span class="error"><?php echo htmlspecialchars($password_message); ?></span><br>
+          <?php endif; ?>
 	
 	  <label>&nbsp;</label>
-	  <input type = "submit" value = "Login"/>
-	  <input type = "reset" value = "Clear"/>
+	  <input type = "submit" value = "Login"/> 
        </form>
-       <b class = "error" align = "center" style = "color: red;"><?php echo $login_message; ?></b>
+	    
+       <h1>Create Account (Signup)</h1>
+       <form action="." method="post">
+          <input type="hidden" name="action" value="view_register">
+          <input type="submit" value="Register">
+       </form>
     </main>
     <?php include 'footer.php'; ?>
  </body>	
