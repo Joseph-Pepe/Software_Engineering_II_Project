@@ -8,7 +8,7 @@
  <head>
      <meta charset = "utf-8">
      <title>Login</title>
-     <link rel = "stylesheet" type = "text/css" href = "../Cstyles/signup_login_styles"/>
+     <link rel = "stylesheet" type = "text/css" href = "../Cstyles/signup_login_styles.css"/>
  </head>
 
  <body>
