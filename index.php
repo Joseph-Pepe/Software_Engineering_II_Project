@@ -92,7 +92,7 @@ switch($action){
       // Store user data in session
       $_SESSION['user'] = get_user($user_id);
       
-      // redirect('.');
+      redirect('.');
       break;
    case 'view_login':
       // Clear login data
@@ -132,7 +132,7 @@ switch($action){
          include('view/login_page.php');
       }
       */
-      // redirect('.');
+      redirect('.');
       break;
    case 'view_homepage':
       $user_name = $_SESSION['user']['first_name'] . ' ' .
