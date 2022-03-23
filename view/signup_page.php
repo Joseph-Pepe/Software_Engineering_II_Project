@@ -14,7 +14,7 @@ if (!isset($password_message)) { $password_message = ''; }
 
  <body>
     <header>
-       <h1>Account Signup</h1>
+       <h1>Create Account (Signup)</h1>
        <hr/>
     </header>
     <main>
