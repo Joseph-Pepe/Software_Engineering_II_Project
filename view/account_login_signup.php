@@ -25,15 +25,12 @@
           <label>Password:</label>
           <input type="password" name="password" size="30">
           <?php echo $fields->getField('password')->getHTML(); ?><br>
-
+	   
           <input type="submit" value="Login">
 	  <input type = "reset" value = "Clear"/>
           <?php if (!empty($password_message)) : ?>         
           <span class="error"><?php echo htmlspecialchars($password_message); ?></span><br>
           <?php endif; ?>
-	
-	  <label>&nbsp;</label>
-	  <input type = "submit" value = "Login"/> 
        </form>
 	    
        <h1>Create Account (Signup)</h1>
