@@ -4,7 +4,7 @@ $lifetime = 60 * 15; // 15 minutes
 session_set_cookie_params($lifetime, '/');
 session_start();
 // require_once('model/database_connection.php');
-require_once('../util/main.php');
+require_once('utility/main.php');
 require_once('model/user_database.php');
 require_once('model/fields.php');
 require_once('model/validate.php');
