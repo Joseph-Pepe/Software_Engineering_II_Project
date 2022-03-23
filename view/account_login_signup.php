@@ -18,6 +18,8 @@
     </header>
     <main>
        <form method = "post" id = "login_form" class = "aligned" action = ".">
+	  <input type="hidden" name="action" value="login">
+	       
           <label>E-Mail:</label>
           <input type="text" name="email" value="<?php echo htmlspecialchars($email); ?>" size="30">
           <?php echo $fields->getField('email')->getHTML(); ?><br>
