@@ -77,18 +77,46 @@ switch($action){
         }
 
         // Validate the data for the user.
-        if (is_valid_customer_email($email)) {
+        if (is_valid_user_email($email)) {
             display_error('The e-mail address ' . $email . ' is already in use.');
         }
 
-        
         // Add the customer data to the database
         $user_id = add_user($email, $first_name, $last_name, $password, $account_type);
+      
+        // Store user data in session
+        $_SESSION['user'] = get_user($user_id);
         break;
-        */
+   case 'view_login':
+      // Clear login data
+      $email = '';
+      $password = '';
+      $password_message = '';
+      include 'account_login_signup.php';
+      break;
    case 'login':
       $email = filter_input(INPUT_POST, 'email');
       $password = filter_input(INPUT_POST, 'password');
+      
+      // Validate user data
+      $validate->email('email', $email);
+      $validate->text('password', $password, true, 10, 30);
+      
+      // If validation errors, redisplay Login page and exit controller
+      if ($fields->hasErrors()) {
+          include 'view/account_login_signup.php';
+          break;
+      }
+      
+      // Check email and password in database.
+      if (is_valid_customer_login($email, $password)) {
+          $_SESSION['user'] = get_user_by_email($email);
+      }else {
+          $password_message = 'Login failed. Invalid email or password.';
+          include 'view/account_login_signup.php';
+          break;
+      }
+      /*
       if(is_valid_user_login($email, $password)){
          $_SESSION['is_valid_user_account'] = true;
          include('view/homepage.php');
@@ -96,6 +124,7 @@ switch($action){
          $login_message = 'You must login to view this page.';
          include('view/login_page.php');
       }
+      */
       break;
    case 'show_homepage':
       include('view/homepage.php');
