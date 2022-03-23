@@ -40,7 +40,6 @@
 	   
           <input type="submit" value="Login">
 	  <input type = "reset" value = "Clear"/>
-          
        </form>
     </main>
     <?php include 'footer.php'; ?>
