@@ -15,6 +15,10 @@ if($action == NULL){
    $action = filter_input(INPUT_GET, 'action');
    if($action == NULL){
       $action = 'view_login';
+      if (isset($_SESSION['user'])) {
+         $action = 'view_homepage';
+      }
+
    }
 }
 
@@ -127,7 +131,7 @@ switch($action){
       }
       */
       break;
-   case 'show_homepage':
+   case 'view_homepage':
       include('view/homepage.php');
       break;
    case 'logout':
