@@ -51,8 +51,8 @@ function get_user_by_email($email) {
 
 function is_valid_user_login($email, $password){
    global $database;
-   
-   $search_query = 'SELECT password FROM accounts 
+   $password = sha1($email . $password);
+   $search_query = 'SELECT * FROM accounts 
                     WHERE email_address = :email AND password = :password';
    $locate_user = $database->prepare($search_query);
    
@@ -66,11 +66,7 @@ function is_valid_user_login($email, $password){
    /*
    // Store the record retrieved from the database in a variable.
    $row = $locate_user->fetch();
-   $locate_user->closeCursor();
-   
-   // Returns true if the hashed password matches the specified hash.
-   if(!$row)
-      return false;
+   $locate_user->closeCursor();=
    
    $retrieved_hashed_password = $row['password'];
    return password_verify($password, $retrieved_hashed_password);
