@@ -17,7 +17,7 @@ if (!isset($password_message)) { $password_message = ''; }
        <h1>Create Account (Signup)</h1>
        <hr/>
     </header>
-    <main>
+    <main class = "signupForm">
        <form method = "post" id = "signup_form" class = "aligned" action = ".">
           <input name = "action" type = "hidden" value = "signup"/>
 	       
