@@ -58,8 +58,8 @@ switch($action){
       
         // Validate user data       
         $validate->email('email', $email);
-        $validate->text('password_1', $password_1, true, 6, 30);
-        $validate->text('password_2', $password_2, true, 6, 30);        
+        $validate->text('password_1', $password_1, true, 10, 30);
+        $validate->text('password_2', $password_2, true, 10, 30);        
         $validate->text('first_name', $first_name);
         $validate->text('last_name', $last_name);
 
