@@ -1,6 +1,7 @@
 <?php
-function add_user($email, $first_name, $last_name, $password, $account_type) {
+function add_user($email, $first_name, $last_name, $password_1, $account_type) {
     global $database;
+    $password = sha1($email . $password_1);
     $add_user_query = 'INSERT INTO accounts (first_name, last_name, email_address, password, account_type)
                        VALUES (:first_name, :last_name, :email, :password, :account_type)';
     $add_user = $database->prepare($add_user_query);
@@ -30,7 +31,7 @@ function is_valid_user_email($email) {
 function get_user($user_id) {
     global $database;
     $query = 'SELECT * FROM accounts WHERE account_id = :user_id';
-    $statement = $db->prepare($query);
+    $statement = $database->prepare($query);
     $statement->bindValue(':user_id', $user_id);
     $statement->execute();
     $user = $statement->fetch();
