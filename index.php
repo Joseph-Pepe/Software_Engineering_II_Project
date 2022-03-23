@@ -135,9 +135,14 @@ switch($action){
       redirect('.');
       break;
    case 'view_homepage':
-      include('view/homepage.php');
+      $user_name = $_SESSION['user']['first_name'] . ' ' .
+                         $_SESSION['user']['last_name'];
+      $email = $_SESSION['user']['email_address'];        
+
+      include 'homepage.php';
       break;
    case 'logout':
+      /*
       // Clear all session data:
       $_SESSION = array();
       
@@ -146,6 +151,12 @@ switch($action){
     
       $login_message = 'You have been logged out.';
       include('view/login_page.php');
+      */
+      unset($_SESSION['user']);
+      redirect('..');
+      break;
+   default:
+      display_error("Unknown account action: " . $action);
       break;
 }
 ?>
