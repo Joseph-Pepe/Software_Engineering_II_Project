@@ -17,7 +17,8 @@ if (!isset($password_message)) { $password_message = ''; }
        <form action="." method="post">
           <input type="hidden" name="action" value="view_signup">
           <input type="submit" value="Create Account (Signup)">
-	   
+       </form>
+       <form action="." method="post">
 	  <input type="hidden" name="action" value="view_login">
           <input type="submit" value="Login">
        </form>
