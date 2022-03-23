@@ -9,13 +9,18 @@
      <meta charset = "utf-8">
      <title>Login</title>
      <link rel = "stylesheet" type = "text/css" href = "Cstyles/login_signup_styles.css"/>
-     <script defer src='../utility/login_signup.js'></script>
  </head>
 
  <body>
     <header>
-       <button class="showLogin">Login</button>
-       <button class="showCreate">Create Account</button>
+       <form action="." method="post">
+          <input type="hidden" name="action" value="view_signup">
+          <input type="submit" value="Create Account (Signup)">
+       </form>
+       <form action="." method="post">
+          <input type="hidden" name="action" value="view_login_signup">
+          <input type="submit" value="Create Account (Signup)">
+       </form>
     </header>
     <main class = "signupForm">
        <form method = "post" id = "login_form" class = "aligned" action = ".">
@@ -36,12 +41,6 @@
           <input type="submit" value="Login">
 	  <input type = "reset" value = "Clear"/>
           
-       </form>
-	    
-       <h1>Create Account (Signup)</h1>
-       <form action="." method="post">
-          <input type="hidden" name="action" value="view_signup">
-          <input type="submit" value="Create Account">
        </form>
     </main>
     <?php include 'footer.php'; ?>
