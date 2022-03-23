@@ -9,7 +9,7 @@ if (!isset($password_message)) { $password_message = ''; }
  <head>
      <meta charset = "utf-8">
      <title>Signup</title>
-     <link rel = "stylesheet" type = "text/css" href = "../Cstyles/login_signup_styles.css"/>
+     <link rel = "stylesheet" type = "text/css" href = "Cstyles/login_signup_styles.css"/>
  </head>
 
  <body>
