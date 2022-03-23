@@ -9,12 +9,13 @@
      <meta charset = "utf-8">
      <title>Login</title>
      <link rel = "stylesheet" type = "text/css" href = "Cstyles/login_signup_styles.css"/>
+     <script defer src='../utility/login_signup.js'></script>
  </head>
 
  <body>
     <header>
-       <h1>Login</h1>
-       <hr/>
+       <button class="showLogin">Login</button>
+       <button class="showCreate">Create Account</button>
     </header>
     <main class = "signupForm">
        <form method = "post" id = "login_form" class = "aligned" action = ".">
