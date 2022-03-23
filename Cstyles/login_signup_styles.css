@@ -18,13 +18,14 @@ body {
    width:  50vh;
 }
 
-/* Hides the forms for our js script to open them up */
+/* Hides the forms for our js script to open them up 
 .loginForm {
    display:  none;
 }
 .signUpForm {
    display:  none;
 }
+*/
 
 /* Login and Sign up buttons */
 button {
