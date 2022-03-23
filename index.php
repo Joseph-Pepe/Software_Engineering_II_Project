@@ -153,7 +153,7 @@ switch($action){
       include('view/login_page.php');
       */
       unset($_SESSION['user']);
-      redirect('..');
+      redirect('.');
       break;
    default:
       display_error("Unknown account action: " . $action);
