@@ -99,7 +99,7 @@ switch($action){
       $email = '';
       $password = '';
       $password_message = '';
-      include 'account_login_signup.php';
+      include 'view/account_login_signup.php';
       break;
    case 'login':
       $email = filter_input(INPUT_POST, 'email');
