@@ -62,6 +62,24 @@ switch($action){
         $validate->text('password_2', $password_2, true, 10, 30);        
         $validate->text('first_name', $first_name);
         $validate->text('last_name', $last_name);
+      
+        // If validation errors, redisplay signup page and exit controller.
+        if ($fields->hasErrors()) {
+            include 'view/signup.php';
+            break;
+        }
+
+        // If passwords don't match, redisplay signup page and exit controller.
+        if ($password_1 !== $password_2) {
+            $password_message = 'Passwords do not match.';
+            include 'view/signup.php';
+            break;
+        }
+
+        // Validate the data for the user.
+        if (is_valid_customer_email($email)) {
+            display_error('The e-mail address ' . $email . ' is already in use.');
+        }
 
         
         // Add the customer data to the database
