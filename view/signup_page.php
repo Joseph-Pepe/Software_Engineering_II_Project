@@ -46,7 +46,6 @@ if (!isset($password_message)) { $password_message = ''; }
 	  <input type = "submit" value = "Signup"/>
 	  <input type = "reset" value = "Clear"/>
        </form>
-       <!-- <b class = "error" align = "center" style = "color: red;"><?php echo $login_message; ?></b> -->
     </main>
     <?php include 'footer.php'; ?>
  </body>	
