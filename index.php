@@ -50,7 +50,7 @@ switch($action){
       $email = '';
       $first_name = '';
       $last_name = '';
-      include 'signup_page.php';
+      include 'view/signup_page.php';
       break;
    case 'signup':
       // Store user data in local variables
