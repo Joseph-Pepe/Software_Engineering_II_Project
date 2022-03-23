@@ -13,7 +13,7 @@ if (!isset($password_message)) { $password_message = ''; }
  </head>
 
  <body>
-    <header>
+    <header class = "login_signup_selection">
        <form action="." method="post">
           <input type="hidden" name="action" value="view_signup">
           <input type="submit" value="Create Account (Signup)">
