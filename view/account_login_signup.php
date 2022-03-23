@@ -16,7 +16,7 @@
        <h1>Login</h1>
        <hr/>
     </header>
-    <main class = "loginForm">
+    <main class = "signupForm">
        <form method = "post" id = "login_form" class = "aligned" action = ".">
 	  <input type="hidden" name="action" value="login">
 	       
@@ -40,7 +40,7 @@
        <h1>Create Account (Signup)</h1>
        <form action="." method="post">
           <input type="hidden" name="action" value="view_signup">
-          <input type="submit" value="Register">
+          <input type="submit" value="Create Account">
        </form>
     </main>
     <?php include 'footer.php'; ?>
