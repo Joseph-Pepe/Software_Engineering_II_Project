@@ -41,7 +41,12 @@ if (!isset($password_message)) { $password_message = ''; }
           <label>Last Name:</label>
           <input type="text" name="last_name" value="<?php echo htmlspecialchars($last_name); ?>" size="30">
           <?php echo $fields->getField('last_name')->getHTML(); ?><br>
-	
+	       
+	  <select name = "account_type">
+	     <option value = "student">Student</option>
+	     <option value = "instructor">Instructor</option>
+	  </select>
+
 	  <label>&nbsp;</label>
 	  <input type = "submit" value = "Signup"/>
 	  <input type = "reset" value = "Clear"/>
