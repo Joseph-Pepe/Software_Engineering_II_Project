@@ -57,8 +57,9 @@ input[type=submit]{
    padding: 12px 20px;
    margin: 15px 100px;
    border: 1px solid #ccc;
-  border-radius: 4px;
+   border-radius: 4px;
    box-sizing: border-box;
+   display: inline-block;
 }
 /* clear button styling */
 input[type=reset]{
