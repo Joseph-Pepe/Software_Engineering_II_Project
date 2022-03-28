@@ -119,6 +119,18 @@ class Validate {
         $hostnames = '(' . $hostname . '(\.' . $hostname . ')*)';
         $top = '\.[[:alnum:]]{2,6}';
         $domainPattern = '/^' . $hostnames . $top . '$/';
+        
+        $isDotEdu = preg_match('/.edu/i', $domainPattern);
+
+        if ($isDotEdu === false) {
+            $field->setErrorMessage('Error testing email.');
+            return;
+        } else if ($isDotEdu != 1) {
+            $field->setErrorMessage(
+                    'Must be a (.edu) email.');
+            return;
+        }
+
 
         // Call the pattern method
         $this->pattern($name, $domain, $domainPattern,
