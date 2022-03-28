@@ -11,7 +11,7 @@
    <head>
       <meta charset = "utf-8">
       <title>Homepage</title>
-      <link rel = "stylesheet" type = "text/css" href = "styles.css"/>
+      <link rel = "stylesheet" type = "text/css" href = "Cstyles/homepage_styles.css"/>
    </head>
 	
    <body> 
