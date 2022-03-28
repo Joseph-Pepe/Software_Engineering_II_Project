@@ -120,7 +120,7 @@ class Validate {
         $top = '\.[[:alnum:]]{2,6}';
         $domainPattern = '/^' . $hostnames . $top . '$/';
         
-        $isDotEdu = preg_match('/.edu/i', $domainPattern);
+        $isDotEdu = preg_match('/.edu/i', $value);
 
         if ($isDotEdu === false) {
             $field->setErrorMessage('Error testing email.');
