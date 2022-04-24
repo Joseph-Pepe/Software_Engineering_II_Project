@@ -4,6 +4,8 @@
 
 // Require a valid user:
 // require_once('utility/valid_user_account.php');
+
+include 'view/side_bar.php';
 ?>
 
 <!DOCTYPE html>
