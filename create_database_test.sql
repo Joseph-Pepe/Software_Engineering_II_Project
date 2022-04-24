@@ -18,8 +18,13 @@ CREATE TABLE class_roster(
    
 );
 
-CREATE TABLE class( 
-   
+CREATE TABLE classes( 
+   class_id          INT            NOT NULL   AUTO_INCREMENT, 
+   class_name        VARCHAR(50)    NOT NULL, 
+   start_time        VARCHAR(50)    NOT NULL,
+   end_time          VARCHAR(50)    NOT NULL,
+   start_date        VARCHAR(50)    NOT NULL,
+   end_date          VARCHAR(50)    NOT NULL,
 );
 
 -- Step 3: Populate with three users. 
