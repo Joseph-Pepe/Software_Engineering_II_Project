@@ -40,13 +40,4 @@
         </li>
         <?php endforeach; ?>
     </ul>
-    
-    <h2>Temp Link</h2>
-    <ul>
-        <li>
-            <!-- This link is for testing only.
-                 Remove it from a production application. -->
-            <a href="<?php echo $app_path; ?>admin">Admin</a>
-        </li>        
-    </ul>
 </aside>
