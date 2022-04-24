@@ -14,6 +14,14 @@ CREATE TABLE accounts(
    PRIMARY KEY (account_id) 
 );
 
+CREATE TABLE class_roster( 
+   
+);
+
+CREATE TABLE class( 
+   
+);
+
 -- Step 3: Populate with three users. 
 INSERT INTO accounts (account_id, email_address, password, first_name, last_name,  account_type) VALUES 
 (1, 'jj@montclair.edu', 'cretas', 'John', 'Johnson', 'Teacher'), 
