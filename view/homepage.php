@@ -31,8 +31,6 @@ include 'view/side_bar.php';
 	    <a href = "index.php?action=student_file_2">student_file_2</a>
          <?php // }?>
          -->
-	      
-	 <a href = "index.php?action=logout">Logout</a>
       </main>
    </body>
 </html>
