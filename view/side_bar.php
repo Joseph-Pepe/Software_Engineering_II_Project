@@ -5,8 +5,7 @@
             <a href="<?php echo $app_path . 'cart'; ?>">View Cart</a>
         </li>
             <?php
-            // Check if user is logged in and
-            // display appropriate account links
+            // Check if user is logged in and display appropriate account links
             $account_url = $app_path . 'account';
             $logout_url = $account_url . '?action=logout';
             if (isset($_SESSION['user'])) :
