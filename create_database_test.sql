@@ -19,12 +19,16 @@ CREATE TABLE class_roster(
 );
 
 CREATE TABLE classes( 
-   class_id          INT            NOT NULL   AUTO_INCREMENT, 
+   course_number     INT            NOT NULL   AUTO_INCREMENT, 
+   instructor        VARCHAR(50)    NOT NULL, 
+   term              VARCHAR(50)    NOT NULL, 
+   day               VARCHAR(50)    NOT NULL, 
    class_name        VARCHAR(50)    NOT NULL, 
    start_time        VARCHAR(50)    NOT NULL,
    end_time          VARCHAR(50)    NOT NULL,
    start_date        VARCHAR(50)    NOT NULL,
    end_date          VARCHAR(50)    NOT NULL,
+   section           VARCHAR(50)    NOT NULL,
 );
 
 -- Step 3: Populate with three users. 
