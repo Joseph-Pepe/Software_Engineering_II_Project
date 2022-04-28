@@ -20,8 +20,8 @@
 	  <select name = "term">
 	     <option value = "fall">Fall</option>
 	     <option value = "spring">Spring</option>
-             <option value = "spring">Winterim</option>
-             <option value = "spring">Summer</option>
+             <option value = "winterim">Winterim</option>
+             <option value = "summer">Summer</option>
 	  </select>
 	       
 	  <label>Start Time:</label>
