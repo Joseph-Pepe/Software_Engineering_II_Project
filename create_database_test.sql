@@ -29,7 +29,7 @@ CREATE TABLE classes(
    start_date        VARCHAR(50)    NOT NULL,
    end_date          VARCHAR(50)    NOT NULL,
    section           VARCHAR(50)    NOT NULL,
-   PRIMARY KEY (account_id) 
+   PRIMARY KEY (course_number) 
 );
 
 -- Step 3: Populate with three users. 
