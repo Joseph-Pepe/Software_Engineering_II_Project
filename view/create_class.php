@@ -9,7 +9,7 @@
  <body>
     <main>
        <form method = "post" id = "login_form" class = "aligned" action = ".">
-	        <input type="hidden" name="action" value="create_class">
+	  <input type="hidden" name="action" value="create_class">
 	       
           <label>Class Name:</label>
           <input type="text" name="class_name" size="30">
@@ -17,17 +17,18 @@
           <label>Term:</label>
           <input type="text" name="term" size="30">
 	       
+	  <select name = "term">
+	     <option value = "fall">Fall</option>
+	     <option value = "spring">Spring</option>
+             <option value = "spring">Winterim</option>
+             <option value = "spring">Summer</option>
+	  </select>
+	       
 	  <label>Start Time:</label>
           <input type="text" name="start_time" size="30">
 	       
 	  <label>End Time:</label>
           <input type="text" name="end_time" size="30">
-	       
-	  <label>Start Date:</label>
-          <input type="text" name="start_date" size="30">
-	       
-	  <label>End Date:</label>
-          <input type="text" name="end_date" size="30">
 	       
 	  <label>Day:</label>
           <input type="text" name="day" size="30">
