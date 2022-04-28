@@ -10,7 +10,7 @@
         </li>
         <?php
             // Logout Account:
-            $logout_url = $account_url . '?action=logout';
+            $logout_url = $app_path . '?action=logout';
         ?>
         <li>
             <a href="<?php echo $logout_url; ?>">Logout</a>
