@@ -11,7 +11,14 @@
          <?php
              // Logout Account:
              $logout_url = $app_path . '?action=logout';
+          
+             // Create Class:
+             $create_class_url = $app_path . '?action=create_class';
          ?>
+         <li>
+             <a href="<?php echo $logout_url; ?>">Create Class</a>
+         </li>
+          
          <li>
              <a href="<?php echo $logout_url; ?>">Logout</a>
          </li>
