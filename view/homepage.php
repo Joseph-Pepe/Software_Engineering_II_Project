@@ -17,10 +17,12 @@ include 'view/side_bar.php';
    </head>
 	
    <body> 
+      <!--
       <header>
          <h2>Welcome User</h2>
 	 <hr/>
       </header>
+      -->
       <main>
 	 <!--
          <?php // if($user_role == "instructor"){ ?>
