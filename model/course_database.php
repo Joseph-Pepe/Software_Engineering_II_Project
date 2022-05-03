@@ -4,7 +4,7 @@ function add_course($class_name, $instructor, $term, $day, $start_time, $end_tim
     $query = 'INSERT INTO courses (instructor, term, day, class_name, start_time, end_time, start_date, end_date, section)
               VALUES (:instructor, :term, :day, :class_name, :start_time, :end_time, start_date, end_date, section)';
     try {
-        $statement = $db->prepare($query);
+        $statement = $database->prepare($query);
         $statement->bindValue(':instructor', instructor);
         $statement->bindValue(':term', $term);
         $statement->bindValue(':day', $day);
@@ -26,7 +26,7 @@ function add_course($class_name, $instructor, $term, $day, $start_time, $end_tim
     }
 }
 
-function get_all_courses() {
+function get_all_courses($instructor) {
     global $database;
     $query = 'SELECT * FROM courses WHERE instructor = :instructor';
     $statement = $database->prepare($query);
