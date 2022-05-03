@@ -6,14 +6,14 @@
          </li>
 
          <li>
-             <a href="<?php echo $app_path . 'classes'; ?>">View Classes</a>
+             <a href="<?php echo $app_path . 'course'; ?>">View Classes</a>
          </li>
          <?php
              // Logout Account:
              $logout_url = $app_path . '?action=logout';
           
              // Create Class:
-             $create_class_url = $app_path . 'classes';
+             $create_class_url = $app_path . 'course';
          ?>
          <li>
              <a href="<?php echo $create_class_url; ?>">Create Class</a>
