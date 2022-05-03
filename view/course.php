@@ -14,21 +14,12 @@
     // Add HMTL tags to the description
     $description_with_tags = add_tags($description);
 
-    // Calculate discounts
-    $discount_amount = round($list_price * ($discount_percent / 100), 2);
-    $unit_price = $list_price - $discount_amount;
-
-    // Format discounts
-    $discount_percent_f = number_format($discount_percent, 0);
-    $discount_amount_f = number_format($discount_amount, 2);
-    $unit_price_f = number_format($unit_price, 2);
-
     // Get image URL and alternate text
     $image_filename = $product_code . '_m.png';
     $image_path = $app_path . 'images/' . $image_filename;
     $image_alt = 'Image filename: ' . $image_filename;
 ?>
-<h1><?php echo htmlspecialchars($product_name); ?></h1>
+<h1><?php echo htmlspecialchars($class_name); ?></h1>
 <div id="left_column">
     <p><img src="<?php echo $image_path; ?>"
             alt="<?php echo $image_alt; ?>" /></p>
