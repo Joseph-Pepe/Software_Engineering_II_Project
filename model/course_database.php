@@ -26,6 +26,16 @@ function add_course($class_name, $instructor, $term, $day, $start_time, $end_tim
     }
 }
 
+function get_all_courses() {
+    global $database;
+    $query = 'SELECT * FROM courses WHERE instructor = :instructor';
+    $statement = $database->prepare($query);
+    $statement->execute();
+    $courses = $statement->fetchAll();
+    $statement->closeCursor();
+    return $courses;
+}
+
 function get_course($course_id) {
     global $database;
     $query = 'SELECT * FROM courses WHERE course_id = :course_id';
