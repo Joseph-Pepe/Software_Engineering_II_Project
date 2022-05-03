@@ -14,6 +14,8 @@ include 'view/side_bar.php';
       <meta charset = "utf-8">
       <title>Homepage</title>
       <link rel = "stylesheet" type = "text/css" href = "Cstyles/home_page_styles.css"/>
+      <link rel = "stylesheet" type = "text/css" href = "Cstyles/side_bar_styles.css"/>
+
    </head>
 	
    <body> 
