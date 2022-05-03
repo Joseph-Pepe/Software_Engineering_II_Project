@@ -6,6 +6,8 @@
          </li>
 
          <?php
+             /* Provides the path to the application, and then the path to the (index.php) file will the appropriate action.*/
+          
              // Logout Account:
              $logout_url = $app_path . '?action=logout';
           
