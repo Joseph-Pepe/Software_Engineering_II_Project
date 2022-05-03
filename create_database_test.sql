@@ -22,7 +22,7 @@ CREATE TABLE courses(
    course_number     INT            NOT NULL   AUTO_INCREMENT, 
    instructor        VARCHAR(50)    NOT NULL, 
    term              VARCHAR(50)    NOT NULL, 
-   day               VARCHAR(50)    NOT NULL, 
+   days              VARCHAR(50)    NOT NULL, 
    class_name        VARCHAR(50)    NOT NULL, 
    start_time        VARCHAR(50)    NOT NULL,
    end_time          VARCHAR(50)    NOT NULL,
