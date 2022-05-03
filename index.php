@@ -39,7 +39,7 @@ switch($action){
       $email = '';
       $first_name = '';
       $last_name = '';
-      include 'view/signup_page.php';
+      include 'account/account_signup.php';
       break;
    case 'signup':
       // Store user data in local variables
@@ -59,14 +59,14 @@ switch($action){
       
       // If validation errors, redisplay signup page and exit controller.
       if ($fields->hasErrors()) {
-          include 'view/signup_page.php';
+          include 'account/account_signup.php';
           break;
       }
 
       // If passwords don't match, redisplay signup page and exit controller.
       if ($password_1 !== $password_2) {
           $password_message = 'Passwords do not match.';
-          include 'view/signup_page.php';
+          include 'account/account_signup.php';
           break;
       }
 
@@ -88,7 +88,7 @@ switch($action){
       $email = '';
       $password = '';
       $password_message = '';
-      include 'view/account_login_signup.php';
+      include 'account/account_login_signup.php';
       break;
    case 'login':
       $email = filter_input(INPUT_POST, 'email');
@@ -100,7 +100,7 @@ switch($action){
       
       // If validation errors, redisplay login page and exit controller
       if ($fields->hasErrors()) {
-          include 'view/account_login_signup.php';
+          include 'account/account_login_signup.php';
           break;
       }
       
@@ -109,7 +109,7 @@ switch($action){
           $_SESSION['user'] = get_user_by_email($email);
       }else {
           $password_message = 'Login failed. Invalid email or password.';
-          include 'view/account_login_signup.php';
+          include 'account/account_login_signup.php';
           break;
       }
       redirect('.');
