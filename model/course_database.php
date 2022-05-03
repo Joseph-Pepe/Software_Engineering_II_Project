@@ -1,9 +1,7 @@
 <?php
 function add_course($class_name, $instructor, $term, $day, $start_time, $end_time, $start_date, $end_date, $section) {
     global $database;
-    $query = 'INSERT INTO classes
-                 (categoryID, productCode, productName, description, listPrice,
-                  discountPercent, dateAdded)
+    $query = 'INSERT INTO courses (categoryID, productCode, productName, description, listPrice, discountPercent, dateAdded)
               VALUES
                  (:category_id, :code, :name, :description, :price,
                   :discount_percent, NOW())';
