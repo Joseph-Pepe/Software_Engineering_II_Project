@@ -29,7 +29,7 @@ switch ($action) {
                 FILTER_VALIDATE_INT);
         $product = get_product($product_id);
         $product_order_count = get_product_order_count($product_id);
-        include('product_view.php');
+        include('course_view.php');
         break;
     case 'show_add_form':
         $product_id = filter_input(INPUT_GET, 'product_id', 
