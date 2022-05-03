@@ -21,7 +21,7 @@ switch ($action) {
         $products = get_products_by_category($category_id);
 
         // display product list
-        include('product_list.php');
+        include('course_list.php');
         break;
     case 'view_course':
         $categories = get_categories();
@@ -40,7 +40,7 @@ switch ($action) {
         }
         $product = get_product($product_id);
         $categories = get_categories();
-        include('product_add_edit.php');
+        include('course_add.php');
         break;
     case 'add_course':
         $category_id = filter_input(INPUT_POST, 'category_id', 
@@ -64,7 +64,7 @@ switch ($action) {
             $product_id = add_product($category_id, $code, $name,
                     $description, $price, $discount_percent);
             $product = get_product($product_id);
-            include('product_view.php');
+            include('course_view.php');
         }
         break;
 }
