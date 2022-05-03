@@ -2,26 +2,20 @@
 <DOCTYPE html>
 <html>
   <main>
-    <h1 class="top">Product Manager - List Products</h1>
-    <p>To view, edit, or delete a product, select the product.</p>
+    <h1 class="top">List Courses</h1>
+    <p>To view a course, select it (press it).</p>
     <p>To add a product, select the "Add Product" link.</p>
-    <?php if (count($products) == 0) : ?>
-        <p>There are no products for this category.</p>
+    <?php if (count($courses) == 0) : ?>
+        <p>No courses currently exist.</p>
     <?php else : ?>
-        <h1>
-            <?php echo htmlspecialchars($current_category['categoryName']); ?>
-        </h1>
-            <?php foreach ($products as $product) : ?>
-            <p>
-                <a href="?action=view_product&amp;product_id=<?php
-                          echo $product['productID']; ?>">
-                    <?php echo htmlspecialchars($product['productName']); ?>
-                </a>
-            </p>
-            <?php endforeach; ?>
+        <?php foreach ($courses as $course) : ?>
+        <p>
+            <a href="?action=view_course&amp;course_id=<?php echo $course['course_id']; ?>"> <?php echo htmlspecialchars($course['course_name']); ?></a>
+        </p>
+        <?php endforeach; ?>
     <?php endif; ?>
 
     <h1>Links</h1>
-    <p><a href="index.php?action=show_add_edit_form">Add Product</a></p>
+    <p><a href="index.php?action=show_add_form">Add Course</a></p>
   </main>
 </html>
