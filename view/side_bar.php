@@ -7,8 +7,8 @@
              // Logout Account:
              $logout_url = $app_path . '?action=logout';
           
-             // Create Course:
-             $create_course_url = $app_path . 'course';
+             // View Courses:
+             $view_course_url = $app_path . 'course';
          ?>
           
          <li>
@@ -16,11 +16,11 @@
          </li>
          
          <li>
-             <a href="<?php echo $create_course_url; ?>">Create Course</a>
+             <a href="<?php echo $view_course_url; ?>">View Courses</a>
          </li>
           
          <li>
-             <a href="<?php echo $app_path . 'course'; ?>">View Courses</a>
+             <a href="<?php echo $view_course_url . '?action=logout'; ?>">Create Courses</a>
          </li>
           
          <li>
