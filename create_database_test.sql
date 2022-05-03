@@ -18,7 +18,7 @@ CREATE TABLE class_roster(
    
 );
 
-CREATE TABLE classes( 
+CREATE TABLE courses( 
    course_number     INT            NOT NULL   AUTO_INCREMENT, 
    instructor        VARCHAR(50)    NOT NULL, 
    term              VARCHAR(50)    NOT NULL, 
