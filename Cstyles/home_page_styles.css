@@ -1,13 +1,28 @@
 html {
    height: 100%;
-   background-color:  #141414;
-   display: table;
+   background-color:  #FF5F5F;
+}
+
+#flexParent {
+   display: flex;
+   flex-wrap: wrap;
    margin: auto;
 }
 
-body {
-   display: table-cell;
-   vertical-align: middle;
+#flexLeft {
+   display:  inline-block;
+   flex-basis: 17%;
+   float: left;
+   margin-top: 50px;
+   margin-left:  50px;
+}
+
+#flexRight {
+   display: inline-block;
+   margin-top: 50px;
+   margin-left: 100px;
+   flex-basis: 40%;
+   float:  right;
 }
 
 h2 {
@@ -17,5 +32,3 @@ h2 {
 a {
    color:  #FCFCFC;
 }
-
-
