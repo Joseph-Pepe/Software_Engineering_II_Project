@@ -1,10 +1,8 @@
 <?php
 function add_course($class_name, $instructor, $term, $day, $start_time, $end_time, $start_date, $end_date, $section) {
     global $database;
-    $query = 'INSERT INTO courses (categoryID, productCode, productName, description, listPrice, discountPercent, dateAdded)
-              VALUES
-                 (:category_id, :code, :name, :description, :price,
-                  :discount_percent, NOW())';
+    $query = 'INSERT INTO courses (instructor, term, day, class_name, start_time, end_time, start_date, end_date, section)
+              VALUES (:category_id, :code, :name, :description, :price, :discount_percent, NOW())';
     try {
         $statement = $db->prepare($query);
         $statement->bindValue(':category_id', $category_id);
