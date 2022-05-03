@@ -5,18 +5,19 @@
              <a href="<?php echo $app_path; ?>">Home</a>
          </li>
 
-         <li>
-             <a href="<?php echo $app_path . 'course'; ?>">View Classes</a>
-         </li>
          <?php
              // Logout Account:
              $logout_url = $app_path . '?action=logout';
           
-             // Create Class:
-             $create_class_url = $app_path . 'course';
+             // Create Course:
+             $create_course_url = $app_path . 'course';
          ?>
          <li>
-             <a href="<?php echo $create_class_url; ?>">Create Class</a>
+             <a href="<?php echo $create_course_url; ?>">Create Course</a>
+         </li>
+          
+         <li>
+             <a href="<?php echo $app_path . 'course'; ?>">View Courses</a>
          </li>
           
          <li>
