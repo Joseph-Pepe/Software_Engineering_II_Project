@@ -20,7 +20,7 @@
          </li>
           
          <li>
-             <a href="<?php echo $view_course_url . '?action=list_courses'; ?>">Create Courses</a>
+             <a href="<?php echo $view_course_url . '?action=add_course'; ?>">Create Course</a>
          </li>
           
          <li>
