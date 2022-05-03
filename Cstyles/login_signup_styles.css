@@ -1,17 +1,27 @@
 html {
-   height: 100%;
-   background-color:  #141414;
-   display: table;
+   height: 90%;
+   background-image: url("../images/Grad_Screenshot.png");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
    margin: auto;
+   min-height: 100%;
 }
 
 header {
    text-align: center;
 }
 
-/* Centering form */
 body {
-   display: table-cell;
+   margin-top: 2%;
+}
+
+#forms {
+   margin: auto;
+}
+
+/* Centering form */
+main {
    vertical-align: middle;
    padding:  5px;
    height:  50%;
@@ -19,23 +29,26 @@ body {
 }
 
 /* Login and Sign up buttons */
-button {
-   width: 45%;
+#buttons {
+   width: 25%;
    padding: 12px 20px;
    margin: 10px 5px;
-   border: 1px solid #ccc;
+   border: 4px solid #141414;
    border-radius: 4px;
    box-sizing: border-box;
+   font-size:  20px;
 }
 
 /* Form styling */
-main {
+#login_form, #signup_form {
    background-color: #FCFCFC;
    display: table-cell;
    vertical-align: middle;
+   border:  5px solid #141414;
    border-radius: 10px;
-   padding:  10px;
+   padding:  20px;
    text-align: left;
+   font-size:  15px;
 }
 
 /* textfield styling*/
@@ -51,9 +64,9 @@ input[type=text], input[type=password], select {
 }
 
 /* Submit styling */
-input[type=submit]{
-   width: 33%;
-   background: #8B8B8B;
+#submit{
+   width: 45%;
+   background: #FF5F5F;
    padding: 12px 20px;
    margin: 15px 100px;
    border: 1px solid #ccc;
@@ -69,4 +82,10 @@ input[type=reset]{
    border: 1px solid #ccc;
    border-radius: 4px;
    box-sizing: border-box;
+}
+
+footer {
+   position: absolute;
+   bottom:  0px;
+   color:  #FCFCFC;
 }
