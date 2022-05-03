@@ -40,6 +40,4 @@
         <input type="text" name="quantity" value="1" size="2" />
         <input type="submit" value="Add to Cart" />
     </form>
-    <h2>Description</h2>
-    <?php echo $description_with_tags; ?>
 </div>
