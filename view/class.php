@@ -1,6 +1,3 @@
-
-   section           VARCHAR(50)    NOT NULL,
-
 <?php
     // Parse data
     $course_number = $product['course_number'];
