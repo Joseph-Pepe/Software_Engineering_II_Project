@@ -9,39 +9,6 @@
 
  <body>
     <main>
-       <form action="index.php" method="post" id="add_product_form">
-            <input type="hidden" name="category_id"
-                   value="<?php echo $product['categoryID']; ?>">
-
-        <label>Category:</label>
-        <select name="category_id">
-        <?php foreach ($categories as $category) : 
-            if ($category['categoryID'] == $product['categoryID']) {
-                $selected = 'selected';
-            } else {
-                $selected = '';
-            }
-        ?>
-            <option value="<?php echo $category['categoryID']; ?>"<?php
-                      echo $selected ?>>
-                <?php echo htmlspecialchars($category['categoryName']); ?>
-            </option>
-        <?php endforeach; ?>
-        </select>
-        <br>
-
-        <label>Name:</label>
-        <input type="text" name="name" 
-               value="<?php echo htmlspecialchars($product['productName']); ?>" 
-               size="50">
-        <br>
-
-        <label>List Price:</label>
-        <input type="text" name="price" 
-               value="<?php echo $product['listPrice']; ?>">
-        <br>
-        
-    </form>
        <form action = "index.php" method = "post" id = "add_course_form" class = "aligned">
 	  <input type="hidden" name="action" value="create_class">
 	       
@@ -74,13 +41,11 @@
 	  </select>
 	       
 	  <label>Days:</label>
-          <select name = "Days">
-             <option value = "Monday">Monday</option>
-	     <option value = "Tuesday">Tuesday</option>
-	     <option value = "Wednesday">Wednesday</option>
-	     <option value = "Thursday">Thursday</option>
-             <option value = "Friday">Friday</option>
-	  </select>
+	  <input type = "checkbox" name = "day[] value = "mon">Monday<br>
+          <input type = "checkbox" name = "day[] value = "tue">Tuesday<br>
+	  <input type = "checkbox" name = "day[] value = "wed">Wednesday<br>
+	  <input type = "checkbox" name = "day[] value = "thur">Thursday<br>
+	  <input type = "checkbox" name = "day[] value = "fri">Friday
 	   
 	  <label>&nbsp;</label>
           <input type="submit" value="Create Course">
