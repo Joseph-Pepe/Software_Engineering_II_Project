@@ -31,13 +31,4 @@
         <?php echo '$' . $unit_price_f; ?>
         (You save
         <?php echo '$' . $discount_amount_f; ?>)</p>
-    <form action="<?php echo $app_path . 'cart' ?>" method="get" 
-          id="add_to_cart_form">
-        <input type="hidden" name="action" value="add" />
-        <input type="hidden" name="product_id"
-               value="<?php echo $product_id; ?>" />
-        <b>Quantity:</b>&nbsp;
-        <input type="text" name="quantity" value="1" size="2" />
-        <input type="submit" value="Add to Cart" />
-    </form>
 </div>
