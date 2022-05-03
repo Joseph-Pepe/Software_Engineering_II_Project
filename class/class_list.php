@@ -1,4 +1,6 @@
 <?php include '../../view/side_bar.php'; ?>
+<DOCTYPE html>
+<html>
 <main>
     <h1 class="top">Product Manager - List Products</h1>
     <p>To view, edit, or delete a product, select the product.</p>
@@ -23,4 +25,4 @@
     <p><a href="index.php?action=show_add_edit_form">Add Product</a></p>
 
 </main>
-<?php include '../../view/footer.php'; ?>
+</html>
