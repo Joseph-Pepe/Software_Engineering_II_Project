@@ -20,8 +20,7 @@ function get_product($product_id) {
     }
 }
 
-function add_product($category_id, $code, $name, $description,
-        $price, $discount_percent) {
+function add_product($category_id, $code, $name, $description, $price, $discount_percent) {
     global $db;
     $query = 'INSERT INTO products
                  (categoryID, productCode, productName, description, listPrice,
