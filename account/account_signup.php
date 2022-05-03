@@ -58,6 +58,6 @@ if (!isset($password_message)) { $password_message = ''; }
 	  <input type = "reset" value = "Clear"/>
        </form>
     </main>
-    <?php include 'footer.php'; ?>
+    <?php include '../view/footer.php'; ?>
  </body>	
 </html>
