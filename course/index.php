@@ -23,7 +23,7 @@ switch ($action) {
         // display product list
         include('product_list.php');
         break;
-    case 'view_product':
+    case 'view_course':
         $categories = get_categories();
         $product_id = filter_input(INPUT_GET, 'product_id', 
                 FILTER_VALIDATE_INT);
@@ -42,7 +42,7 @@ switch ($action) {
         $categories = get_categories();
         include('product_add_edit.php');
         break;
-    case 'add_product':
+    case 'add_course':
         $category_id = filter_input(INPUT_POST, 'category_id', 
                 FILTER_VALIDATE_INT);
         $code = filter_input(INPUT_POST, 'code');
