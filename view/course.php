@@ -28,7 +28,5 @@
     <p><b>Discount:</b>
         <?php echo $discount_percent_f . '%'; ?></p>
     <p><b>Your Price:</b>
-        <?php echo '$' . $unit_price_f; ?>
-        (You save
-        <?php echo '$' . $discount_amount_f; ?>)</p>
+        <?php echo '$' . $unit_price_f; ?></p>
 </div>
