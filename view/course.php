@@ -11,9 +11,6 @@
     $end_date = $product['end_date'];
     $section = $product['end_date'];
 
-    // Add HMTL tags to the description
-    $description_with_tags = add_tags($description);
-
     // Get image URL and alternate text
     $image_filename = $product_code . '_m.png';
     $image_path = $app_path . 'images/' . $image_filename;
