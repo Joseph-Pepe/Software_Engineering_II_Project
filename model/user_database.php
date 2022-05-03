@@ -1,5 +1,5 @@
 <?php
-function add_user($email, $first_name, $last_name, $password_1, $account_type) {
+function add_user($email, $first_name, $last_name, $password, $account_type) {
     global $database;
     $password = sha1($email . $password_1);
     $add_user_query = 'INSERT INTO accounts (first_name, last_name, email_address, password, account_type)
