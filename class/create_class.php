@@ -37,6 +37,5 @@
 	  <input type = "reset" value = "Clear"/>
        </form>
     </main>
-    <?php include 'footer.php'; ?>
  </body>	
 </html>
