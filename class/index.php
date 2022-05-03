@@ -32,17 +32,7 @@ switch ($action) {
         $product_order_count = get_product_order_count($product_id);
         include('product_view.php');
         break;
-    case 'delete_product':
-        $category_id = filter_input(INPUT_POST, 'category_id', 
-                FILTER_VALIDATE_INT);
-        $product_id = filter_input(INPUT_POST, 'product_id', 
-                FILTER_VALIDATE_INT);
-        delete_product($product_id);
-        
-        // Display the Product List page for the current category
-        header("Location: .?category_id=$category_id");
-        break;
-    case 'show_add_edit_form':
+    case 'show_add_form':
         $product_id = filter_input(INPUT_GET, 'product_id', 
                 FILTER_VALIDATE_INT);
         if ($product_id === null) {
