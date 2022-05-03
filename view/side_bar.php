@@ -13,7 +13,7 @@
              $logout_url = $app_path . '?action=logout';
           
              // Create Class:
-             $create_class_url = $app_path . '?action=create_class';
+             $create_class_url = $app_path . 'classes';
          ?>
          <li>
              <a href="<?php echo $create_class_url; ?>">Create Class</a>
