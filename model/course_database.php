@@ -25,4 +25,20 @@ function add_course($class_name, $instructor, $term, $day, $start_time, $end_tim
         display_db_error($error_message);
     }
 }
+
+function get_course($course_id) {
+    global $database;
+    $query = 'SELECT * FROM courses WHERE course_id = :course_id';
+    try {
+        $statement = $database->prepare($query);
+        $statement->bindValue(':course_id', $course_id);
+        $statement->execute();
+        $result = $statement->fetch();
+        $statement->closeCursor();
+        return $result;
+    } catch (PDOException $e) {
+        $error_message = $e->getMessage();
+        display_db_error($error_message);
+    }
+}
 ?>
