@@ -30,6 +30,7 @@ function get_all_courses($instructor) {
     global $database;
     $query = 'SELECT * FROM courses WHERE instructor = :instructor';
     $statement = $database->prepare($query);
+    $statement->bindValue(':instructor', $instructor);
     $statement->execute();
     $courses = $statement->fetchAll();
     $statement->closeCursor();
