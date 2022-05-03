@@ -1,3 +1,4 @@
+<?php
 function get_product($product_id) {
     global $db;
     $query = '
@@ -47,3 +48,4 @@ function add_product($category_id, $code, $name, $description,
         display_db_error($error_message);
     }
 }
+?>
