@@ -42,6 +42,6 @@
 	  <input type = "reset" value = "Clear"/>
        </form>
     </main>
-    <?php include '../view/footer.php'; ?>
+    <?php include 'view/footer.php'; ?>
  </body>	
 </html>
