@@ -5,15 +5,14 @@ $action = strtolower(filter_input(INPUT_POST, 'action'));
 if ($action == NULL) {
     $action = strtolower(filter_input(INPUT_GET, 'action'));
     if ($action == NULL) {        
-        $action = 'list_products';
+        $action = 'list_courses';
     }
 }
 
 switch ($action) {
-    case 'list_products':
+    case 'list_courses':
         // get categories and products
-        $category_id = filter_input(INPUT_GET, 'category_id', 
-                FILTER_VALIDATE_INT);
+        $category_id = filter_input(INPUT_GET, 'category_id', FILTER_VALIDATE_INT);
         if (empty($category_id)) {
             $category_id = 1;
         }
