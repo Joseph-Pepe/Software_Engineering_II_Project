@@ -1,11 +1,18 @@
+
+   section           VARCHAR(50)    NOT NULL,
+
 <?php
     // Parse data
-    $category_id = $product['categoryID'];
-    $product_code = $product['productCode'];
-    $product_name = $product['productName'];
-    $description = $product['description'];
-    $list_price = $product['listPrice'];
-    $discount_percent = $product['discountPercent'];
+    $course_number = $product['course_number'];
+    $instructor = $product['instructor'];
+    $term = $product['term'];
+    $day = $product['day'];
+    $class_name = $product['class_name'];
+    $start_time = $product['start_time'];
+    $end_time = $product['end_time'];
+    $start_date = $product['start_date'];
+    $end_date = $product['end_date'];
+    $section = $product['end_date'];
 
     // Add HMTL tags to the description
     $description_with_tags = add_tags($description);
