@@ -21,10 +21,3 @@
     <p><img src="<?php echo $image_path; ?>"
             alt="<?php echo $image_alt; ?>" /></p>
 </div>
-
-<div id="right_column">
-    <p><b>List Price:</b>
-        <?php echo '$' . $list_price; ?></p>
-    <p><b>Your Price:</b>
-        <?php echo '$' . $unit_price_f; ?></p>
-</div>
