@@ -23,7 +23,7 @@
           <input type="submit" value="Login">
        </form> 
     </header>
-    <main>
+    <main id = "forms">
        <form method = "post" id = "login_form" class = "aligned" action = ".">
 	  <input type="hidden" name="action" value="login">
 	       
