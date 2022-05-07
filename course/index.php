@@ -37,6 +37,18 @@ switch ($action) {
         break;
     case 'add_course':
         $category_id = filter_input(INPUT_POST, 'category_id', FILTER_VALIDATE_INT);
+        
+        // Validate inputs
+        if (empty($code) || empty($name) || empty($description) ||
+            $price === false || $discount_percent === false) {
+            $error = 'Invalid product data. Check all fields and try again.';
+            include('../../errors/error.php');
+        } else {
+            $categories = get_categories();
+            $product_id = add_product($category_id, $code, $name, $description, $price, $discount_percent);
+            $product = get_product($product_id);
+            include('product_view.php');
+        }
         break;
 }
 ?>
