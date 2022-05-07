@@ -21,6 +21,8 @@
 	     <option value = "Differential Equations">Differential Equations</option>
 	     <option value = "Calculus III">Calculus III</option>
 	  </select>
+	       
+	  <br>
 
           <label>Term:</label>
           <select name = "term">
@@ -29,6 +31,8 @@
              <option value = "winterim">Winterim</option>
              <option value = "summer">Summer</option>
 	  </select>
+	       
+	  <br>
 	       
 	  <label>Start Time & End Time:</label>
           <select name = "start_time">
@@ -39,6 +43,8 @@
              <option value = "3:30pm - 5:15pm">3:30pm - 5:15pm</option>
              <option value = "5:15pm - 7:00pm">5:15pm - 7:00pm</option>
 	  </select>
+	       
+	  <br>
 	       
 	  <label>Days:</label>
 	  <input type = "checkbox" name = "day[] value = "mon">Monday<br>
