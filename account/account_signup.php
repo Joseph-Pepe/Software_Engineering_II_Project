@@ -23,7 +23,7 @@ if (!isset($password_message)) { $password_message = ''; }
           <input type="submit" value="Login">
        </form>
     </header>
-    <main>
+    <main id = "forms">
        <form method = "post" id = "signup_form" class = "aligned" action = ".">
           <input name = "action" type = "hidden" value = "signup"/>
 	       
