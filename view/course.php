@@ -6,7 +6,6 @@
     $days = $course['days'];
     $class_name = $course['class_name'];
     $start_end_time = $course['start_end_time'];
-    $start_end_date = $course['start_end_date'];
     $section = $course['end_date'];
 
     // Get image URL and alternate text
