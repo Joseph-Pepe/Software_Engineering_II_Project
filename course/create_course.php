@@ -10,7 +10,7 @@
  <body>
     <main>
        <form action = "index.php" method = "post" id = "add_course_form" class = "aligned">
-	  <input type="hidden" name="action" value="create_class">
+	  <input type="hidden" name="action" value="create_course">
 	       
           <label>Class Name:</label>
           <select name = "start_time">
