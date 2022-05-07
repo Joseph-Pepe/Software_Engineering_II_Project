@@ -2,6 +2,7 @@
 require_once('../../util/main.php');
 require_once('../model/course_database.php');
 
+$instructor = $_SESSION['user']['first_name'] . ' ' . $_SESSION['user']['last_name'];
 $action = strtolower(filter_input(INPUT_POST, 'action'));
 if ($action == NULL) {
     $action = strtolower(filter_input(INPUT_GET, 'action'));
@@ -17,8 +18,7 @@ switch ($action) {
             $course_id = 1;
         }
         $current_course = get_course($course_id);
-        $instructor_name = $_SESSION['user']['first_name'] . ' ' . $_SESSION['user']['last_name'];
-        $courses = get_all_courses($instructor_name);
+        $courses = get_all_courses($instructor);
         // display product list
         include('course_list.php');
         break;
@@ -36,7 +36,15 @@ switch ($action) {
         include('course_add.php');
         break;
     case 'add_course':
-        $category_id = filter_input(INPUT_POST, 'category_id', FILTER_VALIDATE_INT);
+        $course_id = filter_input(INPUT_GET, 'course_id', FILTER_VALIDATE_INT);
+        $class_name = filter_input(INPUT_POST, 'class_name');
+        $term = filter_input(INPUT_POST, 'term');
+        $days = filter_input(INPUT_POST, 'days', FILTER_SANITIZE_SPECIAL_CHARS, FILTER_REQUIRE_ARRAY);
+        $start_time = filter_input(INPUT_POST, 'class_name');
+        $end_time = = filter_input(INPUT_POST, 'class_name');
+        $start_date = filter_input(INPUT_POST, 'class_name');
+        $end_date = = filter_input(INPUT_POST, 'class_name');
+        $section = filter_input(INPUT_POST, 'section');
         
         // Validate inputs
         if (empty($code) || empty($name) || empty($description) ||
@@ -44,9 +52,7 @@ switch ($action) {
             $error = 'Invalid product data. Check all fields and try again.';
             include('../../errors/error.php');
         } else {
-            $categories = get_categories();
             $product_id = add_product($category_id, $code, $name, $description, $price, $discount_percent);
-            $product = get_product($product_id);
             include('product_view.php');
         }
         break;
