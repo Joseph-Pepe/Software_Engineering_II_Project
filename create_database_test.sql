@@ -25,7 +25,6 @@ CREATE TABLE courses(
    days              VARCHAR(50)    NOT NULL, 
    class_name        VARCHAR(50)    NOT NULL, 
    start_end_time    VARCHAR(50)    NOT NULL,
-   start_end_date    VARCHAR(50)    NOT NULL,
    section           VARCHAR(50)    NOT NULL,
    PRIMARY KEY (course_number) 
 );
