@@ -1,6 +1,6 @@
 <?php
 require_once('../../util/main.php');
-require_once('../model/user_database.php');
+require_once('../model/course_database.php');
 
 $action = strtolower(filter_input(INPUT_POST, 'action'));
 if ($action == NULL) {
