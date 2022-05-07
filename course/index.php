@@ -17,7 +17,7 @@ switch ($action) {
             $course_id = 1;
         }
         $current_course = get_course($course_id);
-        $courses = ;
+        $courses = get_all_courses($username);
         // display product list
         include('course_list.php');
         break;
