@@ -35,7 +35,7 @@
 	  <br>
 	       
 	  <label>Start Time & End Time:</label>
-          <select name = "start_time">
+          <select name = "start_end_time">
              <option value = "8:40am - 10:25am">8:40am - 10:25am</option>
 	     <option value = "10:25am - 12:00pm">10:25am - 12:00pm</option>
 	     <option value = "12:00pm - 1:45pm">12:00pm - 1:45pm</option>
