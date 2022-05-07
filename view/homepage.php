@@ -4,8 +4,6 @@
 
 // Require a valid user:
 // require_once('utility/valid_user_account.php');
-
-include 'view/side_bar.php';
 ?>
 
 <!DOCTYPE html>
@@ -18,21 +16,13 @@ include 'view/side_bar.php';
 
    </head>
 	
-   <body> 
-      <header>
+   <body id="flexParent"> 
+      <div id="flexLeft">
+         <?php include 'view/side_bar.php'; ?>
+      </div>
+      <div id="flexRight">
          <h2>Welcome <?php echo $user_name; ?></h2>
 	 <hr/>
-      </header>
-      <main>
-	 <!--
-         <?php // if($user_role == "instructor"){ ?>
-	    <a href = "index.php?action=student_file_1">instructor_file_1</a>
-	    <a href = "index.php?action=student_file_2">instructor_file_2</a>
-	 <?php // }else if($user_role == "student"){?>
-	    <a href = "index.php?action=student_file_1">student_file_1</a>
-	    <a href = "index.php?action=student_file_2">student_file_2</a>
-         <?php // }?>
-         -->
-      </main>
+      </div>
    </body>
 </html>
