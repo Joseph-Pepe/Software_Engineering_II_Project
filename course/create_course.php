@@ -13,7 +13,7 @@
 	  <input type="hidden" name="action" value="create_course">
 	       
           <label>Class Name:</label>
-          <select name = "start_time">
+          <select name = "class_name">
              <option value = "Software Engineering I">Software Engineering I</option>
 	     <option value = "Software Engineering II">Software Engineering II</option>
 	     <option value = "Datastructures & Algorithms">Datastructures & Algorithms</option>
