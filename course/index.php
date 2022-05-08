@@ -1,7 +1,7 @@
 <?php
-require_once('util/main.php');
-require_once('util/images.php');
-require_once('model/course_database.php');
+require_once('../utility/main.php');
+require_once('../utility/images.php');
+require_once('../model/course_database.php');
 
 $instructor = $_SESSION['user']['first_name'] . ' ' . $_SESSION['user']['last_name'];
 $action = strtolower(filter_input(INPUT_POST, 'action'));
