@@ -4,7 +4,7 @@
     $instructor = $course['instructor'];
     $term = $course['term'];
     $days = $course['days'];
-    $class_name = $course['class_name'];
+    $course_name = $course['course_name'];
     $start_end_time = $course['start_end_time'];
     $section = $course['section'];
     /*
@@ -23,9 +23,9 @@
 -->
 <div id="right_column">
     <p><b>Course Name:</b>
-        <?php echo $class_name; ?></p>
+        <?php echo $course_name; ?></p>
     <p><b>Course Number:</b>
-        <?php echo $class_name; ?></p>
+        <?php echo $course_number; ?></p>
     <p><b>Instructor:</b>
         <?php echo $instructor; ?></p>
     <p><b>Term:</b>
