@@ -145,7 +145,7 @@ switch($action){
         
         // Validate inputs
         if (empty($course_name) || empty($term) || empty($section) || empty($start_end_time) || $days === NULL) {
-            $error = 'Invalid course data. Check all fields and try again.';
+            $error_message = 'Invalid course data. Check all fields and try again.';
             include('errors/error.php');
         } else {
             $course_number = add_course($course_name, $user_name, $term, $days, $start_end_time, $section);
