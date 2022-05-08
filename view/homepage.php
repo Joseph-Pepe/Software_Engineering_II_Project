@@ -27,6 +27,12 @@ foreach ($course_numbers as $course_number) {
       <div id="flexRight">
          <h2>Welcome <?php echo $user_name; ?></h2>
 	 <hr/>
+	      
+	 <?php foreach ($courses as $course) :
+           $course_name = $course['course_name'];
+           $course_number = $course['course_name'];
+           $instructor = $course['instructor'];      
+      ?>
       </div>
    </body>
 </html>
