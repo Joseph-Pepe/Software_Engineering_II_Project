@@ -19,7 +19,6 @@ switch ($action) {
         }
         $current_course = get_course($course_id);
         $courses = get_all_courses($instructor);
-        // display product list
         include('course_list.php');
         break;
     case 'view_course':
