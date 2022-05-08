@@ -32,6 +32,8 @@ require_once('model/course_database.php');
                </p>
            <?php endforeach; ?>
         <?php endif; ?>
+	<h1>Add Course (New Class)</h1>
+        <p><a href="index.php?action=show_add_form">Add Course</a></p>
       </div>
    </body>
 </html>
