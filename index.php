@@ -137,6 +137,7 @@ switch($action){
     case 'create_course':
         $course_number = filter_input(INPUT_GET, 'course_number', FILTER_VALIDATE_INT);
         $course_name = filter_input(INPUT_POST, 'course_name');
+        $user_name = $_SESSION['user']['first_name'] . ' ' . $_SESSION['user']['last_name'];
         $term = filter_input(INPUT_POST, 'term');
         $days = filter_input(INPUT_POST, 'days', FILTER_SANITIZE_SPECIAL_CHARS, FILTER_REQUIRE_ARRAY);
         $start_end_time = filter_input(INPUT_POST, 'start_end_time');
@@ -147,7 +148,7 @@ switch($action){
             $error = 'Invalid course data. Check all fields and try again.';
             include('errors/error.php');
         } else {
-            $course_id = add_course($course_name, $term, $days, $start_end_time, $section);
+            $course_number = add_course($course_name, $user_name, $term, $days, $start_end_time, $section);
             $course = get_course($course_number);
             include('course/course_view.php');
         }
