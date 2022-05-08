@@ -60,11 +60,11 @@
 	  <br>
 	       
 	  <label>Days:</label>
-	  <input type = "checkbox" name = "days[] value = "mon">Monday<br>
-          <input type = "checkbox" name = "days[] value = "tue">Tuesday<br>
-	  <input type = "checkbox" name = "days[] value = "wed">Wednesday<br>
-	  <input type = "checkbox" name = "days[] value = "thur">Thursday<br>
-	  <input type = "checkbox" name = "days[] value = "fri">Friday
+	  <input type = "checkbox" name = "days[]" value = "mon">Monday<br>
+          <input type = "checkbox" name = "days[]" value = "tue">Tuesday<br>
+	  <input type = "checkbox" name = "days[]" value = "wed">Wednesday<br>
+	  <input type = "checkbox" name = "days[]" value = "thur">Thursday<br>
+	  <input type = "checkbox" name = "days[]" value = "fri">Friday
 	   
 	  <label>&nbsp;</label>
           <input type="submit" value="Create Course">
