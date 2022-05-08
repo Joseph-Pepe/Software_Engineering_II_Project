@@ -22,8 +22,8 @@
 </div>
 -->
 <div id="right_column">
-    <p><b>List Price:</b>
-        <?php echo '$' . $list_price; ?></p>
+    <p><b>Class Name:</b>
+        <?php echo '$' . $lass_name; ?></p>
     <p><b>Discount:</b>
         <?php echo $discount_percent_f . '%'; ?></p>
     <p><b>Your Price:</b>
