@@ -18,7 +18,7 @@ require_once('model/course_database.php');
          <?php include 'view/side_bar.php'; ?>
       </div>
       <div id="flexRight">
-         <h2>Welcome <?php echo $user_name; ?></h2>
+         <h2>Welcome <?php echo $account_type . ': ' . $user_name; ?></h2>
 	 <hr/>
 	 <h1 class="top">My Courses</h1>
          <p>To view a course, select it (press it).</p>
