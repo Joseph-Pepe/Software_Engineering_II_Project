@@ -31,7 +31,7 @@ CREATE TABLE courses(
 
 -- Step 3: Populate with three users. 
 INSERT INTO accounts (account_id, email_address, password, first_name, last_name,  account_type) VALUES 
-(1, 'jj@montclair.edu', 'cretas', 'John', 'Johnson', 'instructor'), 
+(1, 'jj@montclair.edu', '9788b833f5e94013b7e83a51a4792ea322020945', 'John', 'Johnson', 'instructor'), 
 (2, 'kk@montclair.edu', '7c6b25ee4af6db0472e5c338206a5cbae911c08b', 'Karen', 'King',  'student'), 
 (3, 'sd@montclair.edu', '8b0c689ddba0d0ebc7ab0a320635f35c0f1ae23f', 'Siperus', 'Dare', 'student'); 
 (4, 'bill@montclair.edu', 'ced6caf3d89c2a7ec8795de512ecb68fab24268d', 'Bill', 'Bob', 'student'); 
