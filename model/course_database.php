@@ -1,14 +1,14 @@
 <?php
-function add_course($class_name, $instructor, $term, $day, $start_end_time, $section) {
+function add_course($course_name, $instructor, $term, $day, $start_end_time, $section) {
     global $database;
-    $query = 'INSERT INTO courses (instructor, term, day, class_name, start_end_time, section)
-              VALUES (:instructor, :term, :day, :class_name, :start_end_time, :section)';
+    $query = 'INSERT INTO courses (instructor, term, day, course_name, start_end_time, section)
+              VALUES (:instructor, :term, :day, :course_name, :start_end_time, :section)';
     try {
         $statement = $database->prepare($query);
         $statement->bindValue(':instructor', instructor);
         $statement->bindValue(':term', $term);
         $statement->bindValue(':day', $day);
-        $statement->bindValue(':class_name', $class_name);
+        $statement->bindValue(':course_name', $course_name);
         $statement->bindValue(':start_end_time', $start_time);
         $statement->bindValue(':section', $section);
         $statement->execute();
@@ -34,12 +34,12 @@ function get_all_courses($instructor) {
     return $courses;
 }
 
-function get_course($course_id) {
+function get_course($course_number) {
     global $database;
-    $query = 'SELECT * FROM courses WHERE course_id = :course_id';
+    $query = 'SELECT * FROM courses WHERE course_number = :course_number';
     try {
         $statement = $database->prepare($query);
-        $statement->bindValue(':course_id', $course_id);
+        $statement->bindValue(':course_number', $course_number);
         $statement->execute();
         $result = $statement->fetch();
         $statement->closeCursor();
