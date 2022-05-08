@@ -11,6 +11,7 @@
     <main>
        <form action = "index.php" method = "post" id = "add_course_form" class = "aligned">
 	  <input type="hidden" name="action" value="create_course">
+	  <!-- <input type="hidden" name="course_number" value="<?php echo $course['course_number']; ?>"> -->
 	       
           <label>Class Name:</label>
           <select name = "course_name">
