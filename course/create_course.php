@@ -4,11 +4,15 @@
  <head>
      <meta charset = "utf-8">
      <title>Create Class</title>
-     <link rel = "stylesheet" type = "text/css" href = ""/>
+     <link rel = "stylesheet" type = "text/css" href = "Cstyles/home_page_styles.css"/>
+     <link rel = "stylesheet" type = "text/css" href = "Cstyles/side_bar_styles.css"/>
  </head>
 
- <body>
-    <main>
+ <body id="flexParent">
+    <div id="flexLeft">
+       <?php include 'view/side_bar.php'; ?>
+    </div>
+    <div id="flexRight">
        <form action = "index.php" method = "post" id = "add_course_form" class = "aligned">
 	  <input type="hidden" name="action" value="create_course">
 	  <!-- <input type="hidden" name="course_number" value="<?php echo $course['course_number']; ?>"> -->
@@ -70,6 +74,6 @@
           <input type="submit" value="Create Course">
 	  <input type = "reset" value = "Clear"/>
        </form>
-    </main>
+    </div>
  </body>	
 </html>
