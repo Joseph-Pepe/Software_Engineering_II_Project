@@ -48,8 +48,8 @@ switch ($action) {
             $error = 'Invalid product data. Check all fields and try again.';
             include('../../errors/error.php');
         } else {
-            $product_id = add_product($category_id, $code, $name, $description, $price, $discount_percent);
-            include('product_view.php');
+            $course_id = add_course($class_name, $term, $days, $start_end_time, $section);
+            include('course_view.php');
         }
         break;
 }
