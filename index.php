@@ -132,7 +132,7 @@ switch($action){
             $course_number = filter_input(INPUT_POST, 'course_number', FILTER_VALIDATE_INT);
         }
         $course = get_course($course_number);
-        include('course/course_add.php');
+        include('course/create_course.php');
         break;
     case 'add_course':
         $course_number = filter_input(INPUT_GET, 'course_number', FILTER_VALIDATE_INT);
