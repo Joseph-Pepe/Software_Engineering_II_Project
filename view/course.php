@@ -22,23 +22,18 @@
 </div>
 -->
 <div id="right_column">
-    <p><b>Class Name:</b>
-        <?php echo '$' . $lass_name; ?></p>
-    <p><b>Discount:</b>
-        <?php echo $discount_percent_f . '%'; ?></p>
-    <p><b>Your Price:</b>
-        <?php echo '$' . $unit_price_f; ?>
-        (You save
-        <?php echo '$' . $discount_amount_f; ?>)</p>
-    <form action="<?php echo $app_path . 'cart' ?>" method="get" 
-          id="add_to_cart_form">
-        <input type="hidden" name="action" value="add" />
-        <input type="hidden" name="product_id"
-               value="<?php echo $product_id; ?>" />
-        <b>Quantity:</b>&nbsp;
-        <input type="text" name="quantity" value="1" size="2" />
-        <input type="submit" value="Add to Cart" />
-    </form>
-    <h2>Description</h2>
-    <?php echo $description_with_tags; ?>
+    <p><b>Course Name:</b>
+        <?php echo $class_name; ?></p>
+    <p><b>Course Number:</b>
+        <?php echo $class_name; ?></p>
+    <p><b>Instructor:</b>
+        <?php echo $instructor; ?></p>
+    <p><b>Term:</b>
+        <?php echo $term; ?></p>
+    <p><b>Days:</b>
+        <?php echo $days; ?></p>
+    <p><b>Start & End Time:</b>
+        <?php echo $start_end_time; ?></p>
+    <p><b>Section:</b>
+        <?php echo $section; ?></p>
 </div>
