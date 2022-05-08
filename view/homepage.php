@@ -20,7 +20,7 @@ require_once('model/course_database.php');
       <div id="flexRight">
          <h2>Welcome <?php echo $account_type . ': ' . $user_name; ?></h2>
 	 <hr/>
-	 <h1 class="top">My Courses</h1>
+	 <h2 class="top">My Courses</h2>
          <p>To view a course, select it (press it).</p>
          
          <?php if (count($courses) == 0) : ?>
@@ -32,7 +32,7 @@ require_once('model/course_database.php');
                </p>
            <?php endforeach; ?>
         <?php endif; ?>
-	<h1>Add Course (New Class)</h1>
+	<h2>Add Course (New Class)</h2>
 	<p>To add a course, select the "Add Course" link.</p>
         <p><a href="index.php?action=show_add_form">Add Course</a></p>
       </div>
