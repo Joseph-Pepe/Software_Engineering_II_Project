@@ -45,7 +45,7 @@ switch ($action) {
         
         // Validate inputs
         if (empty($class_name) || empty($term) || empty($section) || empty($start_end_time) || $days === NULL) {
-            $error = 'Invalid product data. Check all fields and try again.';
+            $error = 'Invalid course data. Check all fields and try again.';
             include('../../errors/error.php');
         } else {
             $course_id = add_course($class_name, $term, $days, $start_end_time, $section);
