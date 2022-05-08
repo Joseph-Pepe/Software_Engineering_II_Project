@@ -1,3 +1,15 @@
+<?php
+require_once('utility/main.php');
+require_once('model/course_database.php');
+
+// Get an array of courses from the database
+$courses = array();
+foreach ($course_numbers as $course_number) {
+    $course = get_product($course_number);
+    $courses[] = $course;
+}
+?>
+
 <!DOCTYPE html>
 <html>
    <head>
