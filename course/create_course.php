@@ -73,6 +73,8 @@
 	  <input type = "checkbox" name = "days[]" value = "wed">Wednesday<br>
 	  <input type = "checkbox" name = "days[]" value = "thur">Thursday<br>
 	  <input type = "checkbox" name = "days[]" value = "fri">Friday
+	       
+	  <br>
 	   
 	  <label>&nbsp;</label>
           <input type="submit" value="Create Course">
