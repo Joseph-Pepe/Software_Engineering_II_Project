@@ -6,7 +6,7 @@
     $days = $course['days'];
     $class_name = $course['class_name'];
     $start_end_time = $course['start_end_time'];
-    $section = $course['end_date'];
+    $section = $course['section'];
 
     // Get image URL and alternate text
     $image_filename = $product_code . '_m.png';
