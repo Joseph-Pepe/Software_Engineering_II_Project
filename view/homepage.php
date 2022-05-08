@@ -33,7 +33,7 @@ require_once('model/course_database.php');
            <?php endforeach; ?>
         <?php endif; ?>
 	<h1>Add Course (New Class)</h1>
-	<p>To add a product, select the "Add Course" link.</p>
+	<p>To add a course, select the "Add Course" link.</p>
         <p><a href="index.php?action=show_add_form">Add Course</a></p>
       </div>
    </body>
