@@ -153,7 +153,7 @@ switch($action){
             foreach($days as $key => $value){
                $course_days = $course_days . ' ' . $value;
             }
-            $course_days = $course_days . ']';
+            $course_days = $course_days . ' ]';
             $course_number = add_course($course_name, $user_name, $term, $course_days, $start_end_time, $section);
             $course = get_course($course_number);
             include('course/course_view.php');
