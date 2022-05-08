@@ -10,7 +10,7 @@
     <?php else : ?>
         <?php foreach ($courses as $course) : ?>
         <p>
-            <a href="?action=view_course&amp;course_id=<?php echo $course['course_id']; ?>"> <?php echo htmlspecialchars($course['course_name']); ?></a>
+            <a href="?action=view_course&amp;course_number=<?php echo $course['course_number']; ?>"> <?php echo htmlspecialchars($course['course_name']); ?></a>
         </p>
         <?php endforeach; ?>
     <?php endif; ?>
