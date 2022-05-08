@@ -40,10 +40,7 @@ switch ($action) {
         $class_name = filter_input(INPUT_POST, 'class_name');
         $term = filter_input(INPUT_POST, 'term');
         $days = filter_input(INPUT_POST, 'days', FILTER_SANITIZE_SPECIAL_CHARS, FILTER_REQUIRE_ARRAY);
-        $start_time = filter_input(INPUT_POST, 'class_name');
-        $end_time = = filter_input(INPUT_POST, 'class_name');
-        $start_date = filter_input(INPUT_POST, 'class_name');
-        $end_date = = filter_input(INPUT_POST, 'class_name');
+        $start_end_time = filter_input(INPUT_POST, 'start_end_time');
         $section = filter_input(INPUT_POST, 'section');
         
         // Validate inputs
