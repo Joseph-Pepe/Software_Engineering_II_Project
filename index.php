@@ -5,6 +5,7 @@ require_once('model/course_database.php');
 require_once('model/fields.php');
 require_once('model/validate.php');
 
+
 // Get the action to perform (e.g., login, homepage)
 $action = filter_input(INPUT_POST, 'action');
 if($action == NULL){
