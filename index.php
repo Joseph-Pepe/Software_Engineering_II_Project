@@ -114,12 +114,17 @@ switch($action){
       }
       redirect('.');
       break;
-   case 'view_homepage':
-      $user_name = $_SESSION['user']['first_name'] . ' ' .
-                         $_SESSION['user']['last_name'];
-      $email = $_SESSION['user']['email_address'];        
+   case 'view_homepage':   
+      $user_name = $_SESSION['user']['first_name'] . ' ' . $_SESSION['user']['last_name'];
+      $email = $_SESSION['user']['email_address'];   
+      $courses = get_all_courses($user_name);
 
       include 'view/homepage.php';
+      break;
+   case 'view_course':
+      $course_number = filter_input(INPUT_GET, 'course_number', FILTER_VALIDATE_INT);
+      $course = get_course($course_number);
+      include('course/course_view.php');
       break;
    case 'logout':
       unset($_SESSION['user']);
