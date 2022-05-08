@@ -22,7 +22,7 @@ require_once('model/course_database.php');
 	 <hr/>
 	 <h1 class="top">List Courses</h1>
          <p>To view a course, select it (press it).</p>
-         <p>To add a product, select the "Add Product" link.</p>
+         
          <?php if (count($courses) == 0) : ?>
             <p>No courses currently exist.</p>
          <?php else : ?>
@@ -33,6 +33,7 @@ require_once('model/course_database.php');
            <?php endforeach; ?>
         <?php endif; ?>
 	<h1>Add Course (New Class)</h1>
+	<p>To add a product, select the "Add Course" link.</p>
         <p><a href="index.php?action=show_add_form">Add Course</a></p>
       </div>
    </body>
