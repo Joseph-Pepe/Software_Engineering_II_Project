@@ -36,7 +36,7 @@ foreach ($course_numbers as $course_number) {
            $days = $course['days'];
            $start_end_time = $course['start_end_time'];
            $section = $course['section'];
-      ?>
+        ?>
       </div>
    </body>
 </html>
