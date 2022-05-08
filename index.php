@@ -14,7 +14,6 @@ if($action == NULL){
       if (isset($_SESSION['user'])) {
          $action = 'view_homepage';
       }
-
    }
 }
 
