@@ -7,7 +7,7 @@
      <link rel = "stylesheet" type = "text/css" href = "Cstyles/side_bar_styles.css"/>
  </head>
 	
-
+ <!-- -->
  <body id="flexParent">
     <div id="flexLeft">
        <?php include 'view/side_bar.php'; ?>
