@@ -10,7 +10,7 @@ $app_path = '/' . $dirs[1] . '/' . $dirs[2] . '/';
 // Set the include path
 set_include_path($doc_root . $app_path);
 
-require_once('utility/tags.php');
+require_once('tags.php');
 require_once('model/database_connection.php');
 
 // Define some common functions
