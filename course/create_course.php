@@ -1,4 +1,4 @@
-<?php include '../../view/side_bar.php'; ?>
+<?php include 'view/side_bar.php'; ?>
 <!DOCTYPE html>
 <html>
  <head>
