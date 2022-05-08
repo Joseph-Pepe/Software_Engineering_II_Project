@@ -13,6 +13,8 @@
        <?php include 'view/side_bar.php'; ?>
     </div>
     <div id="flexRight">
+       <h2>Create Course (New Class)</h2>
+	    
        <form action = "index.php" method = "post" id = "add_course_form" class = "aligned">
 	  <input type="hidden" name="action" value="create_course">
 	  <!-- <input type="hidden" name="course_number" value="<?php echo $course['course_number']; ?>"> -->
