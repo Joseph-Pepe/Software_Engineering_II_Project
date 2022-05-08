@@ -26,10 +26,10 @@
 
           <label>Term:</label>
           <select name = "term">
-	     <option value = "fall">Fall</option>
-	     <option value = "spring">Spring</option>
-             <option value = "winterim">Winterim</option>
-             <option value = "summer">Summer</option>
+	     <option value = "fall (08/01/22 - 12/10/22)">Fall (08/01/22 - 12/10/22)</option>
+	     <option value = "spring (02/10/22 - 05/10/22)">Spring (02/01/22 - 05/10/22)</option>
+             <option value = "winterim (01/01/22 - 02/01/22)">Winterim (01/01/22 - 02/01/22)</option>
+             <option value = "summer (06/10/22 - 08/23/22)">Summer (06/10/22 - 08/23/22)</option>
 	  </select>
 	       
 	  <br>
