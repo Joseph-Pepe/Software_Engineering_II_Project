@@ -20,6 +20,18 @@ require_once('model/course_database.php');
       <div id="flexRight">
          <h2>Welcome <?php echo $user_name; ?></h2>
 	 <hr/>
+	 <h1 class="top">List Courses</h1>
+         <p>To view a course, select it (press it).</p>
+         <p>To add a product, select the "Add Product" link.</p>
+         <?php if (count($courses) == 0) : ?>
+            <p>No courses currently exist.</p>
+         <?php else : ?>
+            <?php foreach ($courses as $course) : ?>
+               <p>
+                  <a href="?action=view_course&amp;course_number=<?php echo $course['course_number']; ?>"> <?php echo htmlspecialchars($course['course_name']); ?></a>
+               </p>
+           <?php endforeach; ?>
+        <?php endif; ?>
       </div>
    </body>
 </html>
