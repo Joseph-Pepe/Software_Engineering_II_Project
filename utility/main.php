@@ -11,7 +11,7 @@ $app_path = '/' . $dirs[1] . '/' . $dirs[2] . '/';
 set_include_path($doc_root . $app_path);
 
 require_once('tags.php');
-require_once('model/database_connection.php');
+require_once('../model/database_connection.php');
 
 // Define some common functions
 function display_db_error($error_message) {
