@@ -66,6 +66,8 @@
 	  <br>
 	       
 	  <label>Days:</label>
+	  <br> 
+	       
 	  <input type = "checkbox" name = "days[]" value = "mon">Monday<br>
           <input type = "checkbox" name = "days[]" value = "tue">Tuesday<br>
 	  <input type = "checkbox" name = "days[]" value = "wed">Wednesday<br>
