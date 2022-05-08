@@ -9,7 +9,7 @@ function add_course($course_name, $instructor, $term, $days, $start_end_time, $s
         $statement->bindValue(':term', $term);
         $statement->bindValue(':days', $days);
         $statement->bindValue(':course_name', $course_name);
-        $statement->bindValue(':start_end_time', $start_time);
+        $statement->bindValue(':start_end_time', $start_end_time);
         $statement->bindValue(':section', $section);
         $statement->execute();
         $statement->closeCursor();
