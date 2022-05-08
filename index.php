@@ -141,7 +141,7 @@ switch($action){
         $user_name = $_SESSION['user']['first_name'] . ' ' . $_SESSION['user']['last_name'];
         $term = filter_input(INPUT_POST, 'term');
         $days = filter_input(INPUT_POST, 'days', FILTER_SANITIZE_SPECIAL_CHARS, FILTER_REQUIRE_ARRAY);
-        $course_days = '[';
+        $course_days = '';
         $start_end_time = filter_input(INPUT_POST, 'start_end_time');
         $section = filter_input(INPUT_POST, 'section');
         
@@ -151,9 +151,8 @@ switch($action){
             include('errors/error.php');
         } else {
             foreach($days as $key => $value){
-               $course_days = $course_days . ' ' . $value;
+               $course_days = $course_days . ' [ ' . $value . ' ] ';
             }
-            $course_days = $course_days . ' ]';
             $course_number = add_course($course_name, $user_name, $term, $course_days, $start_end_time, $section);
             $course = get_course($course_number);
             include('course/course_view.php');
