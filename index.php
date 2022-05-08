@@ -3,7 +3,6 @@ require_once('utility/main.php');
 require_once('model/user_database.php');
 require_once('model/fields.php');
 require_once('model/validate.php');
-// require_once('utility/secure_connection.php');
 
 // Get the action to perform (e.g., login, homepage)
 $action = filter_input(INPUT_POST, 'action');
