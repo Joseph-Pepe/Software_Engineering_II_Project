@@ -23,6 +23,18 @@
 	  </select>
 	       
 	  <br>
+	       
+	  <label>Section:</label>
+          <select name = "section">
+             <option value = "00">00</option>
+	     <option value = "01">01</option>
+	     <option value = "02">02</option>
+	     <option value = "03">03</option>
+             <option value = "04">04</option>
+             <option value = "05">05</option>
+	  </select>
+	       
+	  <br>
 
           <label>Term:</label>
           <select name = "term">
