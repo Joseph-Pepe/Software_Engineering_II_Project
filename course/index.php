@@ -49,6 +49,7 @@ switch ($action) {
             include('../../errors/error.php');
         } else {
             $course_id = add_course($class_name, $term, $days, $start_end_time, $section);
+            $course = get_course($course_id);
             include('course_view.php');
         }
         break;
