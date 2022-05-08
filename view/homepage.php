@@ -20,7 +20,7 @@ require_once('model/course_database.php');
       <div id="flexRight">
          <h2>Welcome <?php echo $user_name; ?></h2>
 	 <hr/>
-	 <h1 class="top">List Courses</h1>
+	 <h1 class="top">My Courses</h1>
          <p>To view a course, select it (press it).</p>
          
          <?php if (count($courses) == 0) : ?>
