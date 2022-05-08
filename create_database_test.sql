@@ -31,9 +31,11 @@ CREATE TABLE courses(
 
 -- Step 3: Populate with three users. 
 INSERT INTO accounts (account_id, email_address, password, first_name, last_name,  account_type) VALUES 
-(1, 'jj@montclair.edu', 'cretas', 'John', 'Johnson', 'Teacher'), 
-(2, 'kk@montclair.edu', 'sesame', 'Karen', 'King',  'Student'), 
-(3, 'sd@montclair.edu', 'guard', 'superman', 'Superman', 'Student'); 
+(1, 'jj@montclair.edu', 'cretas', 'John', 'Johnson', 'instructor'), 
+(2, 'kk@montclair.edu', '7c6b25ee4af6db0472e5c338206a5cbae911c08b', 'Karen', 'King',  'student'), 
+(3, 'sd@montclair.edu', '8b0c689ddba0d0ebc7ab0a320635f35c0f1ae23f', 'Siperus', 'Dare', 'student'); 
+(4, 'bill@montclair.edu', 'ced6caf3d89c2a7ec8795de512ecb68fab24268d', 'Bill', 'Bob', 'student'); 
+(5, 'johnpe@montclair.edu', '11051bdbdd7cbaec855d92db2ded7cfc940b99c6', 'John', 'Pe', 'instructor'); 
 
 
 -- Step 4: Create a database server user named "account_username" that can query database (main purpose is so it can be used in the creation of a PDO object).
