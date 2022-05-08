@@ -149,7 +149,7 @@ switch($action){
         } else {
             $course_id = add_course($course_name, $term, $days, $start_end_time, $section);
             $course = get_course($course_number);
-            include('course_view.php');
+            include('course/course_view.php');
         }
         break;
    case 'logout':
