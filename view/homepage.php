@@ -8,6 +8,16 @@ foreach ($course_numbers as $course_number) {
     $course = get_course($course_number);
     $courses[] = $course;
 }
+
+foreach ($courses as $course) {
+    $course_name = $course['course_name'];
+    $course_number = $course['course_number'];
+    $instructor = $course['instructor']; 
+    $term = $course['term'];
+    $days = $course['days'];
+    $start_end_time = $course['start_end_time'];
+    $section = $course['section'];
+}
 ?>
 
 <!DOCTYPE html>
@@ -27,16 +37,6 @@ foreach ($course_numbers as $course_number) {
       <div id="flexRight">
          <h2>Welcome <?php echo $user_name; ?></h2>
 	 <hr/>
-	      
-	 <?php foreach ($courses as $course) :
-           $course_name = $course['course_name'];
-           $course_number = $course['course_number'];
-           $instructor = $course['instructor'];  
-	   $term = $course['term'];
-           $days = $course['days'];
-           $start_end_time = $course['start_end_time'];
-           $section = $course['section'];
-        ?>
       </div>
    </body>
 </html>
