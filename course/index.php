@@ -44,8 +44,7 @@ switch ($action) {
         $section = filter_input(INPUT_POST, 'section');
         
         // Validate inputs
-        if (empty($code) || empty($name) || empty($description) ||
-            $price === false || $discount_percent === false) {
+        if (empty($class_name) || empty($term) || empty($start_end_time) || $days === NULL) {
             $error = 'Invalid product data. Check all fields and try again.';
             include('../../errors/error.php');
         } else {
