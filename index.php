@@ -116,6 +116,7 @@ switch($action){
    case 'view_homepage':   
       $user_name = $_SESSION['user']['first_name'] . ' ' . $_SESSION['user']['last_name'];
       $email = $_SESSION['user']['email_address'];   
+      $account_type = $_SESSION['user']['account_type'];
       $courses = get_all_courses($user_name);
 
       include 'view/homepage.php';
