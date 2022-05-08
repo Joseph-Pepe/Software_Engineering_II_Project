@@ -150,8 +150,8 @@ switch($action){
             $error_message = 'Invalid course data. Check all fields and try again.';
             include('errors/error.php');
         } else {
-            foreach($days as $day){
-               $course_days = $course_days . ',' .$day;
+            foreach($days as $key => $value){
+               $course_days = $course_days . ' ' . $value;
             }
             $course_days = $course_days . ']';
             $course_number = add_course($course_name, $user_name, $term, $course_days, $start_end_time, $section);
