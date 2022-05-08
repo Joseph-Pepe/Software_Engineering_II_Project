@@ -1,13 +1,13 @@
 <?php
-function add_course($course_name, $instructor, $term, $day, $start_end_time, $section) {
+function add_course($course_name, $instructor, $term, $days, $start_end_time, $section) {
     global $database;
-    $query = 'INSERT INTO courses (instructor, term, day, course_name, start_end_time, section)
-              VALUES (:instructor, :term, :day, :course_name, :start_end_time, :section)';
+    $query = 'INSERT INTO courses (instructor, term, days, course_name, start_end_time, section)
+              VALUES (:instructor, :term, :days, :course_name, :start_end_time, :section)';
     try {
         $statement = $database->prepare($query);
-        $statement->bindValue(':instructor', instructor);
+        $statement->bindValue(':instructor', $instructor);
         $statement->bindValue(':term', $term);
-        $statement->bindValue(':day', $day);
+        $statement->bindValue(':days', $days);
         $statement->bindValue(':course_name', $course_name);
         $statement->bindValue(':start_end_time', $start_time);
         $statement->bindValue(':section', $section);
