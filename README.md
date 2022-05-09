@@ -77,6 +77,9 @@ To have an application run on this server, place it in the `htdocs` folder and p
 
 -----
 
+![Screen Shot 2022-05-09 at 4 38 39 PM](https://user-images.githubusercontent.com/32807576/167495504-af2b6765-b1e1-4a14-938d-3d098e430f6f.png)
+![Screen Shot 2022-05-09 at 4 39 56 PM](https://user-images.githubusercontent.com/32807576/167495508-32e1eed6-68e0-429b-9196-9628c92e1ac6.png)
+
 `Step #1:` In the "PHPMyAdmin page" click the "import" to go to the "import tab".
 
 ![Screen Shot 2022-03-18 at 5 26 14 PM](https://user-images.githubusercontent.com/32807576/159085025-e9475d35-bbad-4505-ac3d-83927a333437.png)
@@ -90,9 +93,6 @@ To have an application run on this server, place it in the `htdocs` folder and p
 ![Screen Shot 2022-03-18 at 5 26 14 PM](https://user-images.githubusercontent.com/32807576/159086073-b72872e1-23ec-4a78-b4e6-cb413d365db3.png)
 
 ![Screen Shot 2022-03-18 at 5 52 27 PM](https://user-images.githubusercontent.com/32807576/159088552-aba64fb0-920d-4d78-881c-4c64eaf80f4c.png)
-
-![Screen Shot 2022-05-09 at 4 38 39 PM](https://user-images.githubusercontent.com/32807576/167495504-af2b6765-b1e1-4a14-938d-3d098e430f6f.png)
-![Screen Shot 2022-05-09 at 4 39 56 PM](https://user-images.githubusercontent.com/32807576/167495508-32e1eed6-68e0-429b-9196-9628c92e1ac6.png)
 
 -----
 
