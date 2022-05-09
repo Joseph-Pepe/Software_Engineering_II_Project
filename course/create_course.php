@@ -1,6 +1,6 @@
 <?php
    // Set default value of variables for initial page load.
-   if(!isset($error_message)) {$error_message = '';}
+   if(!isset($course_error_message)) {$course_error_message = '';}
 ?>
 
 <!DOCTYPE html>
@@ -81,8 +81,8 @@
 	       
 	  <br>
 	       
-	  <?php if(!empty($error_message)){ ?>
-	     <p class = "error"> <?php echo htmlspecialchars($error_message); ?></p>
+	  <?php if(!empty($course_error_message)){ ?>
+	     <p class = "error"> <?php echo htmlspecialchars($course_error_message); ?></p>
 	  <?php } ?>
 	       
 	  <br>
