@@ -26,7 +26,7 @@ function add_course($course_name, $instructor, $term, $days, $start_end_time, $s
 function is_valid_course_add($instructor, $course_name, $term, $days, $start_end_time, $section) {
     // Course Data
     global $database;
-    $course_query = 'SELECT * FROM courses 
+    $course_query = 'SELECT course_number FROM courses 
                      WHERE instructor = :instructor AND term = :term AND days = :days AND course_name = :course_name 
                      AND start_end_time = :start_end_time AND section = :section';
     $statement = $database->prepare($course_query);
