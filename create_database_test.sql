@@ -25,7 +25,7 @@ CREATE TABLE courses(
    PRIMARY KEY (course_number) 
 );
 
-CREATE TABLE class_roster( 
+CREATE TABLE course_roster( 
    roster_number                 INT            NOT NULL   AUTO_INCREMENT,
    course_number                 INT            NOT NULL,
    student_full_name             VARCHAR(50)    NOT NULL, 
