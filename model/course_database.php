@@ -23,6 +23,16 @@ function add_course($course_name, $instructor, $term, $days, $start_end_time, $s
     }
 }
 
+function delete_student($course_number, $roster_number) {
+    global $database;
+    $query = 'DELETE FROM course_roster WHERE course_number = :course_number AND roster_number = :roster_number';
+    $statement = $database->prepare($query);
+    $statement->bindValue(':course_number', $course_number);
+    $statement->bindValue(':roster_number', $roster_number);
+    $statement->execute();
+    $statement->closeCursor();
+}
+
 function is_existing_course($course_name, $instructor, $term, $days, $start_end_time, $section) {
     // Course Data
     global $database;
