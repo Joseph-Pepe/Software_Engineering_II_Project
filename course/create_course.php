@@ -20,6 +20,8 @@
     <div id="flexRight">
        <h2>Create Course (New Class)</h2>
 	    
+       <hr/>
+	    
        <form action = "index.php" method = "post" id = "add_course_form" class = "aligned">
 	  <input type="hidden" name="action" value="create_course">
 	       
