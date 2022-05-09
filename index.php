@@ -152,7 +152,7 @@ switch($action){
             foreach($days as $key => $value){
                $course_days = $course_days . ' [ ' . $value . ' ] ';
             }
-            if (is_existing_course($course_name, $instructor, $term, $course_days, $start_end_time, $section)) {
+            if (is_existing_course($course_name, $user_name, $term, $course_days, $start_end_time, $section)) {
                $course_error_message = 'Course already exists. Check all fields and try again.';
                include('course/create_course.php');
             }else {
