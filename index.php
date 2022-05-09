@@ -148,7 +148,7 @@ switch($action){
         if (empty($course_name) || empty($term) || empty($section) || empty($start_end_time) || $days === NULL) {
             $course_error_message = 'Invalid course data. Check all fields and try again.';
             include('course/create_course.php');
-        } else if (is_valid_user_login()) {
+        } else if (is_valid_course_add($user_name, $course_name, $term, $days, $start_end_time, $section)) {
           $password_message = 'Login failed. Invalid email or password.';
           include 'account/account_login_signup.php';
         } 
