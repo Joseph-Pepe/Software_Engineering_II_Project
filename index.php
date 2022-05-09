@@ -161,6 +161,9 @@ switch($action){
             }else {
                $course_number = add_course($course_name, $user_name, $term, $course_days, $start_end_time, $section);
                $course = get_course($course_number);
+               $user_name = $_SESSION['user']['first_name'] . ' ' . $_SESSION['user']['last_name'];
+               $roster_number = filter_input(INPUT_GET, 'roster_number', FILTER_VALIDATE_INT);
+               $roster = get_course_roster($course_number);
                include('course/course_view.php');
             }
         }
