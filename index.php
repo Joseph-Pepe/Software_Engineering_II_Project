@@ -151,7 +151,6 @@ switch($action){
         } else if (is_valid_course_add($user_name, $course_name, $term, $days, $start_end_time, $section)) {
           $password_message = 'Login failed. Invalid email or password.';
           include 'account/account_login_signup.php';
-        } 
         } else {
             foreach($days as $key => $value){
                $course_days = $course_days . ' [ ' . $value . ' ] ';
