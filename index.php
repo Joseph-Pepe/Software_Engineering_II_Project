@@ -127,8 +127,10 @@ switch($action){
       include('course/course_view.php');
       break;
    case 'list_course_roster':
+      $user_name = $_SESSION['user']['first_name'] . ' ' . $_SESSION['user']['last_name'];
       $roster_number = filter_input(INPUT_GET, 'roster_number', FILTER_VALIDATE_INT);
       $course_number = filter_input(INPUT_GET, 'course_number', FILTER_VALIDATE_INT);
+      $roster = get_course_roster($course_number);
       
       break;
    case 'show_add_form':
