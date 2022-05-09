@@ -143,11 +143,10 @@ switch($action){
         $course_days = '';
         $start_end_time = filter_input(INPUT_POST, 'start_end_time');
         $section = filter_input(INPUT_POST, 'section');
-        
+      
         // Validate inputs
         if (empty($course_name) || empty($term) || empty($section) || empty($start_end_time) || $days === NULL) {
-            $error_message = 'Invalid course data. Check all fields and try again.';
-            include('errors/error.php');
+            display_error('Invalid course data. Check all fields and try again.');
         } else {
             foreach($days as $key => $value){
                $course_days = $course_days . ' [ ' . $value . ' ] ';
