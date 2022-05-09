@@ -23,6 +23,25 @@ function add_course($course_name, $instructor, $term, $days, $start_end_time, $s
     }
 }
 
+function is_valid_course_add($instructor, $term, $days, $start_end_time, $section) {
+    global $database;
+    $course_query = 'SELECT course_number FROM courses 
+                    WHERE instructor = :instructor AND term = :term AND days = :days AND course_name = :course_name 
+                    AND start_end_time = :start_end_time AND section = :section';
+    $statement = $database->prepare($course_query);
+    $statement->bindValue(':instructor', $instructor);
+    $statement->bindValue(':term', $term);
+    $statement->bindValue(':days', $days);
+    $statement->bindValue(':course_name', $course_name);
+    $statement->bindValue(':start_end_time', $start_end_time);
+    $statement->bindValue(':section', $section);
+    $statement->execute();
+    $valid = ($statement->rowCount() == 1);
+    $statement->closeCursor();
+    return $valid;
+}
+
+
 function get_all_courses($instructor) {
     global $database;
     $query = 'SELECT * FROM courses WHERE instructor = :instructor';
