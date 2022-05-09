@@ -55,4 +55,3 @@ ON *
 TO canvas@localhost
 IDENTIFIED BY 'software';
 
-
