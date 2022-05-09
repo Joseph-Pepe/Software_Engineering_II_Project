@@ -14,14 +14,6 @@ CREATE TABLE accounts(
    PRIMARY KEY (account_id) 
 );
 
-CREATE TABLE class_roster( 
-   roster_number     INT            NOT NULL   AUTO_INCREMENT,
-   course_number     INT            NOT NULL,
-   instructor        VARCHAR(50)    NOT NULL, 
-   student           VARCHAR(50)    NOT NULL, 
-   PRIMARY KEY (course_number) 
-);
-
 CREATE TABLE courses( 
    course_number     INT            NOT NULL   AUTO_INCREMENT, 
    instructor        VARCHAR(50)    NOT NULL, 
@@ -31,6 +23,15 @@ CREATE TABLE courses(
    start_end_time    VARCHAR(50)    NOT NULL,
    section           VARCHAR(50)    NOT NULL,
    PRIMARY KEY (course_number) 
+);
+
+CREATE TABLE class_roster( 
+   roster_number                 INT            NOT NULL   AUTO_INCREMENT,
+   course_number                 INT            NOT NULL,
+   student_full_name             VARCHAR(50)    NOT NULL, 
+   student_email                 VARCHAR(50)    NOT NULL, 
+   PRIMARY KEY (roster_number),
+   INDEX course_number (course_number)
 );
 
 -- Step 3: Populate with three users. 
