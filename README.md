@@ -117,5 +117,6 @@ The <b>Login Page</b> allows the user to login to an existing account or create 
 
 -----
 
+The <b>Homepage</b> allows the instructor to view their existing courses (courses they are teaching).
 
 
