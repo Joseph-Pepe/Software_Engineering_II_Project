@@ -14,6 +14,8 @@
       </div>
       <div id="flexRight">
          <h2>View Course</h2>
+	 
+	 <hr/>
     
          <!-- display course -->
          <?php include 'view/course.php'; ?>
