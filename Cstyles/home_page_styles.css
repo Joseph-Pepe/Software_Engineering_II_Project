@@ -9,6 +9,7 @@ html {
    margin: auto;
 }
 
+
 #flexLeft {
    display:  inline-block;
    flex-basis: 17%;
