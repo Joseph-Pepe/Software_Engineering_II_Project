@@ -148,16 +148,18 @@ switch($action){
         if (empty($course_name) || empty($term) || empty($section) || empty($start_end_time) || $days === NULL) {
             $course_error_message = 'Invalid course data. Check all fields and try again.';
             include('course/create_course.php');
-        } else if (is_valid_course_add($user_name, $course_name, $term, $days, $start_end_time, $section)) {
-          $password_message = 'Login failed. Invalid email or password.';
-          include 'account/account_login_signup.php';
         } else {
             foreach($days as $key => $value){
                $course_days = $course_days . ' [ ' . $value . ' ] ';
             }
-            $course_number = add_course($course_name, $user_name, $term, $course_days, $start_end_time, $section);
-            $course = get_course($course_number);
-            include('course/course_view.php');
+            if (is_valid_course_add($user_name, $course_name, $term, $course_days, $start_end_time, $section)) {
+               $course_error_message = 'Course already exists. Check all fields and try again.';
+               include('course/create_course.php');
+            }else {
+               $course_number = add_course($course_name, $user_name, $term, $course_days, $start_end_time, $section);
+               $course = get_course($course_number);
+               include('course/course_view.php');
+            }
         }
         break;
    case 'logout':
