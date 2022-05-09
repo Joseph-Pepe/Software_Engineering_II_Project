@@ -19,6 +19,18 @@
     
          <!-- display course -->
          <?php include 'view/course.php'; ?>
+	      
+	 <h2>Roster (Students)</h2>
+         
+         <?php if (count($roster) == 0) : ?>
+            <p>No student currently enrolled.</p>
+         <?php else : ?>
+            <?php foreach ($roster as $student) : ?>
+               <p>
+                  <a href="?action=view_course&amp;course_number=<?php echo $course['course_number']; ?>"> <?php echo htmlspecialchars($course['course_name']); ?></a>
+               </p>
+           <?php endforeach; ?>
+        <?php endif; ?>
       </div>
    </body>
 </html>
