@@ -15,7 +15,11 @@ CREATE TABLE accounts(
 );
 
 CREATE TABLE class_roster( 
-   course_number     INT            NOT NULL
+   roster_number     INT            NOT NULL   AUTO_INCREMENT,
+   course_number     INT            NOT NULL,
+   instructor        VARCHAR(50)    NOT NULL, 
+   student           VARCHAR(50)    NOT NULL, 
+   PRIMARY KEY (course_number) 
 );
 
 CREATE TABLE courses( 
