@@ -70,9 +70,6 @@
 	  <br>
 	       
 	  <label>Days:</label> 
-	  <?php if(!empty($error_message)){ ?>
-		<p class = "error"> <?php echo htmlspecialchars($error_message); ?></p>
-	  <?php } ?>
 
 	  <br> 
 	       
@@ -81,6 +78,12 @@
 	  <input type = "checkbox" name = "days[]" value = "wed">Wednesday<br>
 	  <input type = "checkbox" name = "days[]" value = "thur">Thursday<br>
 	  <input type = "checkbox" name = "days[]" value = "fri">Friday
+	       
+	  <br>
+	       
+	  <?php if(!empty($error_message)){ ?>
+		<p class = "error"> <?php echo htmlspecialchars($error_message); ?></p>
+	  <?php } ?>
 	       
 	  <br>
 	   
