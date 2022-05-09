@@ -43,11 +43,9 @@ INSERT INTO accounts (account_id, email_address, password, first_name, last_name
 (5, 'johnpe@montclair.edu', '11051bdbdd7cbaec855d92db2ded7cfc940b99c6', 'John', 'Pe', 'instructor');
 
 INSERT INTO course_roster (roster_number, course_number, student_full_name, student_email) VALUES 
-(1, 1, 'John Johnson', 'jj@montclair.edu'), 
-(2, 1, 'Karen King', 'kk@montclair.edu'), 
-(3, 1, 'Siperus Dare', 'sd@montclair.edu'),
-(4, 2, 'Bill Bob', 'bill@montclair.edu'),
-(5, 2, 'John Pe', 'johnpe@montclair.edu');
+(1, 1, 'Karen King', 'kk@montclair.edu'), 
+(2, 1, 'Siperus Dare', 'sd@montclair.edu'),
+(3, 2, 'Bill Bob', 'bill@montclair.edu');
 
 -- Step 4: Create a database server user named "account_username" that can query database (main purpose is so it can be used in the creation of a PDO object).
 -- Creates a user and grants them full privileges. 
