@@ -117,6 +117,8 @@ The <b>Login Page</b> allows the user to login to an existing account or create 
 
 -----
 
-The <b>Homepage</b> allows the instructor to view their existing courses (courses they are teaching).
+The <b>Homepage</b> allows the instructor to view their existing courses (courses they teach).
+
+![Screen Shot 2022-05-09 at 4 22 21 PM](https://user-images.githubusercontent.com/32807576/167492279-3b58a174-201a-467f-b779-451e5534b03b.png)
 
 
