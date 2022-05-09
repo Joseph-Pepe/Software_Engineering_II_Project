@@ -147,7 +147,7 @@ switch($action){
         // Validate inputs
         if (empty($course_name) || empty($term) || empty($section) || empty($start_end_time) || $days === NULL) {
             $course_error_message = 'Invalid course data. Check all fields and try again.';
-            include('create_course.php');
+            include('course/create_course.php');
         } else {
             foreach($days as $key => $value){
                $course_days = $course_days . ' [ ' . $value . ' ] ';
