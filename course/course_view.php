@@ -26,7 +26,7 @@
             <p>No student currently enrolled.</p>
          <?php else : ?>
             <?php foreach ($roster as $student) : ?>
-               <p><?php echo htmlspecialchars($student['student_full_name']); ?></p>
+               <p><?php echo htmlspecialchars($student['student_full_name'] . ' (' . htmlspecialchars($student['student_email'] .' )'); ?></p>
            <?php endforeach; ?>
         <?php endif; ?>
       </div>
