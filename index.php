@@ -129,6 +129,17 @@ switch($action){
       $roster = get_course_roster($course_number);
       include('course/course_view.php');
       break;
+   case 'view_delete_confirm':
+        $roster_number = filter_input(INPUT_POST, 'roster_number', FILTER_VALIDATE_INT);
+        $course_number = filter_input(INPUT_POST, 'course_number', FILTER_VALIDATE_INT);
+        include 'student_delete.php';
+        break;
+    case 'delete':
+        $course_number = filter_input(INPUT_POST, 'course_number', FILTER_VALIDATE_INT);
+        $roster_number = filter_input(INPUT_POST, 'roster_number', FILTER_VALIDATE_INT);
+        delete_admin($course_number, $roster_number);
+        redirect($app_path);
+        break;
    case 'show_add_form':
         $course_number = filter_input(INPUT_GET, 'course_number', FILTER_VALIDATE_INT);
         if ($course_number === null) {
