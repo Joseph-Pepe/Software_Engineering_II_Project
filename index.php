@@ -137,7 +137,7 @@ switch($action){
     case 'delete':
         $course_number = filter_input(INPUT_POST, 'course_number', FILTER_VALIDATE_INT);
         $roster_number = filter_input(INPUT_POST, 'roster_number', FILTER_VALIDATE_INT);
-        delete_admin($course_number, $roster_number);
+        delete_student($course_number, $roster_number);
         redirect($app_path);
         break;
    case 'show_add_form':
