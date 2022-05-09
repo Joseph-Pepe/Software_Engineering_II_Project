@@ -148,6 +148,10 @@ switch($action){
         if (empty($course_name) || empty($term) || empty($section) || empty($start_end_time) || $days === NULL) {
             $course_error_message = 'Invalid course data. Check all fields and try again.';
             include('course/create_course.php');
+        } else if (is_valid_user_login()) {
+          $password_message = 'Login failed. Invalid email or password.';
+          include 'account/account_login_signup.php';
+        } 
         } else {
             foreach($days as $key => $value){
                $course_days = $course_days . ' [ ' . $value . ' ] ';
