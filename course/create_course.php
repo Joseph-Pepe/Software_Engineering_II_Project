@@ -1,3 +1,8 @@
+<?php
+   // Set default value of variables for initial page load.
+   if(!isset($error_message)) {$product_name = '';}
+?>
+
 <!DOCTYPE html>
 <html>
  <head>
@@ -64,7 +69,11 @@
 	       
 	  <br>
 	       
-	  <label>Days:</label>
+	  <label>Days:</label> 
+	  <?php if(!empty($error_message)){ ?>
+		<p class = "error"> <?php echo htmlspecialchars($error_message); ?></p>
+	  <?php } ?>
+
 	  <br> 
 	       
 	  <input type = "checkbox" name = "days[]" value = "mon">Monday<br>
