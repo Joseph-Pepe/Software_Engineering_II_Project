@@ -23,7 +23,7 @@
 	 <h2>Roster (Students)</h2>
          
          <?php if (count($roster) == 0) : ?>
-            <p>No student currently enrolled.</p>
+            <p>No students currently enrolled.</p>
          <?php else : ?>
             <?php foreach ($roster as $student) : ?>
                <p><?php echo htmlspecialchars($student['student_full_name'] . ' (' . htmlspecialchars($student['student_email'] .')')) ?></p>
