@@ -126,6 +126,9 @@ switch($action){
       $course = get_course($course_number);
       include('course/course_view.php');
       break;
+   case 'list_course_roster':
+        $roster_number = filter_input(INPUT_GET, 'roster_number', FILTER_VALIDATE_INT);
+        $course_number = filter_input(INPUT_GET, 'course_number', FILTER_VALIDATE_INT);
    case 'show_add_form':
         $course_number = filter_input(INPUT_GET, 'course_number', FILTER_VALIDATE_INT);
         if ($course_number === null) {
