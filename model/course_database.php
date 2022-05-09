@@ -23,7 +23,7 @@ function add_course($course_name, $instructor, $term, $days, $start_end_time, $s
     }
 }
 
-function is_valid_course_add($instructor, $term, $days, $start_end_time, $section) {
+function is_valid_course_add($instructor, $term, $course_name, $days, $start_end_time, $section) {
     // Course Data
     global $database;
     $course_query = 'SELECT course_number FROM courses 
