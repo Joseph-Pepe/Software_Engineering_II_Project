@@ -21,7 +21,7 @@ require_once('model/course_database.php');
          <h2>Welcome <?php echo $account_type . ': ' . $user_name; ?></h2>
 	 <hr/>
 	 <h2 class="top">My Courses</h2>
-         <p>To view a course, select it (press it).</p>
+         <p>To view a course, select it (i.e., press it).</p>
          
          <?php if (count($courses) == 0) : ?>
             <p>No courses currently exist.</p>
