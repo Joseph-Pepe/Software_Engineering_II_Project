@@ -1,6 +1,6 @@
 <?php
    // Set default value of variables for initial page load.
-   if(!isset($error_message)) {$product_name = '';}
+   if(!isset($error_message)) {$error_message = '';}
 ?>
 
 <!DOCTYPE html>
