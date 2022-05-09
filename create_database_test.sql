@@ -54,3 +54,4 @@ GRANT SELECT, INSERT, UPDATE, DELETE
 ON *
 TO canvas@localhost
 IDENTIFIED BY 'software';
+
