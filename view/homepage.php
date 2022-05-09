@@ -34,7 +34,7 @@ require_once('model/course_database.php');
         <?php endif; ?>
 	<h2>Add Course (New Class)</h2>
 	<p>To add a course, select the "Add Course" link.</p>
-        <p><a href="index.php?action=show_add_form">Add Course</a></p>
+        <p><a href="index.php?action=show_add_form">Add Course (+)</a></p>
       </div>
    </body>
 </html>
