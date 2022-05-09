@@ -26,9 +26,7 @@
             <p>No student currently enrolled.</p>
          <?php else : ?>
             <?php foreach ($roster as $student) : ?>
-               <p>
-                  <a href="?action=view_course&amp;course_number=<?php echo $course['course_number']; ?>"> <?php echo htmlspecialchars($course['course_name']); ?></a>
-               </p>
+               <p><?php echo htmlspecialchars($student['student_full_name']); ?></p>
            <?php endforeach; ?>
         <?php endif; ?>
       </div>
