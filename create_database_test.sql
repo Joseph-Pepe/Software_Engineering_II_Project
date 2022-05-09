@@ -15,13 +15,7 @@ CREATE TABLE accounts(
 );
 
 CREATE TABLE class_roster( 
-   course_number     INT            NOT NULL,
-   instructor        VARCHAR(50)    NOT NULL,
-   section           VARCHAR(50)    NOT NULL,
-   term              VARCHAR(50)    NOT NULL, 
-   days              VARCHAR(50)    NOT NULL, 
-   course_name       VARCHAR(50)    NOT NULL,
-   students          VARCHAR(500)   NOT NULL,
+   course_number     INT            NOT NULL
 );
 
 CREATE TABLE courses( 
