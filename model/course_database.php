@@ -40,6 +40,16 @@ function is_existing_course($course_name, $instructor, $term, $days, $start_end_
     return $valid;
 }
 
+function get_course_roster($course_number){
+    global $database;
+    $query = 'SELECT * FROM course_roster WHERE course_number = :course_number';
+    $statement = $database->prepare($query);
+    $statement->bindValue(':course_number', $course_number);
+    $statement->execute();
+    $roster = $statement->fetchAll();
+    $statement->closeCursor();
+    return $roster; 
+}
 
 function get_all_courses($instructor) {
     global $database;
