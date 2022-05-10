@@ -127,6 +127,8 @@ switch($action){
       $user_name = $_SESSION['user']['first_name'] . ' ' . $_SESSION['user']['last_name'];
       $roster_number = filter_input(INPUT_GET, 'roster_number', FILTER_VALIDATE_INT);
       $roster = get_course_roster($course_number);
+      $_SESSION['roster_number'] = $roster_number;
+      $_SESSION['course_number'] = $roster_number;
       include('course/course_view.php');
       break;
     case 'add_student_roster':
@@ -137,12 +139,12 @@ switch($action){
       
       // If validation errors, redisplay login page and exit controller
       if ($fields->hasErrors()) {
-          include 'account/account_login_signup.php';
+          include('course/course_view.php');
           break;
       }
       
       // Check email and password in database.
-      if (is_valid_user_login($email, $password)) {
+      if (is_valid_user_email($email)) {
           $_SESSION['user'] = get_user_by_email($email);
       }else {
           $password_message = 'Login failed. Invalid email or password.';
