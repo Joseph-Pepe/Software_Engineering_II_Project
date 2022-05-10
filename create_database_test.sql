@@ -30,8 +30,7 @@ CREATE TABLE course_roster(
    course_number                 INT            NOT NULL,
    student_full_name             VARCHAR(50)    NOT NULL, 
    student_email                 VARCHAR(50)    NOT NULL, 
-   PRIMARY KEY (roster_number),
-   INDEX course_number (course_number)
+   PRIMARY KEY (roster_number)
 );
 
 -- Step 3: Populate with users. 
