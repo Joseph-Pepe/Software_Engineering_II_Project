@@ -40,10 +40,9 @@
 	      
 	<form action = "index.php" method = "post" id = "add_course_form" class = "aligned">
 	  <input type="hidden" name="action" value="add_student_roster">
-	       
+		
           <label>E-Mail:</label>
-          <input type="text" name="email" value="<?php echo htmlspecialchars($email); ?>">
-          <span class="error"><?php echo $email_message; ?></span>
+          <input type="text" name="email" value="<?php echo htmlspecialchars($email); ?>" size="30">
           <?php echo $fields->getField('email')->getHTML(); ?><br>
           
           <br>
