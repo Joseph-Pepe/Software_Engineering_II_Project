@@ -148,6 +148,8 @@ switch($action){
       if (!is_valid_user_email($email)) {
          $roster_error_message = 'Email is invalid.';
          include 'course/add_student_form.php';
+      }else{
+         
       }
       break;
    case 'show_add_form':
