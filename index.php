@@ -148,12 +148,9 @@ switch($action){
       }
       
       // Check email.
-      if (is_valid_user_email($email)) {
-          $_SESSION['user'] = get_user_by_email($email);
-      }else {
-          $password_message = 'Email is invalid.';
-          include 'account/account_login_signup.php';
-          break;
+      if (!is_valid_user_email($email)) {
+          $course_error_message = 'Email is invalid.';
+          include 'course/course_view.php';
       }
       break;
     case 'delete':
