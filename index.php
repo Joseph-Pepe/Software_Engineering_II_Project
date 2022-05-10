@@ -149,6 +149,9 @@ switch($action){
       if (!is_valid_user_email($email)) {
          $roster_error_message = 'Email is invalid.';
          include 'course/add_student_roster.php';
+      }else if(is_student_already_in_roster($course_number, $email)){
+         $roster_error_message = 'Student already in this course roster.';
+         include 'course/add_student_roster.php';
       }else{
          $roster_number = add_student_to_course_roster($course_number, $student['first_name'] . ' ' . $student['last_name'], $email);
          redirect($app_path);
