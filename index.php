@@ -128,14 +128,14 @@ switch($action){
       $roster_number = filter_input(INPUT_GET, 'roster_number', FILTER_VALIDATE_INT);
       $roster = get_course_roster($course_number);
       $_SESSION['roster_number'] = $roster_number;
-      $_SESSION['course_number'] = $roster_number;
+      $_SESSION['course_number'] = $course_number;
       $_SESSION['roster'] = $roster;
       include('course/course_view.php');
       break;
     case 'add_student_roster':
       $email = filter_input(INPUT_POST, 'email');
       $roster_number = $_SESSION['roster_number'];
-      $roster_number = $_SESSION['course_number'];
+      $course_number = $_SESSION['course_number'];
       $roster = $_SESSION['roster']
          
       // Validate user data
