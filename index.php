@@ -129,11 +129,15 @@ switch($action){
       $roster = get_course_roster($course_number);
       $_SESSION['roster_number'] = $roster_number;
       $_SESSION['course_number'] = $roster_number;
+      $_SESSION['roster'] = $roster;
       include('course/course_view.php');
       break;
     case 'add_student_roster':
       $email = filter_input(INPUT_POST, 'email');
-      
+      $roster_number = $_SESSION['roster_number'];
+      $roster_number = $_SESSION['course_number'];
+      $roster = $_SESSION['roster']
+         
       // Validate user data
       $validate->email('email', $email);
       
@@ -143,11 +147,11 @@ switch($action){
           break;
       }
       
-      // Check email and password in database.
+      // Check email.
       if (is_valid_user_email($email)) {
           $_SESSION['user'] = get_user_by_email($email);
       }else {
-          $password_message = 'Login failed. Invalid email or password.';
+          $password_message = 'Email is invalid.';
           include 'account/account_login_signup.php';
           break;
       }
