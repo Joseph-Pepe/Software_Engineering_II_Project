@@ -141,7 +141,7 @@ switch($action){
         $course = get_course($course_number);
         $roster = get_course_roster($course_number);
         delete_student($course_number, $roster_number);
-        redirect($app_path . 'course/course_view');
+        redirect($app_path);
         break;
    case 'show_add_form':
         $course_number = filter_input(INPUT_GET, 'course_number', FILTER_VALIDATE_INT);
