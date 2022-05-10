@@ -46,11 +46,11 @@
           <?php echo $fields->getField('email')->getHTML(); ?><br>
           
           <br>
-	  <!-- 
+	  
 	  <?php if(!empty($course_error_message)){ ?>
 	     <p class = "error"> <?php echo htmlspecialchars($course_error_message); ?></p>
 	  <?php } ?>
-	  -->
+	  
 	  <br>
 	   
 	  <label>&nbsp;</label>
