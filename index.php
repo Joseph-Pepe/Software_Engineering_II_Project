@@ -137,15 +137,6 @@ switch($action){
       $roster_number = $_SESSION['roster_number'];
       $course_number = $_SESSION['course_number'];
       $roster = $_SESSION['roster']
-         
-      // Validate user data
-      $validate->email('email', $email);
-      
-      // If validation errors, redisplay login page and exit controller
-      if ($fields->hasErrors()) {
-          include('course/course_view.php');
-          break;
-      }
       
       // Check email.
       if (!is_valid_user_email($email)) {
