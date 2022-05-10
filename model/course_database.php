@@ -105,4 +105,22 @@ function get_course($course_number) {
         display_db_error($error_message);
     }
 }
+
+function get_student($email) {
+    global $database;
+    $query = 'SELECT * FROM accounts WHERE email_address = :email_address';
+    try {
+        $statement = $database->prepare($query);
+        $statement->bindValue(':course_number', $course_number);
+        $statement->execute();
+        $result = $statement->fetch();
+        $statement->closeCursor();
+        return $result;
+    } catch (PDOException $e) {
+        $error_message = $e->getMessage();
+        display_db_error($error_message);
+    }
+}
+
+
 ?>
