@@ -23,13 +23,12 @@ function add_course($course_name, $instructor, $term, $days, $start_end_time, $s
     }
 }
 
-function add_student_to_course_roster($roster_number, $course_number, $student_full_name, $student_email) {
+function add_student_to_course_roster($course_number, $student_full_name, $student_email) {
     global $database;
-    $query = 'INSERT INTO course_roster (roster_number, course_number, student_full_name, student_email)
-              VALUES (:roster_number, :course_number, :student_full_name, :student_email)';
+    $query = 'INSERT INTO course_roster (course_number, student_full_name, student_email)
+              VALUES (:course_number, :student_full_name, :student_email)';
     try {
         $statement = $database->prepare($query);
-        $statement->bindValue(':roster_number', $roster_number);
         $statement->bindValue(':course_number', $course_number);
         $statement->bindValue(':student_full_name', $student_full_name);
         $statement->bindValue(':student_email', $student_email);
