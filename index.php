@@ -129,6 +129,27 @@ switch($action){
       $roster = get_course_roster($course_number);
       include('course/course_view.php');
       break;
+    case 'add_student_roster':
+      $email = filter_input(INPUT_POST, 'email');
+      
+      // Validate user data
+      $validate->email('email', $email);
+      
+      // If validation errors, redisplay login page and exit controller
+      if ($fields->hasErrors()) {
+          include 'account/account_login_signup.php';
+          break;
+      }
+      
+      // Check email and password in database.
+      if (is_valid_user_login($email, $password)) {
+          $_SESSION['user'] = get_user_by_email($email);
+      }else {
+          $password_message = 'Login failed. Invalid email or password.';
+          include 'account/account_login_signup.php';
+          break;
+      }
+      break;
     case 'delete':
         $roster_number = filter_input(INPUT_POST, 'roster_number', FILTER_VALIDATE_INT);
         $course_number = filter_input(INPUT_POST, 'course_number', FILTER_VALIDATE_INT);
