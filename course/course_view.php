@@ -35,6 +35,29 @@
                </form>
            <?php endforeach; ?>
         <?php endif; ?>
+	      
+	<h2>Add Student To Roster</h2>
+	      
+	<form action = "index.php" method = "post" id = "add_course_form" class = "aligned">
+	  <input type="hidden" name="action" value="add_student_roster">
+	       
+          <label>E-Mail:</label>
+          <input type="text" name="email" value="<?php echo htmlspecialchars($email); ?>">
+          <span class="error"><?php echo $email_message; ?></span>
+          <?php echo $fields->getField('email')->getHTML(); ?><br>
+          
+          <br>
+	       
+	  <?php if(!empty($course_error_message)){ ?>
+	     <p class = "error"> <?php echo htmlspecialchars($course_error_message); ?></p>
+	  <?php } ?>
+	       
+	  <br>
+	   
+	  <label>&nbsp;</label>
+          <input type="submit" value="Create Course">
+	  <input type = "reset" value = "Clear"/>
+       </form>
       </div>
    </body>
 </html>
