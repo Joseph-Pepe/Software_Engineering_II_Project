@@ -137,7 +137,7 @@ switch($action){
       $email = filter_input(INPUT_POST, 'email');
       $roster_number = $_SESSION['roster_number'];
       $course_number = $_SESSION['course_number'];
-      $roster = $_SESSION['roster']
+      $roster = $_SESSION['roster'];
       
       // Check email.
       if (!is_valid_user_email($email)) {
