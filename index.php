@@ -140,22 +140,16 @@ switch($action){
         redirect($app_path);
         break;
    case 'show_add_student_roster_form':
-      
-      $roster_number = $_SESSION['roster_number'];
-      $course_number = $_SESSION['course_number'];
-      $roster = $_SESSION['roster'];
-      
-      include 'course/add_student_form.php';
-      
-      
-      break;
+        include 'course/add_student_form.php';
+        break;
    case 'add_student_roster':
       $email = filter_input(INPUT_POST, 'email');
-       // Check email.
-       if (!is_valid_user_email($email)) {
-          $roster_error_message = 'Email is invalid.';
-          include 'course/add_student_form.php';
-       }
+      // Check email.
+      if (!is_valid_user_email($email)) {
+         $roster_error_message = 'Email is invalid.';
+         include 'course/add_student_form.php';
+      }
+      break;
    case 'show_add_form':
         $course_number = filter_input(INPUT_GET, 'course_number', FILTER_VALIDATE_INT);
         if ($course_number === null) {
