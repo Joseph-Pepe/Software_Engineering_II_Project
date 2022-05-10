@@ -1,6 +1,6 @@
 <?php
    // Set default value of variables for initial page load.
-   if(!isset($student_roster_error_message)) {$student_roster_error_message = '';}
+   if(!isset($roster_error_message)) {$roster_error_message = '';}
 ?>
 
 <!DOCTYPE html>
@@ -28,7 +28,7 @@
           <label>E-Mail:</label>
           <input type="text" name="email" size="30">
 		
-          <?php if(!empty($student_roster_error_message)){ ?>
+          <?php if(!empty($roster_error_message)){ ?>
 	     <p class = "error"> <?php echo htmlspecialchars($roster_error_message); ?></p>
 	  <?php } ?>
 	  
