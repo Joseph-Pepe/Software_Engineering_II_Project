@@ -148,7 +148,8 @@ switch($action){
          $roster_error_message = 'Email is invalid.';
          include 'course/add_student_roster.php';
       }else{
-         $roster_number = add_student_to_course_roster($course_number, $student_full_name, $email);
+         $roster_number = add_student_to_course_roster($course_number, $student['first_name'] . ' ' . $student['last_name'], $email);
+         redirect($app_path);
       }
       break;
    case 'show_add_form':
