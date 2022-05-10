@@ -140,6 +140,10 @@ switch($action){
         include 'course/add_student_roster.php';
         break;
    case 'add_student_roster':
+      $course_number = filter_input(INPUT_GET, 'course_number', FILTER_VALIDATE_INT);
+      if ($course_number === null) {
+          $course_number = filter_input(INPUT_POST, 'course_number', FILTER_VALIDATE_INT);
+      }
       $email = filter_input(INPUT_POST, 'email');
       $student = get_student($email);
 
