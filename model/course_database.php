@@ -23,6 +23,30 @@ function add_course($course_name, $instructor, $term, $days, $start_end_time, $s
     }
 }
 
+function add_student_to_course_roster($course_name, $instructor, $term, $days, $start_end_time, $section) {
+    global $database;
+    $query = 'INSERT INTO courses (instructor, term, days, course_name, start_end_time, section)
+              VALUES (:instructor, :term, :days, :course_name, :start_end_time, :section)';
+    try {
+        $statement = $database->prepare($query);
+        $statement->bindValue(':instructor', $instructor);
+        $statement->bindValue(':term', $term);
+        $statement->bindValue(':days', $days);
+        $statement->bindValue(':course_name', $course_name);
+        $statement->bindValue(':start_end_time', $start_end_time);
+        $statement->bindValue(':section', $section);
+        $statement->execute();
+        $statement->closeCursor();
+
+        // Get the last course ID that was automatically generated
+        $course_id = $database->lastInsertId();
+        return $course_id;
+    } catch (PDOException $exception_object) {
+        $error_message = $exception_object->getMessage();
+        display_db_error($error_message);
+    }
+}
+
 function delete_student($roster_number) {
     global $database;
     $query = 'DELETE FROM course_roster WHERE roster_number = :roster_number';
