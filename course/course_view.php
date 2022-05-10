@@ -42,8 +42,12 @@
 	  <input type="hidden" name="action" value="add_student_roster">
 		
           <label>E-Mail:</label>
-          <input type="text" name="email" value="<?php echo htmlspecialchars($email); ?>" size="30">
-          <?php echo $fields->getField('email')->getHTML(); ?><br>
+          <input type="text" name="email" size="30">
+		
+          <?php if(!empty($roster_error_message)){ ?>
+	     <p class = "error"> <?php echo htmlspecialchars($roster_error_message); ?></p>
+	  <?php } ?>
+
           
 	  
 	  <br>
