@@ -132,10 +132,8 @@ switch($action){
     case 'delete':
         $roster_number = filter_input(INPUT_POST, 'roster_number', FILTER_VALIDATE_INT);
         $course_number = filter_input(INPUT_POST, 'course_number', FILTER_VALIDATE_INT);
-        $course = get_course($course_number);
-        $roster = get_course_roster($course_number);
         delete_student($roster_number);
-        include('course/course_view.php');
+        redirect($app_path);
         break;
    case 'show_add_form':
         $course_number = filter_input(INPUT_GET, 'course_number', FILTER_VALIDATE_INT);
