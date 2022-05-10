@@ -38,7 +38,7 @@
 	      
 	<h2>Add Student To Roster</h2>
 	      
-	<form action = "index.php" method = "post" id = "add_course_form" class = "aligned">
+	<form action = "index.php" method = "post" id = "add_student_form" class = "aligned">
 	  <input type="hidden" name="action" value="add_student_roster">
 		
           <label>E-Mail:</label>
@@ -46,11 +46,11 @@
           <?php echo $fields->getField('email')->getHTML(); ?><br>
           
           <br>
-	       
+	  <!-- 
 	  <?php if(!empty($course_error_message)){ ?>
 	     <p class = "error"> <?php echo htmlspecialchars($course_error_message); ?></p>
 	  <?php } ?>
-	       
+	  -->
 	  <br>
 	   
 	  <label>&nbsp;</label>
