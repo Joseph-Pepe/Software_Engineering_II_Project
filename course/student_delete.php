@@ -3,8 +3,8 @@
     <p>Are you sure you want to delete this student?</p>
     <form action="." method="post">
         <input type="hidden" name="action" value="delete">
-        <input type="hidden" name="roster_number"
-               value="<?php echo $roster_number; ?>">
+        <input type="hidden" name="roster_number" value="<?php echo $roster_number; ?>">
+        <input type="hidden" name="course_number" value="<?php echo $course_number; ?>">
         <input type="submit" value="Delete Student">
     </form>
     <form action="." method="post">
