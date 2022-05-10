@@ -140,14 +140,14 @@ switch($action){
         redirect($app_path);
         break;
    case 'show_add_student_roster_form':
-        include 'course/add_student_form.php';
+        include 'course/add_student_roster.php';
         break;
    case 'add_student_roster':
       $email = filter_input(INPUT_POST, 'email');
       // Check email.
       if (!is_valid_user_email($email)) {
          $roster_error_message = 'Email is invalid.';
-         include 'course/add_student_form.php';
+         include 'course/add_student_roster.php';
       }else{
          $roster_number = add_student_to_course_roster($course_number, $student_full_name, $student_email);
       }
