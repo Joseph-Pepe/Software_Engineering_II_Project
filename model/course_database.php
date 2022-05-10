@@ -111,7 +111,7 @@ function get_student($email) {
     $query = 'SELECT * FROM accounts WHERE email_address = :email_address';
     try {
         $statement = $database->prepare($query);
-        $statement->bindValue(':course_number', $course_number);
+        $statement->bindValue(':email_address', $email);
         $statement->execute();
         $result = $statement->fetch();
         $statement->closeCursor();
