@@ -56,6 +56,7 @@ function is_student_already_in_roster($course_number, $email) {
     global $database;
     $query = 'SELECT * FROM course_roster WHERE course_number = :course_number AND student_email = :student_email';
     $statement = $database->prepare($query);
+    $statement->bindValue(':course_number', $course_number);
     $statement->bindValue(':student_email', $email);
     $statement->execute();
     $valid = ($statement->rowCount() == 1);
