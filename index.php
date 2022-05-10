@@ -136,9 +136,9 @@ switch($action){
         break;
     case 'delete':
         $user_name = $_SESSION['user']['first_name'] . ' ' . $_SESSION['user']['last_name'];
+        $course_number = filter_input(INPUT_POST, 'course_number', FILTER_VALIDATE_INT);
         $course = get_course($course_number);
         $roster = get_course_roster($course_number);
-        $course_number = filter_input(INPUT_POST, 'course_number', FILTER_VALIDATE_INT);
         $roster_number = filter_input(INPUT_POST, 'roster_number', FILTER_VALIDATE_INT);
         delete_student($course_number, $roster_number);
         include('course/course_view.php');
