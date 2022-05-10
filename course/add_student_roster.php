@@ -21,21 +21,21 @@
        <h2>Add Student To Roster</h2>
 	    
        <hr/>
-	    
-       <form action = "index.php" method = "post" id = "add_student_roster_form" class = "aligned">
+	
+       <form action = "index.php" method = "post" id = "add_student_form" class = "aligned">
 	  <input type="hidden" name="action" value="add_student_roster">
-	     
-	       
-	  <br>
-	       
-	  <?php if(!empty($student_roster_error_message)){ ?>
-	     <p class = "error"> <?php echo htmlspecialchars($course_error_message); ?></p>
+		
+          <label>E-Mail:</label>
+          <input type="text" name="email" size="30">
+		
+          <?php if(!empty($student_roster_error_message)){ ?>
+	     <p class = "error"> <?php echo htmlspecialchars($roster_error_message); ?></p>
 	  <?php } ?>
-	       
+	  
 	  <br>
 	   
 	  <label>&nbsp;</label>
-          <input type="submit" value="Create Course">
+          <input type="submit" value="Add Student">
 	  <input type = "reset" value = "Clear"/>
        </form>
     </div>
