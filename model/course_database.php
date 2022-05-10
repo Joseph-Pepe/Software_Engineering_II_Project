@@ -51,6 +51,24 @@ function delete_student($roster_number) {
     $statement->closeCursor();
 }
 
+function is_student_already_in_roster($roster_number, $email) {
+    // Course Data
+    global $database;
+    $course_query = 'SELECT * FROM courses WHERE instructor = :instructor AND term = :term AND days = :days AND course_name = :course_name AND start_end_time = :start_end_time AND section = :section';
+    $statement = $database->prepare($course_query);
+    $statement->bindValue(':instructor', $instructor);
+    $statement->bindValue(':term', $term);
+    $statement->bindValue(':days', $days);
+    $statement->bindValue(':course_name', $course_name);
+    $statement->bindValue(':start_end_time', $start_end_time);
+    $statement->bindValue(':section', $section);
+    $statement->execute();
+    $valid = ($statement->rowCount() == 1);
+    $statement->closeCursor();
+    return $valid;
+}
+
+
 function is_existing_course($course_name, $instructor, $term, $days, $start_end_time, $section) {
     // Course Data
     global $database;
