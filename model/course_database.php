@@ -26,7 +26,7 @@ function add_course($course_name, $instructor, $term, $days, $start_end_time, $s
 function delete_student($roster_number) {
     global $database;
     $query = 'DELETE FROM course_roster WHERE roster_number = :roster_number';
-    $statement = $db->prepare($query);
+    $statement = $database->prepare($query);
     $statement->bindValue(':roster_number', $roster_number);
     $statement->execute();
     $statement->closeCursor();
