@@ -23,11 +23,10 @@ function add_course($course_name, $instructor, $term, $days, $start_end_time, $s
     }
 }
 
-function delete_student($course_number, $roster_number) {
+function delete_student($roster_number) {
     global $database;
-    $query = 'DELETE FROM course_roster WHERE course_number = :course_number AND roster_number = :roster_number';
-    $statement = $database->prepare($query);
-    $statement->bindValue(':course_number', $course_number);
+    $query = 'DELETE FROM course_roster WHERE roster_number = :roster_number';
+    $statement = $db->prepare($query);
     $statement->bindValue(':roster_number', $roster_number);
     $statement->execute();
     $statement->closeCursor();
