@@ -30,7 +30,6 @@
 	       <form action="." method="post" class="inline">
                   <input type="hidden" name="action" value="delete">
                   <input type="hidden" name="roster_number" value="<?php echo $student['roster_number']; ?>">
-		  <input type="hidden" name="course_number" value="<?php echo $student['course_number']; ?>">
                   <input type="submit" value="Delete">
                </form>
            <?php endforeach; ?>
