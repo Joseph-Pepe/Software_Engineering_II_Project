@@ -135,10 +135,13 @@ switch($action){
         include 'course/student_delete.php';
         break;
     case 'delete':
+        $user_name = $_SESSION['user']['first_name'] . ' ' . $_SESSION['user']['last_name'];
+        $course = get_course($course_number);
+        $roster = get_course_roster($course_number);
         $course_number = filter_input(INPUT_POST, 'course_number', FILTER_VALIDATE_INT);
         $roster_number = filter_input(INPUT_POST, 'roster_number', FILTER_VALIDATE_INT);
         delete_student($course_number, $roster_number);
-        redirect($app_path);
+        include('course/course_view.php');
         break;
    case 'show_add_form':
         $course_number = filter_input(INPUT_GET, 'course_number', FILTER_VALIDATE_INT);
