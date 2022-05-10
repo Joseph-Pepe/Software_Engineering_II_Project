@@ -132,7 +132,7 @@ switch($action){
    case 'view_delete_confirm':
         $roster_number = filter_input(INPUT_POST, 'roster_number', FILTER_VALIDATE_INT);
         $course_number = filter_input(INPUT_POST, 'course_number', FILTER_VALIDATE_INT);
-        include 'student_delete.php';
+        include 'course/student_delete.php';
         break;
     case 'delete':
         $course_number = filter_input(INPUT_POST, 'course_number', FILTER_VALIDATE_INT);
