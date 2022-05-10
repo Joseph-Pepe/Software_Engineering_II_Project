@@ -18,7 +18,7 @@
        <?php include 'view/side_bar.php'; ?>
     </div>
     <div id="flexRight">
-       <h2>Create Course (New Class)</h2>
+       <h2>Add Student To Roster</h2>
 	    
        <hr/>
 	    
