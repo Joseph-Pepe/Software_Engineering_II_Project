@@ -35,6 +35,11 @@
                </form>
            <?php endforeach; ?>
         <?php endif; ?>
+	      
+	<h2>Add Student To Roster</h2>
+	<p>To add a student, select the "Add Student" link.</p>
+        <p><a href="index.php?action=show_add_student_roster_form">Add Student (+)</a></p>
+
       </div>
    </body>
 </html>
