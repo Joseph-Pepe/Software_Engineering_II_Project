@@ -141,12 +141,14 @@ switch($action){
         break;
    case 'add_student_roster':
       $email = filter_input(INPUT_POST, 'email');
+      $student = get_student($email);
+
       // Check email.
       if (!is_valid_user_email($email)) {
          $roster_error_message = 'Email is invalid.';
          include 'course/add_student_roster.php';
       }else{
-         $roster_number = add_student_to_course_roster($course_number, $student_full_name, $student_email);
+         $roster_number = add_student_to_course_roster($course_number, $student_full_name, $email);
       }
       break;
    case 'show_add_form':
