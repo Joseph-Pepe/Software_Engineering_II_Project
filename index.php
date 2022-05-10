@@ -123,6 +123,7 @@ switch($action){
       break;
    case 'view_course':
       $course_number = filter_input(INPUT_GET, 'course_number', FILTER_VALIDATE_INT);
+      $_SESSION['course_number'] = $course_number;
       $course = get_course($course_number);
       $user_name = $_SESSION['user']['first_name'] . ' ' . $_SESSION['user']['last_name'];
       $roster_number = filter_input(INPUT_GET, 'roster_number', FILTER_VALIDATE_INT);
@@ -140,10 +141,7 @@ switch($action){
         include 'course/add_student_roster.php';
         break;
    case 'add_student_roster':
-      $course_number = filter_input(INPUT_GET, 'course_number', FILTER_VALIDATE_INT);
-      if ($course_number === null) {
-          $course_number = filter_input(INPUT_POST, 'course_number', FILTER_VALIDATE_INT);
-      }
+      $course_number = $_SESSION['course_number'];
       $email = filter_input(INPUT_POST, 'email');
       $student = get_student($email);
 
@@ -187,6 +185,7 @@ switch($action){
                include('course/create_course.php');
             }else {
                $course_number = add_course($course_name, $user_name, $term, $course_days, $start_end_time, $section);
+               $_SESSION['course_number'] = $course_number;
                $course = get_course($course_number);
                $roster_number = filter_input(INPUT_GET, 'roster_number', FILTER_VALIDATE_INT);
                $roster = get_course_roster($course_number);
