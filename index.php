@@ -133,7 +133,13 @@ switch($action){
       $_SESSION['roster'] = $roster;
       include('course/course_view.php');
       break;
-    case 'add_student_roster':
+    case 'delete':
+        $roster_number = filter_input(INPUT_POST, 'roster_number', FILTER_VALIDATE_INT);
+        $course_number = filter_input(INPUT_POST, 'course_number', FILTER_VALIDATE_INT);
+        delete_student($roster_number);
+        redirect($app_path);
+        break;
+   case 'show_add_student_roster_form':
       $email = filter_input(INPUT_POST, 'email');
       $roster_number = $_SESSION['roster_number'];
       $course_number = $_SESSION['course_number'];
@@ -145,12 +151,7 @@ switch($action){
           include 'course/course_view.php';
       }
       break;
-    case 'delete':
-        $roster_number = filter_input(INPUT_POST, 'roster_number', FILTER_VALIDATE_INT);
-        $course_number = filter_input(INPUT_POST, 'course_number', FILTER_VALIDATE_INT);
-        delete_student($roster_number);
-        redirect($app_path);
-        break;
+   case 'add_student_roster':
    case 'show_add_form':
         $course_number = filter_input(INPUT_GET, 'course_number', FILTER_VALIDATE_INT);
         if ($course_number === null) {
