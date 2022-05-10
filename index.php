@@ -141,7 +141,7 @@ switch($action){
       
       // Check email.
       if (!is_valid_user_email($email)) {
-          $course_error_message = 'Email is invalid.';
+          $roster_error_message = 'Email is invalid.';
           include 'course/course_view.php';
       }
       break;
