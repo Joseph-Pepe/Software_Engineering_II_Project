@@ -45,16 +45,11 @@
           <input type="text" name="email" value="<?php echo htmlspecialchars($email); ?>" size="30">
           <?php echo $fields->getField('email')->getHTML(); ?><br>
           
-          <br>
-	  
-	  <?php if(!empty($course_error_message)){ ?>
-	     <p class = "error"> <?php echo htmlspecialchars($course_error_message); ?></p>
-	  <?php } ?>
 	  
 	  <br>
 	   
 	  <label>&nbsp;</label>
-          <input type="submit" value="Create Course">
+          <input type="submit" value="Add Student">
 	  <input type = "reset" value = "Clear"/>
        </form>
       </div>
