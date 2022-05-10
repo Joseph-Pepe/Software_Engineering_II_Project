@@ -28,11 +28,9 @@
             <?php foreach ($roster as $student) : ?>
                <p><?php echo htmlspecialchars($student['student_full_name'] . ' (' . htmlspecialchars($student['student_email'] .')')) ?></p>
 	       <form action="." method="post" class="inline">
-                        <input type="hidden" name="action"
-                            value="view_delete_confirm">
-                        <input type="hidden" name="roster_number"
-                            value="<?php echo $admin['adminID']; ?>">
-                        <input type="submit" value="Delete">
+                  <input type="hidden" name="action" value="view_delete_confirm">
+                  <input type="hidden" name="roster_number" value="<?php echo $roster['roster_number']; ?>">
+                  <input type="submit" value="Delete">
                </form>
            <?php endforeach; ?>
         <?php endif; ?>
