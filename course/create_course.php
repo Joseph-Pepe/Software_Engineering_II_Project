@@ -82,7 +82,8 @@
 	  <input type = "checkbox" name = "days[]" value = "fri">Friday
 	       
 	  <br>
-	       
+
+	  <!-- [htmlspecialchars]: Converts HTML special characters (&, <, >) to their corresponding HTML entities and returns the resulting string. -->
 	  <?php if(!empty($course_error_message)){ ?>
 	     <p class = "error"> <?php echo htmlspecialchars($course_error_message); ?></p>
 	  <?php } ?>
