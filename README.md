@@ -1,5 +1,7 @@
 # Web Application
 
+![Screen Shot 2022-05-07 at 8 47 38 PM](https://user-images.githubusercontent.com/32807576/167277013-cf29c5fe-7dac-4fe1-80c9-22dcb8c94b42.png)
+
 -----
 
 <b>Apache (Web Server)</b>
@@ -100,4 +102,3 @@ To have an application run on this server, place it in the `htdocs` folder and p
 The <b>Login Page</b> allows the user to login to an existing account or create a new account (sign up for a new account using .edu email).
 
 ![Screen Shot 2022-05-07 at 8 47 25 PM](https://user-images.githubusercontent.com/32807576/167277012-bdd72b13-e915-423f-a319-91743260a7a2.png)
-![Screen Shot 2022-05-07 at 8 47 38 PM](https://user-images.githubusercontent.com/32807576/167277013-cf29c5fe-7dac-4fe1-80c9-22dcb8c94b42.png)
