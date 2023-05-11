@@ -1,12 +1,10 @@
-# Web Application
+# Implementation
 
 -----
 
 <b>Apache (Web Server)</b>
 
 -----
-
-# Implementation
 
 <b>Scripting Language:</b> PHP embedded in html.
 
