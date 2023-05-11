@@ -1,7 +1,5 @@
 # Web Application
 
-Improves communication between the instructor and students during a class session.
-
 -----
 
 <b>Apache (Web Server)</b>
